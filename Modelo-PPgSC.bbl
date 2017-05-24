@@ -1,0 +1,523 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.42.2.1 }
+
+\bibitem{Williamson1989}
+\abntrefinfo{Williamson e Spencer}{WILLIAMSON; SPENCER}{1989}
+{WILLIAMSON, T.; SPENCER, N.~A. {Development and Operation of the Traffic Alert
+  and Collision Avoidance System (TCAS)}.
+\emph{Proceedings of the IEEE}, v.~77, n.~11, p. 1735--1744, 1989.
+ISSN 15582256.}
+
+\bibitem{burckhardt1989anti}
+\abntrefinfo{Burckhardt, Brugger e Faulhaber}{BURCKHARDT; BRUGGER;
+  FAULHABER}{1989}
+{Manfred Burckhardt, Franz Brugger e Andreas Faulhaber. \emph{{Anti-lock brake
+  system}}. 1989.}
+
+\bibitem{Steinbruckner2010}
+\abntrefinfo{Steinbr{\"{u}}ckner}{STEINBR{\"{U}}CKNER}{2010}
+{STEINBR{\"{U}}CKNER, F. {Coherent software cities: Supporting comprehension of
+  evolving software systems}. In:  \emph{IEEE International Conference on
+  Software Maintenance, ICSM}. IEEE, 2010. p.~1--2.
+ISBN 9781424486298. Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/document/5610421/$>$.}
+
+\bibitem{Ball1996}
+\abntrefinfo{Ball e Eick}{BALL; EICK}{1996}
+{BALL, T.; EICK, S. {Software visualization in the large}.
+\emph{Computer}, v.~29, n.~4, p. 33--43, apr 1996.
+ISSN 00189162.
+Dispon{\'\i}vel em: $<$http://ieeexplore.ieee.org/document/488299/$>$.}
+
+\bibitem{Caserta2011}
+\abntrefinfo{Caserta e Zendra}{CASERTA; ZENDRA}{2011}
+{CASERTA, P.; ZENDRA, O. {Visualization of the static aspects of software: A
+  survey}.
+\emph{IEEE Transactions on Visualization and Computer Graphics}, v.~17, n.~7,
+  p. 913--933, 2011.
+ISSN 10772626.}
+
+\bibitem{Abreu1995}
+\abntrefinfo{Abreu e Goul{\~{a}}o}{ABREU; GOUL{\~{A}}O}{1995}
+{ABREU, F.; GOUL{\~{A}}O, M. {Toward the design quality evaluation of
+  object-oriented software systems}.
+\emph{Proc. 5th Int'l Conf. Software Quality}, n. October, p. 44--57, 1995.
+Dispon{\'\i}vel em:
+  $<$http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.6468{\&}rep=rep1{\&}type=pdf$>$.}
+
+\bibitem{Ghanam2008}
+\abntrefinfo{Ghanam e Carpendale}{GHANAM; CARPENDALE}{2008}
+{GHANAM, Y.; CARPENDALE, S. {A survey paper on software architecture
+  visualization}.
+\emph{University of Calgary, Tech. Rep}, 2008.
+Dispon{\'\i}vel em:
+  $<$http://dspace.ucalgary.ca/bitstream/1880/46648/1/2008-906-19.pdf?origin=publication{\_}detail$>$.}
+
+\bibitem{Petre2006}
+\abntrefinfo{Petre e Quincey}{PETRE; QUINCEY}{2006}
+{PETRE, M.; QUINCEY, E.~D. {A gentle overview of software visualisation}.
+\emph{PPIG News Letter}, n. September, p. 1 -- 10, 2006.
+Dispon{\'\i}vel em:
+  $<$http://www.labri.fr/perso/fleury/courses/PdP/SoftwareVisualization/1-overview-swviz.pdf$>$.}
+
+\bibitem{Khan2012}
+\abntrefinfo{Khan et al.}{KHAN et al.}{2012}
+{KHAN, T. et al. {Visualization and evolution of software architectures}.
+\emph{OpenAccess Series in Informatics}, v.~27, p. 25--42, 2012.
+ISSN 21906807.
+Dispon{\'\i}vel em: $<$http://dx.doi.org/10.4230/OASIcs.VLUDS.2011.25$>$.}
+
+\bibitem{DAmbros2009}
+\abntrefinfo{D'Ambros e Lanza}{D'AMBROS; LANZA}{2009}
+{D'AMBROS, M.; LANZA, M. {Visual software evolution reconstruction}.
+\emph{Journal of Software Maintenance and Evolution}, v.~21, n.~3, p. 217--232,
+  2009.
+ISSN 1532060X.}
+
+\bibitem{Vis}
+\abntrefinfo{VisualVM}{VISUALVM}{2016}
+{VISUALVM. \emph{{VisualVM}}. 2016.
+Dispon{\'\i}vel em: $<$https://visualvm.github.io$>$.}
+
+\bibitem{JProfiler}
+\abntrefinfo{JProfiler}{JPROFILER}{2016}
+{JPROFILER. {JProfiler}. 2016. Dispon{\'\i}vel em:
+  $<$https://www.ej-technologies.com/products/jprofiler/overview.html$>$.}
+
+\bibitem{Profiler2016}
+\abntrefinfo{Profiler}{PROFILER}{2016}
+{PROFILER, Y.~J. \emph{{YourKit Java Profiler}}. 2016.
+Dispon{\'\i}vel em: $<$https://www.yourkit.com/java/profiler/features/$>$.}
+
+\bibitem{SandovalAlcocer2013}
+\abntrefinfo{{Sandoval Alcocer} et al.}{{Sandoval Alcocer} et al.}{2013}
+{{Sandoval Alcocer}, J.~P. et al. {Performance evolution blueprint:
+  Understanding the impact of software evolution on performance}.
+\emph{2013 1st IEEE Working Conference on Software Visualization - Proceedings
+  of VISSOFT 2013}, 2013.}
+
+\bibitem{Ahmed2016}
+\abntrefinfo{Ahmed et al.}{AHMED et al.}{2016}
+{AHMED, T.~M. et al. {Studying the effectiveness of application performance
+  management (APM) tools for detecting performance regressions for web
+  applications}.
+\emph{Proceedings of the 13th International Workshop on Mining Software
+  Repositories - MSR '16}, p. 1--12, 2016.
+Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?doid=2901739.2901774$>$.}
+
+\bibitem{Relic2016}
+\abntrefinfo{{New Relic}}{{New Relic}}{2015}
+{{New Relic}, I. \emph{{New Relic}}. 2015.
+Dispon{\'\i}vel em: $<$http://newrelic.com/$>$.}
+
+\bibitem{Appdynamics}
+\abntrefinfo{Appdynamics}{APPDYNAMICS}{2016}
+{APPDYNAMICS. \emph{{Appdynamics}}. 2016.
+Dispon{\'\i}vel em: $<$https://www.appdynamics.com/$>$.}
+
+\bibitem{Dynatrace2016}
+\abntrefinfo{Dynatrace}{DYNATRACE}{2016}
+{DYNATRACE. \emph{{Dynatrace}}. 2016.
+Dispon{\'\i}vel em: $<$http://www.dynatrace.com/$>$.}
+
+\bibitem{Pinpoint2016}
+\abntrefinfo{Pinpoint}{PINPOINT}{2016}
+{PINPOINT. \emph{{Pinpoint}}. 2016.
+Dispon{\'\i}vel em: $<$https://github.com/naver/pinpoint$>$.}
+
+\bibitem{Pinto2015}
+\abntrefinfo{Pinto}{PINTO}{2015}
+{PINTO, F. A.~P.
+\emph{{An Automated Approach for Performance Deviation Analysis of Evolving
+  Software Systems}}.
+154~p. Tese (Doutorado) --- UFRN - Universidade Federal do Rio Grande do Norte,
+  2015.}
+
+\bibitem{Taylor2009}
+\abntrefinfo{Taylor, Medvidovic e Dashofy}{TAYLOR; MEDVIDOVIC; DASHOFY}{2009}
+{TAYLOR, R.~N.; MEDVIDOVIC, N.; DASHOFY, E.~M. \emph{{Software architecture:
+  foundations, theory, and practice}}. [S.l.]: Wiley Publishing, 2009.
+ISSN 0270-5257.
+ISBN 978-1-60558-719-6.}
+
+\bibitem{Bass2007}
+\abntrefinfo{Bass, Clements e Kazman}{BASS; CLEMENTS; KAZMAN}{2012}
+{BASS, L.; CLEMENTS, P.; KAZMAN, R. \emph{{Software Architecture in Practice}}.
+  [S.l.]: Pearson Education India, 2012. 1--426~p.
+ISSN 03008495.
+ISBN 0321154959.}
+
+\bibitem{Kazman2001}
+\abntrefinfo{Clements, Kazman e Klein}{CLEMENTS; KAZMAN; KLEIN}{2001}
+{CLEMENTS, P.; KAZMAN, R.; KLEIN, M. {Evaluating Software Architectures:
+  Methods and Case Studies}. In:  \emph{Addison Wesley Longman SEI Series In
+  Software Engineering}. Addison-Wesley, 2001. p.~368.
+ISBN 020170482X.
+Dispon{\'\i}vel em:
+  $<$http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20{\&}path=ASIN/020170482X$>$.}
+
+\bibitem{Svahnberg2002}
+\abntrefinfo{Svahnberg et al.}{SVAHNBERG et al.}{2002}
+{SVAHNBERG, M. et al. {A Method for Understanding Quality Attributes in
+  Software Architecture Structures}.
+\emph{SEKE 2002 - 14th international conference on Software engineering and
+  knowledge engineering}, p. 819--826, 2002.
+Dispon{\'\i}vel em:
+  $<$http://portal.acm.org/citation.cfm?doid=568760.568900$>$.}
+
+\bibitem{Malik2013}
+\abntrefinfo{Malik, Hemmati e Hassan}{MALIK; HEMMATI; HASSAN}{2013}
+{MALIK, H.; HEMMATI, H.; HASSAN, A.~E. {Automatic detection of performance
+  deviations in the load testing of Large Scale Systems}. In:
+  \emph{Proceedings - International Conference on Software Engineering}.
+  [s.n.], 2013. p. 1012--1021.
+ISBN 9781467330763.
+ISSN 02705257. Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/document/6606651/?arnumber=6606651{\&}tag=1{\%}5Cnhttp://ieeexplore.ieee.org/ielx7/6596173/6606539/06606651.pdf?tp={\&}arnumber=6606651{\&}isnumber=6606539$>$.}
+
+\bibitem{Babar2004}
+\abntrefinfo{Babar e Gorton}{BABAR; GORTON}{2004}
+{BABAR, M.; GORTON, I. {Comparison of scenario-based software architecture
+  evaluation methods}.
+\emph{Proceedings of the 11th Asia-Pacific Software Engineering Conference}, p.
+  600--607, 2004.
+ISSN 1530-1362.
+Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=1371976$>$.}
+
+\bibitem{Diehl2007}
+\abntrefinfo{Diehl}{DIEHL}{2007}
+{DIEHL, S. \emph{{Software visualization: Visualizing the structure, behaviour,
+  and evolution of software}}. [S.l.: s.n.], 2007. 1--187~p.
+ISSN 0018-9162.
+ISBN 9783540465041.}
+
+\bibitem{Gomez-Henriquez2001a}
+\abntrefinfo{Gomez-Henriquez}{GOMEZ-HENRIQUEZ}{2001}
+{GOMEZ-HENRIQUEZ, L.~M. {Software Visualization: An Overview}.
+\emph{Informatik}, v.~2, n.~2, p.~4--7, 2001.
+Dispon{\'\i}vel em:
+  $<$http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.23.8935{\&}rep=rep1{\&}type=pdf$>$.}
+
+\bibitem{Maletic2002}
+\abntrefinfo{Maletic, Marcus e Collard}{MALETIC; MARCUS; COLLARD}{2002}
+{MALETIC, J.~I.; MARCUS, A.; COLLARD, M.~L. {A Task Oriented View of Software
+  Visualization}.
+\emph{Proceedings of the First International Workshop on Visualizing Software
+  for Understanding and Analysis (VISSOFT'02)}, 2002.}
+
+\bibitem{Denford2002}
+\abntrefinfo{Denford, O'Neill e Leaney}{DENFORD; O'NEILL; LEANEY}{2002}
+{DENFORD, M.; O'NEILL, T.; LEANEY, J. {Architecture-based visualisation of
+  computer based systems}. In:  \emph{Engineering of Computer-Based Systems}.
+  IEEE, 2002. p. 139--146. Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/document/999832/$>$.}
+
+\bibitem{Gallagher2005}
+\abntrefinfo{Gallagher, Hatch e Munro}{GALLAGHER; HATCH; MUNRO}{2005}
+{GALLAGHER, K.; HATCH, A.; MUNRO, M. {A framework for software architecture
+  visualization assessment}.
+2005.
+Dispon{\'\i}vel em: $<$http://ieeexplore.ieee.org/document/1684309/$>$.}
+
+\bibitem{Gallagher2008}
+\abntrefinfo{Gallagher et al.}{GALLAGHER et al.}{2008}
+{GALLAGHER, K. et al. {Software Architecture Visualization: An Evaluation
+  Framework and Its Application}.
+\emph{Software Engineering, IEEE Transactions on}, v.~34, n.~2, p. 260--270,
+  2008.
+ISSN 0098-5589.}
+
+\bibitem{Ambros2007}
+\abntrefinfo{Ambros e Lanza}{AMBROS; LANZA}{2007}
+{AMBROS, M.~D.; LANZA, M. {BugCrawler: Visualizing Evolving Software Systems}.
+\emph{11th European Conference on Software Maintenance and Reengineering
+  (CSMR'07)}, p.~4--5, 2007.
+Dispon{\'\i}vel em: $<$http://ieeexplore.ieee.org/document/4145055/$>$.}
+
+\bibitem{Johnson1991}
+\abntrefinfo{Johnson e Shneiderman}{JOHNSON; SHNEIDERMAN}{1991}
+{JOHNSON, B.; SHNEIDERMAN, B. {Tree-maps: A space-filling approach to the
+  visualization of hierarchical information structures}.
+\emph{Proceedings., IEEE Conference on}, p. 284--291, 1991.}
+
+\bibitem{Wang:2006:VLH:1124772.1124851}
+\abntrefinfo{Wang et al.}{WANG et al.}{2006}
+{WANG, W. et al. {Visualization of Large Hierarchical Data by Circle Packing}.
+  In:  \emph{Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems}. New York, NY, USA: ACM, 2006.  (CHI '06), p. 517--520.
+ISBN 1-59593-372-7. Dispon{\'\i}vel em:
+  $<$http://doi.acm.org/10.1145/1124772.1124851$>$.}
+
+\bibitem{Barlow2001}
+\abntrefinfo{Barlow e Neville}{BARLOW; NEVILLE}{2001}
+{BARLOW, T.; NEVILLE, P. {A Comparison of 2-D Visualizations of Hierarchies}.
+\emph{Proceedings of the IEEE Symposium on Information Visualization 2001
+  (INFOVIS'01)}, v.~2001, 2001.}
+
+\bibitem{Holten2006}
+\abntrefinfo{Holten}{HOLTEN}{2006}
+{HOLTEN, D. {Hierrchical Edge Bundles: Visualizaiton of Adjacency Relations in
+  Hierarchical Data}.
+\emph{IEEE Transactions on Visualization and Computer Graphics}, v.~12, n.~5,
+  p. 741--748, 2006.}
+
+\bibitem{Pinzger2008}
+\abntrefinfo{Pinzger et al.}{PINZGER et al.}{2008}
+{PINZGER, M. et al. {A tool for visual understanding of source code
+  dependencies}.
+\emph{IEEE International Conference on Program Comprehension}, p. 254--259,
+  2008.
+ISSN 1063-6897.}
+
+\bibitem{Alam2007}
+\abntrefinfo{Alam e Dugerdil}{ALAM; DUGERDIL}{2007}
+{ALAM, S.; DUGERDIL, P. {EvoSpaces: 3D visualization of software architecture}.
+  In:  \emph{19th International Conference on Software Engineering and
+  Knowledge Engineering, SEKE 2007}. [S.l.: s.n.], 2007. p. 500--505.
+ISBN 9781627486613.}
+
+\bibitem{Balzer2007}
+\abntrefinfo{Balzer e Deussen}{BALZER; DEUSSEN}{2007}
+{BALZER, M.; DEUSSEN, O. {Level-of-detail visualization of clustered graph
+  layouts}.
+\emph{Asia-Pacific Symposium on Visualisation 2007, APVIS 2007, Proceedings},
+  p. 133--140, 2007.}
+
+\bibitem{Termeer2005}
+\abntrefinfo{Termeer et al.}{TERMEER et al.}{2005}
+{TERMEER, M. et al. {Visual exploration of combined architectural and metric
+  information}.
+\emph{Proceedings - VISSOFT 2005: 3rd IEEE International Workshop on
+  Visualizing Software for Understanding and Analysis}, p. 21--26, 2005.}
+
+\bibitem{Byelas2009}
+\abntrefinfo{Byelas e Telea}{BYELAS; TELEA}{2009}
+{BYELAS, H.; TELEA, A. {Visualizing metrics on areas of interest in software
+  architecture diagrams}.
+\emph{IEEE Pacific Visualization Symposium, PacificVis 2009 - Proceedings}, p.
+  33--40, 2009.
+ISSN 1045-926X.}
+
+\bibitem{Lanza2005}
+\abntrefinfo{Lanza et al.}{LANZA et al.}{2005}
+{LANZA, M. et al. {CodeCrawler - an information visualization tool for program
+  comprehension}.
+\emph{Proceedings. 27th International Conference on Software Engineering, 2005.
+  ICSE 2005.}, n. June 2016, p.~2--3, 2005.
+Dispon{\'\i}vel em:
+  $<$http://www.old.inf.usi.ch/faculty/lanza/Downloads/Lanz05a.pdf$>$.}
+
+\bibitem{Novais2013}
+\abntrefinfo{Novais et al.}{NOVAIS et al.}{2013}
+{NOVAIS, R.~L. et al. {Software evolution visualization: A systematic mapping
+  study}.
+\emph{Information and Software Technology}, Elsevier B.V., v.~55, n.~11, p.
+  1860--1883, 2013.
+ISSN 09505849.
+Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1016/j.infsof.2013.05.008$>$.}
+
+\bibitem{Corbi1989}
+\abntrefinfo{Corbi}{CORBI}{1989}
+{CORBI, T.~A. {Program understanding: Challenge for the 1990s}.
+\emph{IBM Systems Journal}, v.~28, n.~2, p. 294--306, 1989.
+ISSN 0018-8670.}
+
+\bibitem{Magnavita2015}
+\abntrefinfo{Magnavita, Novais e Mendon{\c{c}}a}{MAGNAVITA; NOVAIS;
+  MENDON{\c{C}}A}{2015}
+{MAGNAVITA, R.; NOVAIS, R.; MENDON{\c{C}}A, M. {Using EVOWAVE to analyze
+  software evolution}.
+\emph{ICEIS 2015 - 17th International Conference on Enterprise Information
+  Systems, Proceedings}, v.~2, p. 126--136, 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.scopus.com/inward/record.url?eid=2-s2.0-84939532296{\&}partnerID=tZOtx3y1$>$.}
+
+\bibitem{Steinbruckner2010b}
+\abntrefinfo{Steinbr{\"{u}}ckner e Lewerentz}{STEINBR{\"{U}}CKNER;
+  LEWERENTZ}{2010}
+{STEINBR{\"{U}}CKNER, F.; LEWERENTZ, C. {Representing development history in
+  software cities}.
+\emph{Proc. 5th Int. Symp. Softw. Vis.}, p. 193--202, 2010.
+ISSN 15437221.
+Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=1879211.1879239$>$.}
+
+\bibitem{Telea2008}
+\abntrefinfo{Telea e Auber}{TELEA; AUBER}{2008}
+{TELEA, A.; AUBER, D. {Code flows: Visualizing structural evolution of source
+  code}.
+\emph{Computer Graphics Forum}, v.~27, n.~3, p. 831--838, 2008.
+ISSN 01677055.}
+
+\bibitem{Collberg2003}
+\abntrefinfo{Collberg et al.}{COLLBERG et al.}{2003}
+{COLLBERG, C. et al. {A system for graph-based visualization of the evolution
+  of software}.
+\emph{Proceedings of the 2003 ACM symposium on Software visualization - SoftVis
+  '03}, p.~77, 2003.
+Dispon{\'\i}vel em:
+  $<$http://portal.acm.org/citation.cfm?doid=774833.774844$>$.}
+
+\bibitem{Langelier2008}
+\abntrefinfo{Langelier, Sahraoui e Poulin}{LANGELIER; SAHRAOUI; POULIN}{2008}
+{LANGELIER, G.; SAHRAOUI, H.; POULIN, P. {Exploring the evolution of software
+  quality with animated visualization}.
+\emph{Proceedings - 2008 IEEE Symposium on Visual Languages and Human-Centric
+  Computing, VL/HCC 2008}, p. 13--20, 2008.
+ISSN 1943-6092.}
+
+\bibitem{Wettel2007}
+\abntrefinfo{Wettel e Lanza}{WETTEL; LANZA}{2007}
+{WETTEL, R.; LANZA, M. {Visualizing software systems as cities}.
+\emph{VISSOFT 2007 - Proceedings of the 4th IEEE International Workshop on
+  Visualizing Software for Understanding and Analysis}, p. 92--99, 2007.}
+
+\bibitem{Lanza2001}
+\abntrefinfo{Lanza}{LANZA}{2001}
+{LANZA, M. {The evolution matrix: Recovering software evolution using software
+  visualization techniques}.
+\emph{Proceedings of the 4th international workshop on principles of software
+  evolution}, p. 37--42, 2001.
+Dispon{\'\i}vel em: $<$http://portal.acm.org/citation.cfm?id=602461.602467$>$.}
+
+\bibitem{Pinzger2005}
+\abntrefinfo{Pinzger et al.}{PINZGER et al.}{2005}
+{PINZGER, M. et al. {Visualizing multiple evolution metrics}.
+\emph{Proceedings of the 2nd ACM symposium on Software visuallization}, v.~1,
+  n.~212, p.~67, 2005.
+Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=1056018.1056027$>$.}
+
+\bibitem{McConathy1993}
+\abntrefinfo{McConathy}{MCCONATHY}{1993}
+{MCCONATHY, D.~A. {Evaluation methods in visualization: Combating the emperor's
+  new clothes phenomenon}.
+\emph{ACM SIGBIO Newsletter}, 1993.
+Dispon{\'\i}vel em: $<$http://portal.acm.org/citation.cfm?id=163425$>$.}
+
+\bibitem{komlodi2004information}
+\abntrefinfo{Komlodi, Sears e Stanziola}{KOMLODI; SEARS; STANZIOLA}{2004}
+{KOMLODI, A.; SEARS, A.; STANZIOLA, E. \emph{{Information Visualization
+  Evaluation Review}}.
+[S.l.], 2004.}
+
+\bibitem{Seriai2014}
+\abntrefinfo{Seriai et al.}{SERIAI et al.}{2014}
+{SERIAI, A. et al. {Validation of Software Visualization Tools: A Systematic
+  Mapping Study}.
+\emph{2014 Second IEEE Working Conference on Software Visualization}, p.
+  60--69, 2014.}
+
+\bibitem{Dmitriev2004}
+\abntrefinfo{Dmitriev}{DMITRIEV}{2004}
+{DMITRIEV, M. {Profiling Java applications using code hotswapping and dynamic
+  call graph revelation}.
+\emph{ACM SIGSOFT Software Engineering Notes}, v.~29, n.~1, p.~139, 2004.
+ISSN 01635948.}
+
+\bibitem{Bateman2009}
+\abntrefinfo{Bateman et al.}{BATEMAN et al.}{2009}
+{BATEMAN, S. et al. {Interactive usability instrumentation}.
+\emph{Proceedings of the 1st ACM SIGCHI symposium on Engineering interactive
+  computing systems}, p. 45--54, 2009.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/1570433.1570443$>$.}
+
+\bibitem{ApacheJMeter2016}
+\abntrefinfo{{Apache JMeter}}{{Apache JMeter}}{2016}
+{{Apache JMeter}. \emph{{Apache JMeter}}. 2016.
+1~p.
+Dispon{\'\i}vel em: $<$http://jmeter.apache.org/$>$.}
+
+\bibitem{Neuhauser2011}
+\abntrefinfo{Neuh{\"{a}}user}{NEUH{\"{A}}USER}{2011}
+{NEUH{\"{A}}USER, M. {Wilcoxon–Mann–Whitney Test}. In:  LOVRIC, M. (Ed.).
+  \emph{International Encyclopedia of Statistical Science}. Springer Berlin
+  Heidelberg, 2011. p. 1656--1658.
+ISBN 978-3-642-04897-5.
+Dispon{\'\i}vel em:
+  $<$http://www.amazon.com/International-Encyclopedia-Statistical-Science-Miodrag/dp/3642048978$>$.}
+
+\bibitem{Sousa2009}
+\abntrefinfo{Sousa, Moreira e Machado}{SOUSA; MOREIRA; MACHADO}{2009}
+{SOUSA, F.; MOREIRA, L.; MACHADO, J. {Computa{\c{c}}{\~{a}}o em nuvem:
+  Conceitos, tecnologias, aplica{\c{c}}{\~{o}}es e desafios}.
+\emph{Cear{\'{a}}: Universidade Federal do {\ldots}}, n. September, 2009.
+Dispon{\'\i}vel em:
+  $<$http://www.lia.ufc.br/{~}flavio/papers/ercemapi2009.pdf$>$.}
+
+\bibitem{Spence2005}
+\abntrefinfo{Spence}{SPENCE}{2005}
+{SPENCE, I. {No Humble Pie: The Origins and Usage of a Statistical Chart}.
+\emph{Journal of Educational and Behavioral Statistics}, v.~30, n.~4, p.
+  353--368, 2005.
+ISSN 1076-9986.}
+
+\bibitem{Herman2000}
+\abntrefinfo{Herman, Melan{\c{c}}on e Marshall}{HERMAN; MELAN{\c{C}}ON;
+  MARSHALL}{2000}
+{HERMAN, I.; MELAN{\c{C}}ON, G.; MARSHALL, M.~S. {Graph visualization and
+  navigation in information visualization: a survey}.
+\emph{IEEE Transactions on Visualization and Computer Graphics}, v.~6, n.~1, p.
+  24--43, 2000.
+ISSN 10772626.}
+
+\bibitem{Jetty2016}
+\abntrefinfo{Jetty}{JETTY}{2016}
+{JETTY. \emph{{Jetty}}. 2016.
+Dispon{\'\i}vel em: $<$http://www.eclipse.org/jetty/$>$.}
+
+\bibitem{ApacheWi}
+\abntrefinfo{Wicket}{WICKET}{2016}
+{WICKET, A.
+\emph{{Wicket}}.
+Tese (Doutorado), 2016.
+Dispon{\'\i}vel em: $<$https://wicket.apache.org$>$.}
+
+\bibitem{Netty2016}
+\abntrefinfo{Netty}{NETTY}{2016}
+{NETTY. \emph{{Netty}}. 2016.
+Dispon{\'\i}vel em: $<$http://netty.io$>$.}
+
+\bibitem{Eick1992}
+\abntrefinfo{Eick, Steffen e Sumner}{EICK; STEFFEN; SUMNER}{1992}
+{EICK, S.~G.; STEFFEN, J.~L.; SUMNER, E.~E. {Seesoft—A Tool for Visualizing
+  Line Oriented Software Statistics}.
+\emph{IEEE Transactions on Software Engineering}, v.~18, n.~11, p. 957--968,
+  1992.
+ISSN 00985589.}
+
+\bibitem{Holten2008}
+\abntrefinfo{Holten e {Van Wijk}}{HOLTEN; {Van Wijk}}{2008}
+{HOLTEN, D.; {Van Wijk}, J.~J. {Visual comparison of hierarchically organized
+  data}.
+\emph{Computer Graphics Forum}, v.~27, n.~3, p. 759--766, 2008.
+ISSN 01677055.}
+
+\bibitem{Wettel2008}
+\abntrefinfo{Wettel e Lanza}{WETTEL; LANZA}{2008}
+{WETTEL, R.; LANZA, M. {Visual exploration of large-scale system evolution}.
+\emph{Proceedings - Working Conference on Reverse Engineering, WCRE}, p.
+  219--228, 2008.
+ISSN 10951350.}
+
+\bibitem{Bergel}
+\abntrefinfo{Bergel, Robbes e Binder}{BERGEL; ROBBES; BINDER}{2010}
+{BERGEL, A.; ROBBES, R.; BINDER, W. {Visualizing dynamic metrics with profiling
+  blueprints}.
+\emph{Lecture Notes in Computer Science (including subseries Lecture Notes in
+  Artificial Intelligence and Lecture Notes in Bioinformatics)}, v. 6141 LNCS,
+  p. 291--309, 2010.
+ISSN 03029743.}
+
+\bibitem{Mostafa2009}
+\abntrefinfo{Mostafa e Krintz}{MOSTAFA; KRINTZ}{2009}
+{MOSTAFA, N.; KRINTZ, C. {Tracking performance across software revisions}.
+\emph{Proceedings of the 7th International Conference on Principles and
+  Practice of Programming in Java - PPPJ '09}, p. 162--171, 2009.
+Dispon{\'\i}vel em:
+  $<$http://portal.acm.org/citation.cfm?doid=1596655.1596682$>$.}
+
+\end{thebibliography}
