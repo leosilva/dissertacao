@@ -45,13 +45,17 @@
 \contentsline {subsection}{\numberline {3.4.6}Exemplo de Uso da Ferramenta: Jetty {\color {red}fica ou sai?}}{61}{subsection.3.4.6}
 \contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{64}{section.3.5}
 \contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{66}{chapter.4}
-\contentsline {section}{\numberline {4.1}Objetivos e Quest\IeC {\~o}es de Pesquisa}{66}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sistemas e Procedimentos}{67}{section.4.2}
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{69}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{69}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ferramentas APM}{70}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{71}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{72}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{72}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{73}{section.6.2}
-\contentsline {chapter}{Refer\^encias}{75}{section.6.2}
+\contentsline {section}{\numberline {4.1}Projeto}{66}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{67}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{67}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Sistemas e Procedimentos}{68}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Resultados}{70}{section.4.2}
+\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{70}{section.4.3}
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{71}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ferramentas APM}{72}{section.5.2}
+\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{73}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{74}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{74}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{75}{section.6.2}
+\contentsline {chapter}{Refer\^encias}{77}{section.6.2}

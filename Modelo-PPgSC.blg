@@ -36,43 +36,43 @@ Warning--faltando school em ApacheWi
 +---------------------------------------------------------+
 You've used 71 entries,
             6480 wiz_defined-function locations,
-            1707 strings with 24564 characters,
-and the built_in function-call counts, 56898 in all, are:
-= -- 4693
-> -- 1896
-< -- 107
-+ -- 770
-- -- 569
-* -- 4193
-:= -- 7419
+            1707 strings with 24376 characters,
+and the built_in function-call counts, 56645 in all, are:
+= -- 4679
+> -- 1867
+< -- 106
++ -- 758
+- -- 561
+* -- 4156
+:= -- 7390
 add.period$ -- 305
 call.type$ -- 71
-change.case$ -- 777
+change.case$ -- 768
 chr.to.int$ -- 131
 cite$ -- 73
-duplicate$ -- 2837
-empty$ -- 4094
-format.name$ -- 2933
-if$ -- 13546
+duplicate$ -- 2826
+empty$ -- 4103
+format.name$ -- 2892
+if$ -- 13497
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 1232
-newline$ -- 413
+missing$ -- 1229
+newline$ -- 412
 num.names$ -- 285
-pop$ -- 1659
+pop$ -- 1651
 preamble$ -- 1
-purify$ -- 291
+purify$ -- 289
 quote$ -- 0
-skip$ -- 2989
+skip$ -- 2990
 stack$ -- 1
 substring$ -- 2581
-swap$ -- 1420
-text.length$ -- 87
+swap$ -- 1414
+text.length$ -- 86
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 11
 warning$ -- 2
 while$ -- 490
 width$ -- 0
-write$ -- 1022
+write$ -- 1020
 (There were 3 warnings)

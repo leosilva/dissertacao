@@ -71,6 +71,13 @@ Dispon{\'\i}vel em:
 ISSN 21906807.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.4230/OASIcs.VLUDS.2011.25$>$.}
 
+\bibitem{SandovalAlcocer2013}
+\abntrefinfo{{Sandoval Alcocer} et al.}{{Sandoval Alcocer} et al.}{2013}
+{{Sandoval Alcocer}, J.~P. et al. {Performance evolution blueprint:
+  Understanding the impact of software evolution on performance}.
+\emph{2013 1st IEEE Working Conference on Software Visualization - Proceedings
+  of VISSOFT 2013}, 2013.}
+
 \bibitem{DAmbros2009}
 \abntrefinfo{D'Ambros e Lanza}{D'AMBROS; LANZA}{2009}
 {D'AMBROS, M.; LANZA, M. {Visual software evolution reconstruction}.
@@ -92,13 +99,6 @@ Dispon{\'\i}vel em: $<$https://visualvm.github.io$>$.}
 \abntrefinfo{Profiler}{PROFILER}{2016}
 {PROFILER, Y.~J. \emph{{YourKit Java Profiler}}. 2016.
 Dispon{\'\i}vel em: $<$https://www.yourkit.com/java/profiler/features/$>$.}
-
-\bibitem{SandovalAlcocer2013}
-\abntrefinfo{{Sandoval Alcocer} et al.}{{Sandoval Alcocer} et al.}{2013}
-{{Sandoval Alcocer}, J.~P. et al. {Performance evolution blueprint:
-  Understanding the impact of software evolution on performance}.
-\emph{2013 1st IEEE Working Conference on Software Visualization - Proceedings
-  of VISSOFT 2013}, 2013.}
 
 \bibitem{Ahmed2016}
 \abntrefinfo{Ahmed et al.}{AHMED et al.}{2016}
@@ -440,14 +440,6 @@ ISBN 978-3-642-04897-5.
 Dispon{\'\i}vel em:
   $<$http://www.amazon.com/International-Encyclopedia-Statistical-Science-Miodrag/dp/3642048978$>$.}
 
-\bibitem{Sousa2009}
-\abntrefinfo{Sousa, Moreira e Machado}{SOUSA; MOREIRA; MACHADO}{2009}
-{SOUSA, F.; MOREIRA, L.; MACHADO, J. {Computa{\c{c}}{\~{a}}o em nuvem:
-  Conceitos, tecnologias, aplica{\c{c}}{\~{o}}es e desafios}.
-\emph{Cear{\'{a}}: Universidade Federal do {\ldots}}, n. September, 2009.
-Dispon{\'\i}vel em:
-  $<$http://www.lia.ufc.br/{~}flavio/papers/ercemapi2009.pdf$>$.}
-
 \bibitem{Spence2005}
 \abntrefinfo{Spence}{SPENCE}{2005}
 {SPENCE, I. {No Humble Pie: The Origins and Usage of a Statistical Chart}.
@@ -468,6 +460,11 @@ ISSN 10772626.}
 \abntrefinfo{Jetty}{JETTY}{2016}
 {JETTY. \emph{{Jetty}}. 2016.
 Dispon{\'\i}vel em: $<$http://www.eclipse.org/jetty/$>$.}
+
+\bibitem{VRaptor2017}
+\abntrefinfo{VRaptor}{VRAPTOR}{2017}
+{VRAPTOR. \emph{{VRaptor}}. 2017.
+Dispon{\'\i}vel em: $<$http://www.vraptor.org$>$.}
 
 \bibitem{ApacheWi}
 \abntrefinfo{Wicket}{WICKET}{2016}
