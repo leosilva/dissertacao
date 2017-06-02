@@ -89,7 +89,7 @@ A extensão ao \textit{\perfMinerName} foi implementada na forma de uma aplicaç
 
 Por ser web, os usuários da aplicação, como os desenvolvedores e arquitetos, podem utilizá-la sem a necessidade de instalar nenhum módulo nas suas estações de trabalho. Essa é uma importante característica da extensão à ferramenta, fazendo com que esta se diferencie das outras ferramentas mencionadas neste trabalho. A ideia é que distribuição e facilidade de acesso façam com que a equipe de desenvolvimento acompanhe mais adequadamente a evolução do atributo de qualidade de desempenho.
 
-A implementação foi feita utilizando o \textit{framework} web Grails\footnote{https://grails.org}, banco de dados relacional PostgreSQL\footnote{https://www.postgresql.org} e o \textit{layout} das páginas foi elaborado lançando mão do \textit{framework front-end} Bootstrap\footnote{http://getbootstrap.com}. As visualizações foram geradas a partir de \textit{scripts} em JavaScript através da biblioteca JointJS\footnote{https://www.jointjs.com}. A estrutura das páginas web da ferramenta é dividida em três partes: canto superior, canto esquerdo e centro.
+A implementação foi feita utilizando o \textit{framework} web Grails\footnote{\href{https://grails.org}{https://grails.org}}, banco de dados relacional PostgreSQL\footnote{\href{https://www.postgresql.org}{https://www.postgresql.org}} e o \textit{layout} das páginas foi elaborado lançando mão do \textit{framework front-end} Bootstrap\footnote{\href{http://getbootstrap.com}{http://getbootstrap.com}}. As visualizações foram geradas a partir de \textit{scripts} em JavaScript através da biblioteca JointJS\footnote{\href{https://www.jointjs.com}{https://www.jointjs.com}}. A estrutura das páginas web da ferramenta é dividida em três partes: canto superior, canto esquerdo e centro.
 
 No canto superior situa-se uma barra de título, onde é apresentado o nome do sistema e o nome da página atual exibida. Na figura \ref{fig:pagina-inicial}, o nome do sistema é identificado como \texttt{\toolName} ao passo que o nome da página é \texttt{Analyzed Systems}.
 
@@ -219,7 +219,7 @@ O gráfico desta visualização é passível de ações do usuário, a fim de (i
    \textsf{\caption[\textit{Tooltip} com maiores informações sobre determinado cenário.]{\textit{Tooltip} com maiores informações sobre determinado cenário.\label{fig:visualizacao-1-tooltip}}}
 \end{figure}
 
-No \textit{tooltip} mostrado, é possível verificar o nome do cenário: \texttt{Entry point for ClassA\\Test.testMethod}; o seu tempo de execução na versão anterior: \texttt{582,00 milissegundos}; o tempo de execução na versão atual: \texttt{1,48 segundos}; e a porcentagem de desvio do tempo de execução da versão atual em relação a versão anterior: uma degradação de \texttt{154,02 \%}. É possível concluir que houve uma degradação através da seta vermelha para baixo. Em caso de seta verde para cima, significa que houve uma otimização de desempenho. Ao clicar em uma das fatias do gráfico, o usuário será levado para a visualização do grafo de chamadas.
+No \textit{tooltip} mostrado, é possível verificar o nome do cenário: \texttt{Entry point for ClassA\\Test.testMethod}; o seu tempo de execução na versão anterior: \texttt{582,00 milissegundos}; o tempo de execução na versão atual: \texttt{1,48 segundos}; e a porcentagem de desvio do tempo de execução da versão atual em relação a versão anterior: uma degradação de \texttt{154,02\%}. É possível concluir que houve uma degradação através da seta vermelha para baixo. Em caso de seta verde para cima, significa que houve uma otimização de desempenho. Ao clicar em uma das fatias do gráfico, o usuário será levado para a visualização do grafo de chamadas.
 
 \subsection{Funcionamento} \label{subsec:sumarizacao-cenarios-funcionamento}
 
@@ -270,7 +270,7 @@ Na figura \ref{fig:grafo-chamadas-sumario}, é mostrada uma visão geral sobre d
    \item \textit{Scenario}: exibe o nome do cenário analisado;
    \item \textit{System}: nome do sistema analisado;
    \item \textit{Versions}: versões do sistema que foram analisadas. É mostrado no formato \textit{<versionA>} to \textit{<versionB>}. Espera-se que a versão B, neste caso, seja posterior a versão A;
-   \item \textit{Time}: mostra o tempo de execução do cenário na versão mais recente. A diferença de tempo entre as duas versões vai guiar o que será exibido na barra de títulos da figura. No exemplo mostrado, o tempo na última versão degradou com relação ao tempo na versão anterior, sendo exibido, no canto superior direito, a porcentagem da degradação (\texttt{105,62 \%}) acompanhada de uma seta vermelha para baixo e um rótulo em vermelho marcando o cenário como degradado (\textit{degradation}). Caso o tempo do cenário seja otimizado, é exibida uma seta verde para cima ao lado da porcentagem da variação, além de um rótulo verde marcando o cenário como otimizado (\textit{optimization}).
+   \item \textit{Time}: mostra o tempo de execução do cenário na versão mais recente. A diferença de tempo entre as duas versões vai guiar o que será exibido na barra de títulos da figura. No exemplo mostrado, o tempo na última versão degradou com relação ao tempo na versão anterior, sendo exibido, no canto superior direito, a porcentagem da degradação (\texttt{105,62\%}) acompanhada de uma seta vermelha para baixo e um rótulo em vermelho marcando o cenário como degradado (\textit{degradation}). Caso o tempo do cenário seja otimizado, é exibida uma seta verde para cima ao lado da porcentagem da variação, além de um rótulo verde marcando o cenário como otimizado (\textit{optimization}).
 \end{itemize}
 
 Para a seção \textit{Nodes}, as informações são as seguintes:
@@ -439,14 +439,14 @@ As propriedades visuais apresentadas para a visualização do grafo de chamadas 
    \textsf{\caption{Resumo das características visuais dos nós.\label{tab:resumo-caracteristicas-nos}}}
    \centering
    \medskip
-   \begin{tabular}{c|c|c|c|c}
-   \textbf{Tipo} & \textbf{Cor}   & \textbf{\begin{tabular}[c]{@{}c@{}}Tempos de\\ Execução\end{tabular}} & \textbf{Setas} \\ \hline
-   Sem desvio    & Marrom claro   & Total e próprio                                                       & Sem setas \\ \hline
-   Degradado     & Vermelho claro & \begin{tabular}[c]{@{}c@{}}Total, próprio\\ e desvio\end{tabular}     & \begin{tabular}[c]{@{}c@{}}Vermelhas,\\ para baixo\end{tabular} \\ \hline
-   Otimizado     & Verde claro    & \begin{tabular}[c]{@{}c@{}}Total, próprio\\ e desvio\end{tabular}     & \begin{tabular}[c]{@{}c@{}}Verdes,\\ para cima\end{tabular} \\ \hline
-   Adicionado    & Salmão claro   & Total e próprio                                                       & Sem setas \\ \hline
-   Removido    & Cinza   & Total e próprio                                                       & Sem setas \\ \hline
-   Agrupado      & Marrom claro   & Total                                                                 & Sem setas
+   \begin{tabular}{c|c|c|c}
+   \textbf{Tipo} & \textbf{Cor}   & \textbf{Tempos de Execução} & \textbf{Setas} \\ \hline
+   Sem desvio    & Marrom claro   & Total e próprio         & Sem setas \\ \hline
+   Degradado     & Vermelho claro & Total, próprio e desvio & Vermelhas, para baixo \\ \hline
+   Otimizado     & Verde claro    & Total, próprio e desvio & Verdes, para cima \\ \hline
+   Adicionado    & Salmão claro   & Total e próprio         & Sem setas \\ \hline
+   Removido      & Cinza          & Total e próprio         & Sem setas \\ \hline
+   Agrupado      & Marrom claro   & Total                   & Sem setas
    \end{tabular}
 \end{table}
 

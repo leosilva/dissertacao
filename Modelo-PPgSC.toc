@@ -22,40 +22,45 @@
 \contentsline {subsubsection}{\numberline {3.1.1.2}Fase 2: An\IeC {\'a}lise de Desvio}{32}{subsubsection.3.1.1.2}
 \contentsline {subsubsection}{\numberline {3.1.1.3}Fase 3: Minera\IeC {\c c}\IeC {\~a}o de Reposit\IeC {\'o}rio}{33}{subsubsection.3.1.1.3}
 \contentsline {section}{\numberline {3.2}Vis\IeC {\~a}o Geral}{36}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Nova An\IeC {\'a}lise}{38}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Funcionamento}{39}{subsubsection.3.2.1.1}
+\contentsline {subsection}{\numberline {3.2.1}Nova An\IeC {\'a}lise}{37}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Funcionamento}{38}{subsubsection.3.2.1.1}
 \contentsline {subsubsection}{\numberline {3.2.1.2}Bancos de Dados}{41}{subsubsection.3.2.1.2}
-\contentsline {paragraph}{\numberline {3.2.1.2.1}DAM - \textit {Dynamic Analysis Model}}{42}{paragraph.3.2.1.2.1}
-\contentsline {paragraph}{\numberline {3.2.1.2.2}QAV - \textit {Quality Attribute Visualization}}{43}{paragraph.3.2.1.2.2}
-\contentsline {section}{\numberline {3.3}Visualiza\IeC {\c c}\IeC {\~a}o da Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{44}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Intera\IeC {\c c}\IeC {\~a}o}{46}{subsection.3.3.1}
+\contentsline {paragraph}{\numberline {3.2.1.2.1}DAM - \textit {Dynamic Analysis Model}}{41}{paragraph.3.2.1.2.1}
+\contentsline {paragraph}{\numberline {3.2.1.2.2}QAV - \textit {Quality Attribute Visualization}}{42}{paragraph.3.2.1.2.2}
+\contentsline {section}{\numberline {3.3}Visualiza\IeC {\c c}\IeC {\~a}o da Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{43}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Intera\IeC {\c c}\IeC {\~a}o}{45}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Funcionamento}{46}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Visualiza\IeC {\c c}\IeC {\~a}o do Grafo de Chamadas}{48}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Sum\IeC {\'a}rio}{49}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Hist\IeC {\'o}rico}{51}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Grafo de Chamadas}{52}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}N\IeC {\'o} sem desvio}{52}{subsubsection.3.4.3.1}
-\contentsline {subsubsection}{\numberline {3.4.3.2}N\IeC {\'o} degradado}{53}{subsubsection.3.4.3.2}
-\contentsline {subsubsection}{\numberline {3.4.3.3}N\IeC {\'o} otimizado}{54}{subsubsection.3.4.3.3}
-\contentsline {subsubsection}{\numberline {3.4.3.4}N\IeC {\'o} adicionado}{54}{subsubsection.3.4.3.4}
-\contentsline {subsubsection}{\numberline {3.4.3.5}N\IeC {\'o} removido}{55}{subsubsection.3.4.3.5}
-\contentsline {subsubsection}{\numberline {3.4.3.6}N\IeC {\'o} de agrupamento}{55}{subsubsection.3.4.3.6}
-\contentsline {subsection}{\numberline {3.4.4}Intera\IeC {\c c}\IeC {\~a}o}{56}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{59}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Exemplo de Uso da Ferramenta: Jetty {\color {red}fica ou sai?}}{61}{subsection.3.4.6}
-\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{64}{section.3.5}
-\contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{66}{chapter.4}
-\contentsline {section}{\numberline {4.1}Projeto}{66}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{67}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{67}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Sistemas e Procedimentos}{68}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Resultados}{70}{section.4.2}
-\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{70}{section.4.3}
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{71}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{71}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ferramentas APM}{72}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{73}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{74}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{74}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{75}{section.6.2}
-\contentsline {chapter}{Refer\^encias}{77}{section.6.2}
+\contentsline {section}{\numberline {3.4}Visualiza\IeC {\c c}\IeC {\~a}o do Grafo de Chamadas}{47}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Sum\IeC {\'a}rio}{48}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Hist\IeC {\'o}rico}{50}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Grafo de Chamadas}{51}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}N\IeC {\'o} sem desvio}{51}{subsubsection.3.4.3.1}
+\contentsline {subsubsection}{\numberline {3.4.3.2}N\IeC {\'o} degradado}{52}{subsubsection.3.4.3.2}
+\contentsline {subsubsection}{\numberline {3.4.3.3}N\IeC {\'o} otimizado}{53}{subsubsection.3.4.3.3}
+\contentsline {subsubsection}{\numberline {3.4.3.4}N\IeC {\'o} adicionado}{53}{subsubsection.3.4.3.4}
+\contentsline {subsubsection}{\numberline {3.4.3.5}N\IeC {\'o} removido}{54}{subsubsection.3.4.3.5}
+\contentsline {subsubsection}{\numberline {3.4.3.6}N\IeC {\'o} de agrupamento}{54}{subsubsection.3.4.3.6}
+\contentsline {subsection}{\numberline {3.4.4}Intera\IeC {\c c}\IeC {\~a}o}{55}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{58}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Exemplo de Uso da Ferramenta: Jetty {\color {red}fica ou sai?}}{60}{subsection.3.4.6}
+\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{63}{section.3.5}
+\contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Projeto}{65}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{66}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{66}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Sistemas e Procedimentos}{67}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Resultados}{71}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{71}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{71}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{74}{section.4.3}
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{75}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{75}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ferramentas APM}{76}{section.5.2}
+\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{77}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{78}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{78}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{79}{section.6.2}
+\contentsline {chapter}{Refer\^encias}{81}{section.6.2}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{87}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{87}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{90}{section.appen.A.2}
