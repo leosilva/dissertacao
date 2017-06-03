@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Visualiza\IeC {\c c}\IeC {\~a}o de Software}{21}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Visualiza\IeC {\c c}\IeC {\~a}o de Arquitetura de Software}{22}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Visualiza\IeC {\c c}\IeC {\~a}o da Evolu\IeC {\c c}\IeC {\~a}o da Arquitetura de Software}{24}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Estudos Emp\IeC {\'\i }ricos em Visualiza\IeC {\c c}\IeC {\~a}o de Software}{25}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Estudos Emp\IeC {\'\i }ricos em Visualiza\IeC {\c c}\IeC {\~a}o de Software {\color {red} fica ou sai?}}{25}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Ferramentas de An\IeC {\'a}lise de Desempenho}{27}{section.2.3}
 \contentsline {section}{\numberline {2.4}Considera\IeC {\c c}\IeC {\~o}es}{29}{section.2.4}
 \contentsline {chapter}{\numberline {3}Performance QA Evolution}{30}{chapter.3}
@@ -52,15 +52,15 @@
 \contentsline {section}{\numberline {4.2}Resultados}{71}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{71}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{71}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{74}{section.4.3}
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{75}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{75}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ferramentas APM}{76}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{77}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{78}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{78}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{79}{section.6.2}
-\contentsline {chapter}{Refer\^encias}{81}{section.6.2}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{87}{chapter.appen.A}
-\contentsline {section}{\numberline {A.1}Tipo 1}{87}{section.appen.A.1}
-\contentsline {section}{\numberline {A.2}Tipo 2}{90}{section.appen.A.2}
+\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{75}{section.4.3}
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{76}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{76}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ferramentas APM}{77}{section.5.2}
+\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{78}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{79}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{79}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{80}{section.6.2}
+\contentsline {chapter}{Refer\^encias}{82}{section.6.2}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{88}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{88}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{91}{section.appen.A.2}
