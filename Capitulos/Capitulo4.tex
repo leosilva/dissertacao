@@ -23,7 +23,7 @@ As principais contribuições desta avaliação são: (i) a identificação visu
 
 O principal objetivo deste estudo é investigar se a ferramenta \textit{\toolName}, com suas visualizações e propriedades visuais oferecidas, é capaz de representar as evoluções de desempenho dos cenários analisados, se proporciona uma fácil identificação desses desvios pelos usuários e se é útil para as equipes de desenvolvimento dos sistemas analisados. Ao utilizar a ferramenta, os usuários poderão identificar os cenários com desvios de desempenho e, a partir da análise do grafo de chamadas de cada um deles, tomar conhecimento sobre os \textit{commits} dos métodos que possivelmente foram os responsáveis pelo desvio. A partir de então, ações podem ser tomadas pela equipe de desenvolvimento para sanar possíveis problemas no desempenho das aplicações. O estudo foi guiado pelas seguintes questões de pesquisa:
 
-\textbf{QP1.}
+\textbf{QP1. }
 
 \textbf{QP2. Há indícios de que os usuários conseguem identificar os métodos com desvios de desempenho e os respectivos \textit{commits} usando as visualizações disponíveis na ferramenta?}
 
@@ -148,7 +148,7 @@ Em resposta à questão \textit{``Suponha que uma funcionalidade do Jetty/VRapto
 
 \section{Resultados} \label{sec:avaliacao-resultados}
 
-Nesta seção serão discutidos os resultados obtidos após a execução da ferramenta para os sistemas mencionados e após a aplicação do questionário online com os desenvolvedores dessas aplicações. A subseção \ref{subsec:avaliacao-comportamento-visualizacoes} comenta o comportamento das visualizações para os dados obtidos e a subseção \ref{subsec:avaliacao-questionario-online} apresenta os resultados obtidos após a aplicação do questionário.
+Nesta seção serão discutidos os resultados obtidos após a execução da ferramenta para os sistemas mencionados e após a aplicação do questionário online com os desenvolvedores dessas aplicações. A subseção \ref{subsec:avaliacao-comportamento-visualizacoes} comenta o comportamento das visualizações para os dados obtidos dos sistemas e a subseção \ref{subsec:avaliacao-questionario-online} apresenta os resultados obtidos após a aplicação do questionário.
 
 \subsection{Análise do Comportamento das Visualizações} \label{subsec:avaliacao-comportamento-visualizacoes}
 
@@ -156,7 +156,7 @@ Após a execução dos passos 1 e 2 da seção de Procedimentos (\ref{subsec:ava
 
 \subsubsection{Sumarização de Cenários} \label{subsec:avaliacao-comportamento-sumarizacao-cenarios}
 
-A visualização da Sumarização de Cenários mostra todos os cenários identificados com desvios de desempenho (otimização ou degradação) entre duas versões do sistema. Ao final da análise das releases selecionadas, os cenários analisados, com degradações e com otimizações estão mostrados nas tabelas \ref{tab:summary-jetty} para o Jetty, e \ref{tab:summary-vraptor} para o VRaptor.
+Ao final da análise das releases selecionadas, foram encontrados um total de 244 cenários com desvios de desempenho, sejam degradações ou otimizações. Eles estão mostrados nas tabelas \ref{tab:summary-jetty} para o Jetty, e \ref{tab:summary-vraptor} para o VRaptor.
 
 \begin{table}[!htb]
   \textsf{\caption{Resumo para o Jetty.\label{tab:summary-jetty}}}
@@ -270,6 +270,8 @@ Para resolver ou minimizar essa situação, podem ser feitas adaptações na imp
 
 \subsubsection{Grafo de Chamadas} \label{subsec:avaliacao-comportamento-grafo-chamadas}
 
+Cada um dos 244 cenários identificados com desvios de desempenho pela ferramenta possuem nós a serem dispostos na visualização do grafo de chamadas. Nesta subseção serão destacados o resultado do algoritmo de supressão dos nós exibidos, bem como serão comentados 8 casos especiais de grafos.
+
 \paragraph{Supressão de Nós Exibidos}
 
 A ferramenta dispõe de um algoritmo de supressão de nós que calcula os nós que devem ser apresentados para o usuário. Dessa forma, em um grafo de chamadas para determinado cenário, são exibidos os nós que têm relevância para o entendimento e identificação dos métodos possívelmente responsáveis pelo desvio de desempenho do cenário.
@@ -318,7 +320,7 @@ O gráfico da figura \ref{fig:boxplot-reducao-nos} reforça o resultado do algor
 
 \paragraph{Casos Especiais}
 
-Dentro os cenários analisados para os sistemas Jetty e VRaptor, alguns deles podem ser destacados por serem casos especiais de situações envolvendo a quantidade de nós degradados e otimizados, a porcentagem de redução dos nós exibidos e a porcentagem de desvio de desempenho de cenários. Os cenários que exemplificam esses casos são os seguintes:
+Dentre os cenários analisados para os sistemas Jetty e VRaptor, alguns deles podem ser destacados por serem casos especiais de situações envolvendo a quantidade de nós degradados e otimizados, a porcentagem de redução dos nós exibidos e a porcentagem de desvio de desempenho de cenários. Os cenários que exemplificam esses casos são os seguintes:
 \begin{itemize}
   \item \textit{Alta quantidade de nós degradados}: \texttt{Entry point for AsyncContextListeners-\\Test.testAsyncDispatchAsyncCompletePreservesListener} (C1)
   \item \textit{Alta quantidade de nós otimizados}:  \texttt{Entry point for ServletHolderTest.test-\\UnloadableClassName} (C2)
