@@ -49,27 +49,30 @@
 \contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{68}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{68}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Sistemas}{69}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Procedimentos}{70}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.4}Procedimentos}{69}{subsection.4.1.4}
 \contentsline {subsubsection}{\numberline {4.1.4.1}Passo 1 - Coleta e Prepara\IeC {\c c}\IeC {\~a}o dos Dados}{70}{subsubsection.4.1.4.1}
 \contentsline {subsubsection}{\numberline {4.1.4.2}Passo 2 - Aplica\IeC {\c c}\IeC {\~a}o da Abordagem}{70}{subsubsection.4.1.4.2}
-\contentsline {subsubsection}{\numberline {4.1.4.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{72}{subsubsection.4.1.4.3}
+\contentsline {subsubsection}{\numberline {4.1.4.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{71}{subsubsection.4.1.4.3}
 \contentsline {subsection}{\numberline {4.1.5}Caracteriza\IeC {\c c}\IeC {\~a}o dos Participantes}{73}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Resultados}{75}{section.4.2}
+\contentsline {section}{\numberline {4.2}Resultados}{74}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{75}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{75}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{80}{subsubsection.4.2.1.2}
 \contentsline {paragraph}{\numberline {4.2.1.2.1}Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{80}{paragraph.4.2.1.2.1}
 \contentsline {paragraph}{\numberline {4.2.1.2.2}Casos Especiais}{83}{paragraph.4.2.1.2.2}
-\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{87}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{90}{section.4.3}
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{91}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{91}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ferramentas APM}{92}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{93}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{94}{chapter.6}
-\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{94}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{95}{section.6.2}
-\contentsline {chapter}{Refer\^encias}{97}{section.6.2}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{103}{chapter.appen.A}
-\contentsline {section}{\numberline {A.1}Tipo 1}{103}{section.appen.A.1}
-\contentsline {section}{\numberline {A.2}Tipo 2}{106}{section.appen.A.2}
+\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{88}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{88}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{91}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{93}{subsubsection.4.2.2.3}
+\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{95}{section.4.3}
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{96}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{96}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ferramentas APM}{97}{section.5.2}
+\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{98}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}Cronograma de Atividades}{99}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{100}{section.6.2}
+\contentsline {chapter}{Refer\^encias}{102}{section.6.2}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{108}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{108}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{111}{section.appen.A.2}

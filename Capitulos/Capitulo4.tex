@@ -23,15 +23,19 @@ As principais contribuições desta avaliação são: (i) a identificação visu
 
 O principal objetivo deste estudo é investigar se a ferramenta \textit{\toolName}, com suas visualizações e propriedades visuais oferecidas, é capaz de representar as evoluções de desempenho dos cenários analisados, se proporciona uma fácil identificação desses desvios pelos usuários e se é útil para as equipes de desenvolvimento dos sistemas analisados. Ao utilizar a ferramenta, os usuários poderão identificar os cenários com desvios de desempenho e, a partir da análise do grafo de chamadas de cada um deles, tomar conhecimento sobre os \textit{commits} dos métodos que possivelmente foram os responsáveis pelo desvio. A partir de então, ações podem ser tomadas pela equipe de desenvolvimento para sanar possíveis problemas no desempenho das aplicações. O estudo foi guiado pelas seguintes questões de pesquisa:
 
-\textbf{QP1. }
+\textbf{QP1. As visualizações implementadas na ferramenta se mostraram suficientes (?) para representar os cenários e suas propriedades?}
+
+\textbf{QP1. Quais as vantagens e desvantagens de se exibir as informações dos cenários utilizando as representações visuais implementadas na ferramenta?}
+
+\textbf{QP1. A ferramenta e suas visualizações fornecem informações sobre os cenários de modo que pode ser utilizada como uma ferramenta de apoio a decisão com relação a análise de desempenho dos sistemas?}
 
 \textbf{QP2. Há indícios de que os usuários conseguem identificar os métodos com desvios de desempenho e os respectivos \textit{commits} usando as visualizações disponíveis na ferramenta?}
 
-\textbf{QP1. A ferramenta proposta é capaz de exibir representações visuais que fornecem informações sobre os cenários de determinados releases de um sistema que tiveram o maior desvio de desempenho dentre os analisados?} Após as análises realizadas nos releases dos sistemas, a expectativa é que a visualização da sumarização de cenários seja capaz de exibir metáforas visuais que permitam aos usuários identificar informações sobre os cenários. É esperado que a complexidade na identificação dessas informações seja baixa através da metáfora visual e interações oferecidas para ajudar os usuários nessa identificação.
+%\textbf{QP1. A ferramenta proposta é capaz de exibir representações visuais que fornecem informações sobre os cenários de determinados releases de um sistema que tiveram o maior desvio de desempenho dentre os analisados?} Após as análises realizadas nos releases dos sistemas, a expectativa é que a visualização da sumarização de cenários seja capaz de exibir metáforas visuais que permitam aos usuários identificar informações sobre os cenários. É esperado que a complexidade na identificação dessas informações seja baixa através da metáfora visual e interações oferecidas para ajudar os usuários nessa identificação.
 
-\textbf{QP2. A ferramenta proposta é capaz de exibir visualmente, para determinado cenário analisado, os métodos identificados com desvios de desempenho, além dos \textit{commits} que possivelmente causaram esses desvios?} A expectativa é que a visualização do grafo de chamada seja capaz de exibir elementos visuais que permitam aos usuários encontrar as informações sobre os métodos com desvios de desempenho, além das suas possíveis causas. Espera-se, também, que a complexidade de identificação dessas informações seja baixa através das metáforas visuais oferecidas e das interações implementadas. É importante que os usuários tomem conhecimento sobre as modificações no código-fonte que geraram algum impacto no desempenho dos sistemas.
+%\textbf{QP2. A ferramenta proposta é capaz de exibir visualmente, para determinado cenário analisado, os métodos identificados com desvios de desempenho, além dos \textit{commits} que possivelmente causaram esses desvios?} A expectativa é que a visualização do grafo de chamada seja capaz de exibir elementos visuais que permitam aos usuários encontrar as informações sobre os métodos com desvios de desempenho, além das suas possíveis causas. Espera-se, também, que a complexidade de identificação dessas informações seja baixa através das metáforas visuais oferecidas e das interações implementadas. É importante que os usuários tomem conhecimento sobre as modificações no código-fonte que geraram algum impacto no desempenho dos sistemas.
 
-\textbf{QP3. Os usuários dos sistemas analisados veem benefícios ou vantagens de se usar a ferramenta proposta em seus processos de desenvolvimento?} Espera-se, com essa questão de pesquisa, verificar se os usuários dos sistemas analisados utilizariam a ferramenta em seus processos de desenvolvimento. Além disso, outro aspecto interessante é saber em qual momento desse processo os desenvolvedores vislumbram que a ferramenta pode ser usada.
+%\textbf{QP3. Os usuários dos sistemas analisados veem benefícios ou vantagens de se usar a ferramenta proposta em seus processos de desenvolvimento?} Espera-se, com essa questão de pesquisa, verificar se os usuários dos sistemas analisados utilizariam a ferramenta em seus processos de desenvolvimento. Além disso, outro aspecto interessante é saber em qual momento desse processo os desenvolvedores vislumbram que a ferramenta pode ser usada.
 
 \subsection{Sistemas} \label{subsec:avaliacao-sistemas}
 
@@ -116,7 +120,7 @@ Os tipos dos questionários têm as seguintes características:
     \item \textit{Tipo 2}: é o inverso do anterior: o participante respondeu às questões sobre a visualização do grafo de chamadas se baseando em resultados exibidos em uma tabela e respondeu às questões sobre a visualização da sumarização de cenários através da visualização mostrada pela ferramenta.
 \end{itemize}
 
-A divisão do questionário nesses dois tipos permite que as respostas sejam comparadas entre os que responderam baseados nas visualizações da ferramenta e os que responderam baseados em dados tabulares. Ambos os tipos tiveram questões iguais, no entanto, utilizando referências específicas aos cenários dos projetos analisados, quando aplicado nas questões. Através dessa divisão, pode ser comparado, por exemplo, o porcentual de acerto às questões com e sem as visualizações. Os dois tipos do questionário podem ser consultados no apêncice \ref{ch:apendice-a}.
+A divisão do questionário nesses dois tipos permite que as respostas sejam comparadas entre os que responderam baseados nas visualizações da ferramenta e os que responderam baseados em dados tabulares. Ambos os tipos tiveram questões iguais, no entanto, utilizando referências específicas aos cenários dos projetos analisados, quando aplicado nas questões. Através dessa divisão, pode ser comparado, por exemplo, o porcentual de acerto às questões com e sem as visualizações. Os dois tipos do questionário podem ser consultados no apêncice \ref{ch:apendice-a}. Além disso, as perguntas sobre as visualizações permitem coletar informações sobre a identificação correta de elementos, a facilidade de se identificar esses elementos e as impressões dos participantes sobre elas.
 
 Com o questionário elaborado, foram coletados os dados de email e login dos contribuidores de cada projeto através da API do Github. No entanto, não foi possível coletar esses dados para todos os contribuidores pelo fato de existir uma opção nessa ferramenta em que os usuários podem desabilitar a publicização do seu endereço de email nessa API. Para esses casos foram feitas visitas manuais aos perfis de cada contribuidor. Ao final desse processo, foram submetidos 66 questionários para os contribuidores do Jetty e 48 para os contribuidores do VRaptor, um total de 114.
 
@@ -152,7 +156,7 @@ Nesta seção serão discutidos os resultados obtidos após a execução da ferr
 
 \subsection{Análise do Comportamento das Visualizações} \label{subsec:avaliacao-comportamento-visualizacoes}
 
-Após a execução dos passos 1 e 2 da seção de Procedimentos (\ref{subsec:avaliacao-procedimentos}) foram verificadas as visualizações geradas e constatou-se que, de maneira geral, a representação visual dos dados analisados foi feita de maneira correta e safisfatória. As subseções seguintes apresentam os resultados da visualização de Sumarização de Cenários, mostrando exemplos em que a visualização foi gerada conforme esperado e outros que expõem situações onde a identificação dos cenários foi prejudicada, e da visualização do Grafo de Chamadas, expondo o algoritmo de supressão de nós exibidos além de comentar casos especiais ocorridos.
+Após a execução dos passos 1 e 2 da subseção de Procedimentos (\ref{subsec:avaliacao-procedimentos}) foram verificadas as visualizações geradas e constatou-se que, de maneira geral, a representação visual dos dados analisados foi feita de maneira correta e safisfatória. As subseções seguintes apresentam os resultados da visualização de Sumarização de Cenários, mostrando exemplos em que a visualização foi gerada conforme esperado e outros que expõem situações onde a identificação dos cenários foi prejudicada, e da visualização do Grafo de Chamadas, expondo o algoritmo de supressão de nós exibidos além de comentar casos especiais ocorridos.
 
 \subsubsection{Sumarização de Cenários} \label{subsec:avaliacao-comportamento-sumarizacao-cenarios}
 
@@ -196,7 +200,9 @@ Ao final da análise das releases selecionadas, foram encontrados um total de 24
   \end{tabular}
 \end{table}
 
-A figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} apresenta exemplos de visualizações de sumarização de cenários. Na figura \ref{fig:avaliacao-sumarizacao-otimizacao} são mostrados 7 cenários com otimizações de desempenho para o \texttt{Jetty}, versão \texttt{9.3.12} para \texttt{9.3.13}. O cenário indicado pela letra \texttt{A} foi o de maior tempo de execução, conforme denuncia a altura da sua fatia preenchida. Percebe-se, através do gráfico, que os cenários \texttt{A} e \texttt{B} tiveram tempos de execução bem maiores do que o restante. Já o cenário \texttt{C} foi o que teve a maior otimização (47,46\%), identificada através da largura da fatia. Já a figura \ref{fig:avaliacao-sumarizacao-degradacao} exibe 6 cenários degradados para o \texttt{VRaptor}, versão \texttt{4.2.0.RC2} para \texttt{4.2.0.RC3}. O cenário \texttt{A} foi o que possuiu o maior tempo de execução, sendo o seu tempo de execução muito maior do que o dos outros cenários. O cenário \texttt{B} foi o que teve o maior desvio de desempenho, 111,93\%.
+\noindent\textbf{Visualização sem Prejuízos}
+
+A figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} apresenta exemplos de visualizações de sumarização de cenários geradas sem prejuízos. Na figura \ref{fig:avaliacao-sumarizacao-otimizacao} são mostrados 7 cenários com otimizações de desempenho para o \texttt{Jetty}, versão \texttt{9.3.12} para \texttt{9.3.13}. O cenário indicado pela letra \texttt{A} foi o de maior tempo de execução, conforme denuncia a altura da sua fatia preenchida. Percebe-se, através do gráfico, que os cenários \texttt{A} e \texttt{B} tiveram tempos de execução bem maiores do que o restante. Já o cenário \texttt{C} foi o que teve a maior otimização (47,46\%), identificada através da largura da fatia. Já a figura \ref{fig:avaliacao-sumarizacao-degradacao} exibe 6 cenários degradados para o \texttt{VRaptor}, versão \texttt{4.2.0.RC2} para \texttt{4.2.0.RC3}. O cenário \texttt{A} foi o que possuiu o maior tempo de execução, sendo o seu tempo de execução muito maior do que o dos outros cenários. O cenário \texttt{B} foi o que teve o maior desvio de desempenho, 111,93\%.
 
 Os dois exemplos comentados anteriormente mostram cenários com apenas um tipo de desvio de desempenho entre as versões. Na figura \ref{fig:avaliacao-sumarizacao-misturado} são exibidos cenários de ambos os tipos, 3 degradações e 2 otimizações, para o \texttt{Jetty}, versões \texttt{9.3.14} para \texttt{9.3.15}. O cenário indicado pela letra \texttt{A} foi de maior tempo de execução, já o indicado pela letra \texttt{B} foi o que teve a maior porcentagem de desvio de desempenho, 92,99\% de otimização. Já na figura \ref{fig:avaliacao-sumarizacao-misturado-2} são mostrados 5 cenários, 4 degradações e 1 otimização, para o \texttt{VRaptor}, versões \texttt{4.2.0.RC1} para \texttt{4.2.0.RC2}. O único cenário otimizado, identificado pela letra \texttt{A}, foi o que possuiu o maior tempo de execução, já o maior desvio de desempenho foi identificado no cenário \texttt{B}, 142,87\% de degradação.
 
@@ -227,6 +233,8 @@ Os dois exemplos comentados anteriormente mostram cenários com apenas um tipo d
    \caption{Exemplos da visualização de Sumarização de Cenários.}
   \label{fig:avaliacao-sumarizacao-exemplos-sucesso}
 \end{figure}
+
+\noindent\textbf{Visualização com Prejuízos}
 
 Houve casos em que a identificação dos cenários na visualização pode ser prejudicada, de maneira geral: quando há muitos cenários com desvios de desempenho para o par de versões analisados. Quando isso acontece, as fatias ficam pequenas, dificultando a visualização, a localização pelo mouse e o clique para a visualização do grafo de chamadas. Em alguns casos, parte dos cenários apresentados podem ficar até mesmo ilegíveis. A figura \ref{fig:avaliacao-sumarizacao-ruim} apresenta esses casos.
 
@@ -264,9 +272,13 @@ De todas as versões analisadas para os dois sistemas, as versões \texttt{4.0.0
 
 A figura \ref{fig:avaliacao-sumarizacao-ruim-4} apresenta 30 cenários para o \texttt{VRaptor}, versões \texttt{4.2.0.RC1} para \texttt{4.2.0.RC2}. Através de diferenciação visual das larguras das fatias, como no caso anterior, o cenário da letra \texttt{A} pode ser identificado como o cenário que possuiu o maior desvio de desempenho: uma degradação de 730,93\%. De identificação mais difícil e não tão imediata como o cenário \texttt{A}, o cenário da letra \texttt{B} se apresenta como o de maior tempo de execução, porém com baixa porcentagem de desvio. Assim como no caso anterior, os cenários com baixa porcentagem de desvio de desempenho podem ser difíceis de identificar. No entanto, como nos casos da figura \ref{fig:avaliacao-sumarizacao-ruim-1} e \ref{fig:avaliacao-sumarizacao-ruim-3}, tanto o cenário com maior desvio de desempenho quanto o cenário com maior tempo de execução podem ser identificados.
 
-Essa dificuldade em se localizar os cenários não necessariamente está ligada somente a quantidade de cenários apresentados pela visualização, mas também a distribuição das porcentagens de desvio. Quando há uma vasta quantidade de cenários a serem exibidos e cenários com baixas porcentagens de desvio com relação aos demais, a localização destes pode se tornar uma tarefa difícil.
+Essa dificuldade em localizar os cenários, nesses casos, não necessariamente está ligada somente a quantidade de cenários apresentados pela visualização, mas também a distribuição das porcentagens de desvio. Quando há uma vasta quantidade de cenários a serem exibidos (acima de 20) e cenários com baixas porcentagens de desvio com relação aos demais, a identificação destes pode ser prejudicada.
 
-Para resolver ou minimizar essa situação, podem ser feitas adaptações na implementação dessa visualização: (i) os cenários poderiam ser agrupados em módulos do sistema, de acordo com critérios definidos pelos usuários. Dessa forma, várias visualizações de sumarização de cenários seriam geradas, uma para cada módulo, e a ferramenta as apresentaria, uma a uma, com mecanismos de paginação entre os módulos; (ii) outra forma seria fazer um ranqueamento das maiores porcentagens de desvios de desempenho e agrupá-los por esse critério. Assim, utilizando um mecanismo de paginação para apresentá-las, na primeira página estariam os \textit{N} cenários com maior porcentagem de desvio de desempenho, e assim por diante nas páginas seguintes.
+Para resolver ou minimizar essa situação, podem ser feitas adaptações na implementação dessa visualização: (i) os cenários poderiam ser agrupados em módulos do sistema, de acordo com critérios definidos pelos usuários. Dessa forma, várias visualizações de sumarização de cenários seriam geradas, uma para cada módulo, e a ferramenta as apresentaria, uma a uma, com mecanismos de paginação entre os módulos; (ii) outra forma seria fazer um ranqueamento das maiores porcentagens de desvios de desempenho e agrupá-los por esse critério. Assim, utilizando um mecanismo de paginação para apresentá-las, na primeira página estariam os \textit{n} (por exemplo, 10) cenários com maior porcentagem de desvio de desempenho, e assim por diante nas páginas seguintes.
+
+\begin{framed}
+  \noindent A visualização da sumarização de cenários se mostrou eficaz na apresentação da maioria dos casos analisados onde o usuário pode distinguir entre os cenários com maior/menor desvio de desempenho, além de maior/menor tempo de execução. Em outros casos, quando há uma grande quantidade de cenários a serem exibidos (acima de 20) e cenários com baixas porcentagens de desvio de desempenho com relação aos demais, a identificação desses cenários pode ser prejudicada.
+\end{framed}
 
 \subsubsection{Grafo de Chamadas} \label{subsec:avaliacao-comportamento-grafo-chamadas}
 
@@ -317,6 +329,10 @@ O gráfico da figura \ref{fig:boxplot-reducao-nos} reforça o resultado do algor
    \caption{Gráficos \textit{boxplot} sobre o algoritmo de redução de nós.}
   \label{fig:boxplot-porcentagem-reducao-nos}
 \end{figure}
+
+\begin{framed}
+  \noindent O algoritmo de supressão de nós exibidos conseguiu reduzir, para 75\% dos cenários analisados, entre 73,77\% e 99,83\% a quantidade de nós a serem mostrados no grafo. Essa quantidade é de 2 a 16 nós exibidos, para 75\% dos cenários analisados.
+\end{framed}
 
 \paragraph{Casos Especiais}
 
@@ -397,42 +413,114 @@ O último cenário destacado é o \texttt{C8}, que possuiu a menor otimização.
    \textsf{\caption[Grafo de Chamadas do cenário \texttt{C8}.]{Grafo de Chamadas do cenário \texttt{C8}.\label{fig:avaliacao-casos-especiais-c8}}}
 \end{figure}
 
-\FloatBarrier
+\begin{framed}
+  \noindent A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados, independente da quantidade de nós a ser exibido. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, além de, através dos \textit{commits}, tomar conhecimento sobre as mudanças que potencialmente causaram esses desvios de desempenho.
+\end{framed}
 
 \subsection{Questionário Online} \label{subsec:avaliacao-questionario-online}
 
-\textbf{QP1. A ferramenta proposta é capaz de exibir representações visuais que fornecem informações sobre os cenários de determinado release de um sistema que tiveram o maior desvio de desempenho dentre os analisados?} Os questionários aplicados coletaram dados sobre a utilização da visualização de sumarização de cenários para encontrar informações específicas, bem como da utilização de dados tabulares para encontrar as mesmas informações. Foi observado que...
+O questionário online foi enviado para 114 contribuidores de ambos os sistemas. Desses, 16 responderam com algum feedback. Foram consideradas inválidas 3 dessas respostas, pelos motivos expostos na subseção \ref{subsec:avaliacao-caracterizacao-participantes}, restando, portanto, 13 respostas válidas. As respostas comentadas e expostas nesta subseção consideram apenas as respostas válidas.
 
-\textbf{QP2. A ferramenta proposta é capaz de exibir visualmente, para determinado cenário analisado, os métodos identificados com desvios de desempenho, além dos \textit{commits} que possivelmente causaram esses desvios?}
+\subsubsection{Grafo de Chamadas}
 
-{\color{red}FALTAM MUITAS QUESTÕES AQUI...}
+A seção do questionário sobre o grafo de chamadas foi respondida pelos 4 grupos: dois deles responderam o questionário do tipo 1 e os outros dois grupos responderam ao questionário de tipo 2. Nessa seção, foi perguntado se os usuários conseguiam identificar os possíveis métodos responsáveis pelo desvio de desempenho de determinado cenário, além de solicitar que os métodos fossem listados em dois grupos: otimizados e degradados. Dos 9 participantes que responderam a essa pergunta baseados na visualização (questionário tipo 1), 6 (67\%) deles responderam corretamente e um (11\%) respondeu parcialmente correto. Nesse caso, a resposta foi considerada parcialmente correta pois o participante não mencionou um dos métodos degradados. Por outro lado, dos 4 participantes que responderam à questão baseados em dados tabulares (questionário tipo 2), apenas um (25\%) respondeu corretamente. %A figura \ref{fig:avaliacao-questao-7-tipo-1} mostra as porcentagens das respostas para o questionário de tipo 1, e a figura \ref{fig:avaliacao-questao-7-tipo-2} para o questionário de tipo 2.
 
-\textbf{QP3. Os usuários dos sistemas analisados veem benefícios ou vantagens de se usar a ferramenta proposta em seus processos de desenvolvimento?} Através do questionário aplicado foi verificado se os participantes veem benefícios na utilização de uma ferramenta como o \textit{\toolName}, além de se eles utilizariam, e de que maneira, a ferramenta em seus processos de desenvolvimento.
+Em seguida, os participantes responderam à questão \textit{``Quão fácil foi responder à pergunta anterior?''}, para ambos os questionários. Considerando apenas os que responderam de maneira correta ou parcialmente correta, para o questionário em que os participantes responderam baseados na visualização, 4 (58\%) dos 7 acharam muito fácil ou fácil responder à questão comentada no parágrafo anterior. Por outro lado, o único participante que acertou a mesma questão baseado em dados tabulares achou fácil encontrar as informações solicitadas.
 
-Dentre as perguntas dos questionários continha uma específica para os participantes relatarem suas impressões positivas e negativas para cada visualização implementada: \textit{``Você poderia mencionar aspectos dessa visualização que você gostou? E quais outros aspectos você não gostou? Você tem alguma sugestão de melhoria ou comentário para essa visualização?''}. Para a visualização do Grafo de Chamadas, no geral, os participantes disseram gostar das características visuais implementadas, mas também fizeram críticas à visualização. O participante P5GA disse que \textit{``o gráfico é bastante simples e fácil de entender. Não há muita informação, apenas o necessário. Eu gostei do recurso de destaque e a seta verde/vermelha indicando o nível de melhoria/degradação. Como sugestão, pode ser interessante adicionar informações sobre o contexto de execução (ex: argumentos JVM)''}, já o participante P22GA menciona que \textit{``o popup Detalhes é difícil de copiar / colar. Eu preferiria que ele permanecesse aberto até eu clicar em outro lugar. Os links para o commit exato são agradáveis. Toda a visualização parece muito boa, mas gostaria que o grafo de chamadas tivesse um pouco mais de espaço em tela. Seria bom ter (temporariamente?) preenchendo a tela inteira. Por algum motivo, eu esperava poder clicar e arrastar o grafo de chamadas (como o Google Maps) em vez de usar a rolagem''}. O participante P13GC, no entanto, não percebeu que a funcionalidade de zoom foi implementada e relatou sentir falta: \textit{``gostei dos gráficos e dos detalhes das informações. Achei o espaço reservado para o grafo de chamadas muito reduzido, o espaço vertical pra ele é pequeno. Outra coisa que senti falta foi uma opção de Zoom Out no grafo de chamadas''}.
+\begin{framed}
+  \noindent Diante do exposto para as duas questões anteriores, pode-se obter indícios de que a visualização do grafo de chamadas se mostrou mais eficaz do que os dados tabulares (isto é, desconsiderando a existência dessa visualização) para se encontrar informações sobre os possíveis métodos responsáveis pelo desvio de desempenho de determinado cenário.
+\end{framed}
 
-Para a visualização da Sumarização de Cenários o sentimento foi dividido. O participante P1GD não se sentiu confortável com o gráfico de rosca utilizado para a visualização: \textit{``gráficos em torta ou semelhantes normalmente querem representar 100\% de algo. Usar a largura versus altura não foi intuitivo pra mim. Talvez separar mesmo em dois gráficos e dar a opção de ordenar ou por um ou por outro}. Por outro lado, o participante P6GD gostou e comentou que \textit{``utilizar a largura, cor e altura da fatia me pareceu uma boa definição para identificação dos aspectos analisados''}.
+% \begin{figure}[!htb]
+%   \centering
+%    \begin{subfigure}{.5\textwidth}
+%    \centering
+%    \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_7_tipo_1.png}}
+%    \textsf{\caption[Questionário de tipo 1.]{Questionário de tipo 1.\label{fig:avaliacao-questao-7-tipo-1}}}
+%    \end{subfigure}%
+%    \begin{subfigure}{.5\textwidth}
+%    \centering
+%    \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_7_tipo_2.png}}
+%    \textsf{\caption[Questionário de tipo 2.]{Questionário de tipo 2.\label{fig:avaliacao-questao-7-tipo-2}}}
+%    \end{subfigure}
+%    \caption{Respostas dos participantes à questão para identificar os possíveis métodos responsáveis pelo desvio de desempenho de determinado cenário.}
+%   \label{fig:avaliacao-questao-7}
+% \end{figure}
 
-Quando responderam a questão \textit{``Você vê benefícios de usar a ferramenta de visualização de desvios de desempenho apresentada? Se sim, quais?''}, \texttt{63\%} dos participantes disseram que veem benefícios no uso da ferramenta, conforme exibe a figura \ref{fig:avaliacao-questao-16}. Dentre os benefícios comentados pelos participantes, alguns exemplos do que foi informado são: o participante P8GC disse que \textit{``aparentemente pode trazer análises mais assertivas do atual desempenho do sistema''}, o participante P13GC menciona que \textit{``sim, é bem interessante para verificar se os novos releases contém alterações com prejuízos sérios à performance, podendo algumas vezes até detectar algum problema de lógica ou regra de negócio''}, já o participante P6GD informa que \textit{``sim. É interessante saber de maneira precisa e quantitativa a quantidade e nível de melhorias e degradações entre versões''}.
+Em seguida, uma questão, de ambos dos questionários, solicitou aos participantes que identificassem o \textit{hash} do \textit{commit} responsável por pelo principal desvio de desempenho do sistema. Dos 9 participantes que responderam a essa questão baseados na visualização do grafo de chamadas, 6 (67\%) deles acertaram a resposta. Por outro lado, dos 4 que responderam baseados nos dados tabulares, 2 (50\%) acertaram.
+
+A próxima questão indagava \textit{``Quão fácil foi responder à pergunta anterior?''}, para ambos os questionários. Considerando apenas os 6 participantes que responderam corretamete à questão anterior no questionário de tipo 1, 5 (84\%) deles considerou muito fácil ou fácil. Por outro lado, para o questionário de tipo 2, dos 2 participantes que responderam à questão corretamente, apenas 1 (50\%) deles achou fácil.
+
+\begin{framed}
+  \noindent Tomando como base as respostas as duas perguntas anteriores, têm-se indícios de que a visualização do grafo de chamadas se mostrou novamente mais eficaz do que os dados tabulares para se encontrar os \textit{hashs} dos \textit{commits} responsáveis pelos principais desvios de desempenho do sistema.
+\end{framed}
+
+Através da visualização do grafo de chamadas, os participantes acessaram um cenário real a partir da execução da ferramenta em seus respectivos sistemas e tomaram conhecimento, se já não havia, sobre o desvio de desempenho deparado. Em resposta à pergunta \textit{``Este desvio parece plausível de acordo com o seu conhecimento do sistema?''}, 7 (54\%) dos 13 participantes com respostas válidas consideraram ser plausível o desvio de desempenho mostrado na visualização. Apenas 2 (15\%) responderam que não era plausível, enquanto que o restante não informou (3 - 28\%) ou não soube responder (1 - 8\%).
+
+Na seção dos questionários de tipo 1 e 2 que tratavam das visualizações havia uma pergunta para os participantes relatarem as suas impressões: \textit{``Você poderia mencionar aspectos dessa visualização que você gostou? E quais outros aspectos você não gostou? Você tem alguma sugestão de melhoria ou comentário para essa visualização?''}. Para a visualização do Grafo de Chamadas, no geral, os participantes disseram gostar das características visuais implementadas, mas também fizeram críticas à visualização. O participante P5GA disse que \textit{``o gráfico é bastante simples e fácil de entender. Não há muita informação, apenas o necessário. Eu gostei do recurso de destaque e a seta verde/vermelha indicando o nível de melhoria/degradação. Como sugestão, pode ser interessante adicionar informações sobre o contexto de execução (ex: argumentos JVM)''}, já o participante P22GA menciona que \textit{``o popup Detalhes é difícil de copiar / colar. Eu preferiria que ele permanecesse aberto até eu clicar em outro lugar. Os links para o commit exato são agradáveis. Toda a visualização parece muito boa, mas gostaria que o grafo de chamadas tivesse um pouco mais de espaço em tela. Seria bom ter (temporariamente?) preenchendo a tela inteira. Por algum motivo, eu esperava poder clicar e arrastar o grafo de chamadas (como o Google Maps) em vez de usar a rolagem''}. O participante P13GC, no entanto, não percebeu que a funcionalidade de zoom foi implementada e relatou sentir falta: \textit{``gostei dos gráficos e dos detalhes das informações. Achei o espaço reservado para o grafo de chamadas muito reduzido, o espaço vertical pra ele é pequeno. Outra coisa que senti falta foi uma opção de Zoom Out no grafo de chamadas''}. O gráfico da figura \ref{fig:avaliacao-questao-12} quantifica as opiniões dos participantes com relação ao que gostaram, não gostaram ou as sugestões feitas por eles para essa visualização.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.60]{Imagens/avaliacao_questao_12.png}}
+   \textsf{\caption[Opinião dos participantes sobre os aspectos da visualização do grafo de chamadas.]{Opinião dos participantes sobre os aspectos da visualização do grafo de chamadas.\label{fig:avaliacao-questao-12}}}
+\end{figure}
+
+Dos aspectos que os participantes gostaram, é importante destacar que houve 5 opiniões de que o grafo está fácil de entender. Outras menções foram feitas para funcionalidades como a de destaque dos nós com desvio, as setas indicativas de nós degradados ou otimizados e os \textit{links} diretamente para os \textit{commits} que possívelmente foram os causadores do desvio de desempenho do referido nó.
+
+Sobre os aspectos que os participantes não gostaram, o participante P22GA comentou sobre os \textit{tooltips}, conforme relatado no parágrafo anterior, e o participante P26GA mencionou que \textit{``as diferenças de unidades de tempo (ms, ns) podem atrapalhar as pessoas''}. Essa diferença das unidades de tempo foi implementada para que a quantidade de números exibidos nos nós seja a menor possível. Dessa forma, sempre que possível o tempo é convertido para a unidade superior. Por exemplo: um tempo de execução de 1.200.000 nanosegundos será automaticamente convertido para 1,2 milissegundos, já um tempo de 1.500 milissegundos será convertido para 1,5 segundos.
+
+Como sugestões, o participante P5GA acha interessante visualizar informações sobre o contexto de execução do teste automatizado, como, por exemplo, os argumentos da JVM. Já o participante P22GA, em sua resposta, comentou que esperava poder clicar e arrastar o grafo para navegação. Diante dessa frustração, a implementação dessa funcionalidade foi colocada como sugestão. Dois participantes sugeriram mais espaço para o grafo de chamadas. Se possível, mesmo que temporariamente, exibi-lo em tela cheia. Por fim, outro participante acha interessante que haja a porcentagem de desvio de desempenho indicada nos nós.
+
+\subsubsection{Sumarização de Cenários}
+
+A seção do questionário sobre a sumarização de cenários também foi respondida pelos 4 grupos: dois deles responderam o questionário do tipo 1 e os outros dois grupos responderam o questionário de tipo 2. Foi perguntado se os participantes conseguiam identificar qual dos cenários, dadas duas versões de seus respectivos sistemas, possuiu o maior desvio de desempenho dentre os exibidos. Além disso, foi solicitado que eles indicassem se o cenário tinha sido otimizado ou degradado. Dos 4 participantes responderam a essa questão baseados na visualização da sumarização de cenários, 2 (50\%) a responderam corretamente e um (25\%) respondeu parcialmente correto. Nesse caso, a resposta foi considerada parcialmente correta pois o participante apenas apontou o nome do cenário, mas não se ele degradou ou otimizou. Por outro lado, dos que responderam baseados em dados tabulares, 5 (56\%) acertaram a resposta e uma (11\%) foi considerada parcialmente correta. A resposta foi considerada parcialmente correta, nesse caso, pois o participante não apontou o nome do cenário e se este degradou ou otimizou, ele apenas indicou em qual linha da tabela estava o cenário.
+
+Em seguida, os participantes responderam à questão \textit{``Quão fácil foi responder à pergunta anterior?''} relacionada a questão do parágrafo anterior. Considerando apenas os participantes que responderam de maneira correta ou parcialmente correta a questão anterior, 2 (66\%) dos 3 que responderam baseados na visualização apontaram ser muito fácil ou fácil respondê-la. Já os participantes que responderam baseados em dados tabulares, 5 (88\%) dos 6 acohu fácil ou muito fácil respondê-la.
+
+\begin{framed}
+  \noindent Diante do exposto para as duas questões anteriores, não há indícios suficientes para concluir se a visualização da sumarização de cenários traz ganhos na identificação dos cenários com maior desvio de desempenho dentre os exibidos, uma vez que o resultado foi semelhante com o uso de dados tabulares.
+\end{framed}
+
+Outra questão em que os participantes tinham que identificar um cenário a partir de suas características visuais foi para indicar o cenário com o maior tempo de execução dentre os exibidos, além de informar se ele foi otimizado ou degradado. Dois (50\%) participantes que responderam à questão baseados na visualização acertaram, além de um (25\%) que acertou parcialmente, de um total de 4. O participante que acertou parcialmente apenas informou o nome do cenário, mas não se este foi degradado ou otimizado. Por outro lado, dos que responderam baseados em dados tabulares, 5 (56\%) responderam corretamente e um (11\%) parcialmente correto. O participante que acertou parcialmente informou apenas a situação do cenário, porém não informou o seu nome.
+
+Novamente, após a questão anterior, os participantes responderam à questão \textit{``Quão fácil foi responder à pergunta anterior?''}. Considerando apenas os participantes que responderam de maneira correta ou parcialmente correta a questão anterior, 2 (66\%) dos 3 que responderam baseados na visualização apontaram ser muito fácil ou fácil respondê-la. Os 6 participantes que responderam baseados nos dados tabulares acharam muito fácil ou fácil respondê-la.
+
+\begin{framed}
+  \noindent Para as duas questões anteriores, também não há indícios suficientes para concluir se a visualização da sumarização de cenários traz ganhos na identificação dos cenários com maior tempo de execução dentre os exibidos, uma vez que o resultado foi semelhante com o uso de dados tabulares.
+\end{framed}
+
+De maneira igual a seção dos questionários referentes a visualização do grafo de chamadas, os participantes responderam a questão \textit{``Você poderia mencionar aspectos dessa visualização que você gostou? E quais outros aspectos você não gostou? Você tem alguma sugestão de melhoria ou comentário para essa visualização?''}. O sentimento foi dividido. O participante P1GD não se sentiu confortável com o gráfico de rosca utilizado para a visualização: \textit{``gráficos em torta ou semelhantes normalmente querem representar 100\% de algo. Usar a largura versus altura não foi intuitivo pra mim. Talvez separar mesmo em dois gráficos e dar a opção de ordenar ou por um ou por outro}. Por outro lado, o participante P6GD gostou e comentou que \textit{``utilizar a largura, cor e altura da fatia me pareceu uma boa definição para identificação dos aspectos analisados''}.
+
+\subsubsection{Questões Finais}
+
+Após responderem sobre as visualizações, a seção final do questionário convidou os participantes a responderem a questões gerais sobre os benefícios, a utilidade da ferramenta além de comentários gerais. Na primeira das questões dessa seção, os participantes responderam a questão \textit{``Você vê benefícios de usar a ferramenta de visualização de desvios de desempenho apresentada? Se sim, quais?''}. Do total de participantes, \texttt{69\%} deles disseram que veem benefícios no uso da ferramenta, conforme exibe a figura \ref{fig:avaliacao-questao-17}. Dentre os benefícios comentados pelos participantes, o participante P8GC disse que \textit{``aparentemente pode trazer análises mais assertivas do atual desempenho do sistema''}, já o participante P13GC menciona que \textit{``sim, é bem interessante para verificar se os novos releases contém alterações com prejuízos sérios à performance, podendo algumas vezes até detectar algum problema de lógica ou regra de negócio''}, ao passo que o participante P6GD informa que \textit{``sim. É interessante saber de maneira precisa e quantitativa a quantidade e nível de melhorias e degradações entre versões''}.
+
+Os 15\% que talvez vejam benefícios na ferramenta também merecem destaque. O participante P19GD respondeu que \textit{``Acho a idéia muito interessante, mas acredito que o projeto ainda precise evoluir bastante para se tornar usável.''}. Já o participante P11GA disse que se sente \textit{``duvidoso com relação a falsos positivos/negativos de testes automatizados que não foram projetados para serem comparados.''}.
 
 \begin{figure}[!htb]
   \centering
   \begin{subfigure}{.50\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_16.png}}
-   \textsf{\caption[Benefícios da ferramenta.]{Benefícios da ferramenta.\label{fig:avaliacao-questao-16}}}
+   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_17.png}}
+   \textsf{\caption[Benefícios da ferramenta.]{Benefícios da ferramenta.\label{fig:avaliacao-questao-17}}}
    \end{subfigure}%
    \begin{subfigure}{.50\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_17.png}}
-   \textsf{\caption[Utilidade da ferramenta.]{Utilidade da ferramenta.\label{fig:avaliacao-questao-17}}}
+   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_18.png}}
+   \textsf{\caption[Utilidade da ferramenta.]{Utilidade da ferramenta.\label{fig:avaliacao-questao-18}}}
    \end{subfigure}
-   \caption{Questões sobre os benefícios e utilidades da ferramenta proposta.}
-  \label{fig:avaliacao-questoes-16-17}
+   \caption{Questões sobre os benefícios e utilidade da ferramenta.}
+  \label{fig:avaliacao-questoes-17-18}
 \end{figure}
 
-Com relação à questão \textit{``Você utilizaria a ferramenta como parte integrante do processo de desenvolvimento de software do Jetty/VRaptor? Se sim, como você vislumbra que ela seria utilizada?''}, metade (\texttt{50\%}) dos participantes respondeu que usaria a ferramenta como parte integrante do processo de desenvolvimento. O participante P22GA disse que \textit{``eu imagino usar esta ferramenta de duas maneiras: monitoramento regular para ver como as mudanças afetam o desempenho e investigação focada em uma questão específica''}, já o participante P8GC reforça que \textit{``talvez ela pudesse fazer parte do conjunto de análises antes da release''}, o participante P13GC afirma que \textit{``Sim. Acho que poderia ser utilizada para avaliar releases antes de serem lançadas, para garantir que não há consequencias graves à performance após as evoluções implementadas''} e o participante P18GD disse que \textit{``sim. Integrada ao ciclo de entrega continua (acredito que usam travis.ci) para geração de reports (configurado no maven)''}. A figura \ref{fig:avaliacao-questao-17} sumariza as respostas à essa questão.
+Com relação à questão \textit{``Você utilizaria a ferramenta como parte integrante do processo de desenvolvimento de software do Jetty/VRaptor? Se sim, como você vislumbra que ela seria utilizada?''}, \texttt{54\%} dos participantes respondeu que usaria a ferramenta como parte integrante do processo de desenvolvimento. O participante P22GA disse que \textit{``eu imagino usar esta ferramenta de duas maneiras: monitoramento regular para ver como as mudanças afetam o desempenho e investigação focada em uma questão específica''}, já o participante P8GC reforça que \textit{``talvez ela pudesse fazer parte do conjunto de análises antes da release''}, o participante P13GC afirma que \textit{``Sim. Acho que poderia ser utilizada para avaliar releases antes de serem lançadas, para garantir que não há consequencias graves à performance após as evoluções implementadas''} e o participante P18GD disse que \textit{``sim. Integrada ao ciclo de entrega continua (acredito que usam travis.ci) para geração de reports (configurado no maven)''}. A figura \ref{fig:avaliacao-questao-18} sumariza as respostas à essa questão e expõe que a maioria dos usuários usariam a ferramenta em seus processos de desenvolvimento.
 
-Vale destacar que \texttt{19\%} responderam talvez à questão do parágrafo anterior. Dentre as justificativas apresentadas por eles, o participante P4GA disse que \textit{``não sei dizer. Não tenho certeza sobre outros testes mais complexos e de integração''} e o participante P19GD comentou que \textit{``não neste momento. Posteriormente poderia fazer parte de uma análise de status do projeto antes de um release''}.
+Vale destacar que \texttt{23\%} responderam talvez à questão do parágrafo anterior. Dentre as justificativas apresentadas por eles, o participante P4GA disse que \textit{``não sei dizer. Não tenho certeza sobre outros testes mais complexos e de integração''}, já o participante P19GD comentou que \textit{``não neste momento. Posteriormente poderia fazer parte de uma análise de status do projeto antes de um release''}. Essas responstas indicam que, caso tivessem mais conhecimento e experiência sobre a ferramenta, eles são potenciais usuários a integrarem-na aos seus processos de desenvolvimento.
+
+\begin{framed}
+  \noindent A maioria (69\%) dos participantes veem benefícios em se utilizar a ferramenta e pouco mais da metade (54\%) usariam a ferramenta em seus processos de desenvolvimento de software.
+\end{framed}
+
+A última questão dos questionários convidou os participantes a deixar comentários gerais sobre a ferramenta. A maioria deles deixou comentários positivos, no entanto, houve críticas. O participante P1GD comentou: \textit{``achei algo bem profissional o que fizeram. Ainda está muito com cara de produto para hacker/coder, algo que já não sou mais, e fico perdido.''}. Já o participante P19GD comentou: \textit{``gostei da idéia do projeto, mas acho que precisa de alguns ajustes, principalmente na exibição das informações. Por exemplo, na planilha tem colunas em `ns', outras em `ms', mas que todas poderiam ter sido normalizadas para facilitar as comparações.''}. O participante P11GA disse \textit{``A análise é boa, mas o alvo ser testes unitários é pobre. Eu não me importo com o desempenho de 90\% dos casos de teste... Eles estão muitas vezes testando erros e mau comportamento.''}. Outro participante (P26GA) disse que \textit{``parece ótimo''}.
 
 \section{Considerações} \label{sec:avaliacao-consideracoes}
