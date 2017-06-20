@@ -64,14 +64,30 @@
 \BOOKMARK [3][-]{subsubsection.4.2.2.2}{Sumariza\347\343o de Cen\341rios}{subsection.4.2.2}% 64
 \BOOKMARK [3][-]{subsubsection.4.2.2.3}{Quest\365es Finais}{subsection.4.2.2}% 65
 \BOOKMARK [1][-]{section.4.3}{Considera\347\365es}{chapter.4}% 66
-\BOOKMARK [0][-]{chapter.5}{Trabalhos Relacionados}{}% 67
-\BOOKMARK [1][-]{section.5.1}{Ferramentas de Profiling}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.2}{Ferramentas APM}{chapter.5}% 69
-\BOOKMARK [1][-]{section.5.3}{Abordagens de Degrada\347\343o de Desempenho}{chapter.5}% 70
-\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 71
-\BOOKMARK [1][-]{section.6.1}{Cronograma de Atividades}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.2}{Limita\347\365es}{chapter.6}% 73
-\BOOKMARK [0][-]{section.6.2}{Refer\352ncias}{}% 74
-\BOOKMARK [0][-]{chapter.appen.A}{Ap\352ndice A \205 Question\341rio}{}% 75
-\BOOKMARK [1][-]{section.appen.A.1}{Tipo 1}{chapter.appen.A}% 76
-\BOOKMARK [1][-]{section.appen.A.2}{Tipo 2}{chapter.appen.A}% 77
+\BOOKMARK [2][-]{subsection.4.3.1}{Medi\347\343o do Desempenho}{section.4.3}% 67
+\BOOKMARK [2][-]{subsection.4.3.2}{Testes Unit\341rios}{section.4.3}% 68
+\BOOKMARK [2][-]{subsection.4.3.3}{Falsos Negativos e Falsos Positivos}{section.4.3}% 69
+\BOOKMARK [2][-]{subsection.4.3.4}{Dados Tabulares}{section.4.3}% 70
+\BOOKMARK [2][-]{subsection.4.3.5}{Generaliza\347\343o e Limita\347\343o dos Resultados}{section.4.3}% 71
+\BOOKMARK [0][-]{chapter.5}{Trabalhos Relacionados}{}% 72
+\BOOKMARK [1][-]{section.5.1}{Ferramentas de Profiling}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.2}{Ferramentas APM}{chapter.5}% 74
+\BOOKMARK [1][-]{section.5.3}{Abordagens de Degrada\347\343o de Desempenho}{chapter.5}% 75
+\BOOKMARK [0][-]{chapter.6}{Conclus\343o}{}% 76
+\BOOKMARK [1][-]{section.6.1}{Limita\347\365es}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.1.1}{Seguran\347a e Desempenho}{section.6.1}% 78
+\BOOKMARK [2][-]{subsection.6.1.2}{Escalabilidade}{section.6.1}% 79
+\BOOKMARK [2][-]{subsection.6.1.3}{Acessibilidade}{section.6.1}% 80
+\BOOKMARK [2][-]{subsection.6.1.4}{Automatiza\347\343o}{section.6.1}% 81
+\BOOKMARK [2][-]{subsection.6.1.5}{Dispositivos M\363veis}{section.6.1}% 82
+\BOOKMARK [1][-]{section.6.2}{Trabalhos Futuros}{chapter.6}% 83
+\BOOKMARK [2][-]{subsection.6.2.1}{Atributos de Qualidade Adicionais}{section.6.2}% 84
+\BOOKMARK [2][-]{subsection.6.2.2}{Aplica\347\343o em um Ambiente Real de Desenvolvimento}{section.6.2}% 85
+\BOOKMARK [2][-]{subsection.6.2.3}{Novas Avalia\347\365es}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.4}{Novas Estrat\351gias para Exercitar os Cen\341rios}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.5}{Automatiza\347\343o}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.6}{Disponibiliza\347\343o para a Comunidade}{section.6.2}% 89
+\BOOKMARK [0][-]{subsection.6.2.6}{Refer\352ncias}{}% 90
+\BOOKMARK [0][-]{chapter.appen.A}{Ap\352ndice A \205 Question\341rio}{}% 91
+\BOOKMARK [1][-]{section.appen.A.1}{Tipo 1}{chapter.appen.A}% 92
+\BOOKMARK [1][-]{section.appen.A.2}{Tipo 2}{chapter.appen.A}% 93

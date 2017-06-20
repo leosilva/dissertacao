@@ -1,41 +1,71 @@
 % Considerações finais
 \chapter{Conclusão} \label{ch:conclusao}
 
-Este capítulo apresenta na seção \ref{sec:cronograma-atividades} o cronograma das atividades que guiarão a continuidade do trabalho durante o próximo semestre. Na seção \ref{sec:limitacoes} são mostradas algumas limitações já conhecidas deste trabalho.
-
-\section{Cronograma de Atividades} \label{sec:cronograma-atividades}
-
-A figura \ref{fig:cronograma-atividades} adiante apresenta o cronograma de atividades a ser seguido durante o próximo semestre. Vale salientar que todas as datas apresentadas na figura são estimativas, portanto, são datas aproximadas. Dessa forma, podem ocorrer variações nas datas planejadas.
-
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.45]{Imagens/cronograma.png}}
-   \textsf{\caption[Cronograma de atividades.]{Cronograma de atividades.\label{fig:cronograma-atividades}}}
-\end{figure}
-
-Após a qualificação, será dada continuidade a implementação da visualização 3, o grafo de chamadas. Será implementada a opção de o desenvolvedor ou arquiteto usuário do sistema obter acesso ao código-fonte responsável por desvios de desempenho indicados na visualização. Esta atividade durará até a primeira metade do mês de janeiro/17.
-
-Após a conclusão da implementação da visualização do grafo de chamadas, será implementada a visualização 2 - sumarização dos cenários. Essa atividade foi escolhida por ser menos complexa do que a visualização 1, evolução do desempenho, e a previsão de duração é até o final do mês de janeiro/17. Na sequência, para finalizar a etapa de desenvolvimento do trabalho, a visualização de evolução do desempenho será implementada, em tarefa que tem conclusão prevista para a primeira metade de fevereiro/17.
-
-Passada a etapa de desenvolvimento, serão iniciados os estudos empíricos planejados, conforme descritos neste documento. Essa etapa, por envolver desenvolvedores e arquitetos dos sistemas escolhidos, terá maior tempo de duração e está prevista para ser finalizada na primeira quinzena de abril/17. Terá duração total de aproximadamente 50 dias.
-
-Em abril/17, está planejado que se inicie as análises dos estudos de caso realizados, em tarefa que durará, aproximadamente, 25 dias. Pretende-se analisar qualitativamente os dados obtidos para, então, obter os resultados do trabalho.
-
-Após essa etapa, será retomada a escrita do documento, relatando o desenvolvimento das visualizações 1 e 2, os detalhes da aplicação dos estudos de caso, os resultados obtidos nesses estudos, bem como será revisto e, se cabível, refinado cada capítulo do documento. A defesa desta dissertação de mestrado é planejada para a última semana de junho/17.
+Este capítulo apresenta na seção aadadasdsa. Na seção \ref{sec:limitacoes} são mostradas algumas limitações já conhecidas deste trabalho.
 
 \section{Limitações} \label{sec:limitacoes}
 
-Algumas limitações do trabalho são conhecidas, em particular para a visualização do grafo de chamadas:
-\begin{itemize}
-	\item \textit{Tamanho do grafo}: a quantidade de nós com desvios de desempenho de uma versão para outra do software pode ser em grande quantidade de modo a comprometer o desempenho da própria visualização, comprometer a usabilidade e a visibilidade ou, até mesmo, inviabilizá-la. Embora medidas tenham sido tomadas para minimizar esse impacto - como, por exemplo, o agrupamento de nós não relacionados com nós de desvio ou adicionados - há possibilidades de acontecer;
-	\item \textit{Evoluções espaçadas ou bruscas}: caso sejam analisadas duas versões muitos distantes entre si, as modificações podem ser enormes, fazendo com que o grafo gerado seja grande e complexo, resultando no problema do tamanho do grafo apresentado no item anterior. Para análises desse tipo, pode ser recorrido a uma análise em alta granularidade. O ideal ao utilizar a ferramenta é analisar versões próximas, para beneficiar-se da baixa granularidade apresentada pelo grafo de chamadas.
-\end{itemize}
+Este trabalho possui limitações no tocante à ferramenta e sua implementação, conforme descritas a seguir nesta seção.
 
-{\color{red}Requisitos não-funcionais: segurança e desempenho da aplicação web...}\\
-{\color{red}Daltônicos (acessibilitade): podem não conseguir distinguir corretamente as cores...}\\
-{\color{red}Número de aplicações analisadas: podem não refletir todos as situações e quantidade de informações para as visualizações podem ser excessivas, tornando a visualização difícil de compreender...}\\
-{\color{red}Automatização: apesar de possuir rotinas automatizadas, a abordagem não está completamente automatizada... falar de maneira sumária dos passos em que ainda necessita de intervenção manual, de que não será mais necessário o AWS com a automatização...}\\
-{\color{red}Touch support: a aplicação foi testada e não está preparada para dispositivos móveis...}
-{\color{red}adaptações na implementação da visualização de sumarização de cenários}
+\subsection{Segurança e Desempenho} \label{subsec:consideracoes-limitacoes-seguranca-desempenho}
+
+A implementação do \textit{\toolName} não levou em consideração requisitos não-funcionais como segurança e desempenho da própria aplicação. Nesse sentido, com relação à segurança, não há verificações dos usuários que utilizam a ferramenta nem quais funcionalidades eles podem acessar. Já com relação ao desempenho, não foram estabelecidas restrições de desempenho como velocidade da resposta de processamento em telas ou o tempo de resposta em processamentos específicos, como o processamento em lote. A implementação do banco de dados QAV serve como um \textit{cache}, minimizando o tempo de resposta na requisição a uma visualização, no entanto, o seu propósito primário é armazenar os dados resultantes do processamento em lote.
+
+\subsection{Escalabilidade} \label{subsec:consideracoes-limitacoes-escalabilidade}
+
+Conforme mostrado na subseção \ref{subsec:avaliacao-comportamento-sumarizacao-cenarios}, existem limitações com relação a escalabilidade da visualização da sumarização de cenários. Para a análise de um par de releases, quando a quantidade de cenários indicados com desvios de desempenho é grande (acima de 20) e há cenários com baixas porcentagens de desvio de desempenho em relação aos demais, a identificação destes pode ser prejudicada ou até mesmo inviabilizada.
+
+O grafo de chamadas também possui limitações de escalabilidade. A quantidade dos nós com desvios de desempenho de uma versão para outra de um software pode ser em grande quantidade de modo a comprometer o desempenho da própria visualização, comprometer a sua usabilidade e visibilidade ou, até mesmo, inviabilizá-la. Embora medidas tenham sido tomadas para minimizar esse impacto - como, por exemplo, o agrupamento de nós não relacionados com nós de desvio, adicionados ou removidos - há possibilidades de acontecer. 
+
+No caso de serem analisadas duas versões muitos distantes entre si, podem existir muitas modificações, fazendo com que o grafo gerado seja grande e complexo, resultando no problema do tamanho do grafo apresentado no parágrafo anterior. O ideal ao utilizar a ferramenta é analisar versões próximas para beneficiar-se da baixa granularidade apresentada pelo grafo de chamadas.
+
+\subsection{Acessibilidade} \label{subsec:consideracoes-limitacoes-acesibilidade}
+
+A ferramenta proposta faz constante uso de cores para distinguir cenários e nós com propriedades diferentes. Dessa maneira, espera-se que os usuários, através dessa propriedade visual, consiga identificar corretamente os desvios de desempenho, o que pode não acontecer com usuários com problemas de visão. Até o momento da escrita deste trabalho, a ferramenta não pode ser considerada acessível por não dispor de mecanismos de acessibilidade para cegos, daltônicos, surdos (apesar de não fazer uso de mídias auditivas) e pessoas com baixa visão.
+
+\subsection{Automatização} \label{subsec:consideracoes-limitacoes-automatizacao}
+
+A análise do desempenho dos cenários contidos nas versões dos sistemas é feita de forma automatizada pelo \textit{\perfMinerName}, entretanto, é reconhecido que ainda há passos manuais a serem feitos, conforme destacado na subseção \ref{subsec:avaliacao-procedimentos}: (i) os códigos-fonte das versões são baixados e configurados manualmente para executar sem erros; (ii) a configuração do suporte ao \textit{AspectJ} e a inclusão das bibliotecas do próprio \textit{\perfMinerName} são realizadas manualmente; (iii) o início da execução dos testes é dado de forma manual, mesmo que se utilize ferramentas que automatizam a execução de cada teste, como o Maven\footnote{\href{http://maven.apache.org}{http://maven.apache.org}} ou o Gradle\footnote{\href{https://gradle.org}{https://gradle.org}}; e (iv) os artefatos de saída da execução do \textit{\perfMinerName} são importados manualmente na ferramenta \textit{\toolName}, através da funcionalidade de Nova Análise (\ref{subsec:new-analysis}).
+
+\subsection{Dispositivos Móveis}
+
+Embora seja uma ferramenta web, pode ser considerada uma limitação o não suporte a dispositivos móveis, sejam eles tablets ou smartphones. Através desses dispositivos é possível acessar a ferramenta, no entanto, por não dispor de mecanismos responsivos validados para este fim, as informações podem ser apresentadas nas visualizações de maneira indesejada.
+
+Um dos participantes (P2GA) do questionário online acessou a ferramenta através do seu celular para responder às questões. Entretanto, como as visualizações abriram de maneira inadequada, suas respostas foram comprometidas, o que fez com que a resposta desse participante fosse invalidada.
 
 Também pode ser considerada uma limitação, herdada do \textit{PerfMiner}, o fato de o conjunto de visualizações apresentar apenas dados do atributo de qualidade de  desempenho. No entanto, a ferramenta está apta a atender a outros atributos de qualidade.
+
+\section{Trabalhos Futuros} \label{sec:consideracoes-trabalhos-futuros}
+
+Há planos de trabalhos a serem feitos de modo a incrementar a implementação da ferramenta e os resultados obtidos.
+
+\subsection{Atributos de Qualidade Adicionais}
+
+A ferramenta apresenta a evolução do desempenho dos cenários das versões de um sistema em termos de tempo de execução. Para determinados sistemas, outros atributos de qualidade podem ser tão ou mais importantes do que o desempenho. Como trabalho futuro, a ferramenta pode ser expandida para medir o desempenho a partir de outras propriedades, como consumo de memória, atividades de disco e uso de CPU, mas também pode ser adicionado o suporte para novos atributos de qualidade, como segurança e confiabilidade. Um dos desafios encontrados ao se expandir a ferramenta para outros atributos de qualidade é como medi-los. É provável que para representar os novos atributos de qualidade seja necessário implementar novas visualizações com novas metáforas visuais de acordo com as características do atributo de qualidade desejado.
+
+\subsection{Aplicação em um Ambiente Real de Desenvolvimento}
+
+A maioria dos participantes indicou que utilizaria a ferramenta como parte integrante dos seus processos de desenvolvimento de software. A ferramenta foi aplicada em sistemas \textit{open-source} de diferentes domínios, como o Jetty e o VRaptor. Após isso, os desenvolvedores desses sistemas acessaram as visualizações implementadas para responder ao questionário online. Planeja-se implantar a ferramenta em um ambiente real de desenvolvimento para que os desenvolvedores e arquitetos experimentem, na prática, a sua utilização ao longo das releases do sistema. Uma empresa candidata é a \abrv[SINFO -- Superintendência de Informática]{Superintendência de Informática (SINFO)}da UFRN pelo fato de ser uma empresa sediada na universidade, de fácil acesso e possuir produtos desenvolvidos na linguagem Java.
+
+\subsection{Novas Avaliações}
+
+As avaliações realizadas neste trabalho incluíram a aplicação da ferramenta em dois sistemas reais de diferentes domínios e a aplicação do questionário junto aos desenvolvedores desses sistemas. Há planos para que sejam feitas mais avaliações a fim de obter mais indícios sobre a utilidade da ferramenta e suas visualizações. Tais estudos seriam:
+\begin{enumerate}[(i)]
+	\item \textit{Aplicar a abordagem em sistemas open-source}: outros sistemas \textit{open-source} seriam escolhidos e então a abordagem seria aplicada. Após isso, o questionário seria submetido aos desenvolvedores e arquitetos desses sistemas, como foi feito no estudo relatado neste trabalho;
+	\item \textit{Experimento controlado I}: a partir dos mesmos resultados já obtidos, realizar um experimento controlado com desenvolvedores e arquitetos de empresas da cidade de Natal/RN. Dessa forma, o questionário poderia ser modificado para incluir outros aspectos não medidos neste trabalho, como a usabilidade;
+	\item \textit{Experimento controlado II}: contactar os representantes de empresas de desenvolvimento da cidade de Natal/RN com a finalidade de aplicar a ferramenta em seus sistemas. Após isso, convidar os desenvolvedores desses sistemas para um experimento controlado, aplicando um questionário para coletar feedback sobre as visualizações. Assim como no ponto anterior, o questionário poderia ser modificado para incluir aspectos ainda não avaliados.
+\end{enumerate}
+
+\subsection{Novas Estratégias para Exercitar os Cenários} \label{subsec:consideracoes-novas-estrategias-exercitar-cenarios}
+
+Como discutido na subseção \ref{subsec:avaliacao-consideracoes-testes-unitarios}, a ferramenta utiliza atualmente casos de testes automatizados para execitar os cenários e realizar a análise, estratégia essa que foi criticada por um dos participantes do estudo (P11GA). No entanto, outras estratégias também são válidas, pois a ferramenta continuará apontando os cenários com desvios de desempenho. Nesse sentido, há planos futuros para que a ferramenta permita a configuração dos cenários desejados a serem considerados na análise, de maneira não intrusiva. Dessa forma, os usuários poderão escolher os cenários que devem ter o desempenho medido pela ferramenta, de acordo com as regras de negócio dos seus sistemas.
+
+\subsection{Automatização} \label{subsec:consideracoes-automatizacao}
+
+A abordagem realiza a comparação automática de duas releases de um sistema, indicando os cenários com desvios de desempenho. Embora essa comparação seja automática, há ainda passos manuais a serem executados, conforme destacado na subseção \ref{subsec:avaliacao-procedimentos} e comentado novamente na subseção \ref{subsec:consideracoes-limitacoes-automatizacao}. Como trabalho futuro, planeja-se automatizar os passos executados manualmente, como a obtenção dos códigos-fonte das releases, configuração do suporte ao \textit{AspectJ} e ao \textit{\perfMinerName}, execução da ferramenta e a importação dos artefatos de saída para o \textit{\toolName}.
+
+\subsection{Disponibilização para a Comunidade}
+
+O questionário online mostrou que a maioria dos participantes veem benefícios em se utilizar a ferramenta proposta e também a utilizariam como parte integrante de seus processos de desenvolvimento. A partir desse feedback, há planos futuros de disponibilizar a ferramenta para a comunidade para que desenvolvedores façam uso e tirem proveito de suas funcionalidades. Dentre as maneiras de se fazer isso, incluem o desenvolvimento e disponibilização de \textit{plugins} para ferramentas de integração contínua como o Hudson CI, Jenkins CI ou Travis CI, e a disponibilização de uma versão que possa ser utilizada de maneira \textit{standalone}, sem estar necessariamente integrada a ferramentas de integração contínua.
+
+A fim de disponibilizar uma ferramenta fácil de usar, robusta e configurável, é de fundamental importância a implementação das modificações comentadas nas subseções \ref{subsec:consideracoes-novas-estrategias-exercitar-cenarios} e \ref{subsec:consideracoes-automatizacao}, além de outras que venham a ser vislumbradas durante o aprimoramento da ferramenta.

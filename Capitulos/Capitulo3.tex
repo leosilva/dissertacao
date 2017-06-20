@@ -1,11 +1,7 @@
 % Capíulo 3
 \chapter{\toolName} \label{ch:pqae}
 
-{\color{red}rever texto a seguir...}
-
-{\color{red}para cada visualização, comentar quais seriam os benefícios e o que os desenvolvedores podem tirar de informações delas...}
-
-Este capítulo apresenta o conjunto de visualizações proposto como extensão à ferramenta \textit{\perfMinerName}. A seção \ref{sec:perfminer} destaca o funcionamento dessa ferramenta. A seção \ref{visao-geral-architecture-qa-evolution} mostra uma visão geral sobre o funcionamento das visualizações propostas. As seções \ref{sec:visualizacao1}, \ref{sec:visualizacao2} e \ref{sec:visualizacao3} descrevem cada uma das visualizações, sendo esta última em detalhes, com suas características, propriedades visuais, funcionamento e exemplo de uso. Por fim, são reportadas considerações finais sobre o capítulo na seção \ref{sec:consideracoes-cap3}.
+Este capítulo apresenta o conjunto de visualizações proposto como extensão à ferramenta \textit{\perfMinerName}. A seção \ref{sec:perfminer} destaca o funcionamento dessa ferramenta. A seção \ref{sec:visao-geral-architecture-qa-evolution} mostra uma visão geral sobre o funcionamento da ferramenta proposta. As seções \ref{sec:visualizacao1} e \ref{sec:visualizacao2} descrevem as visualizações da sumarização de cenários e grafo de chamadas, respectivamente, com suas características, propriedades visuais e funcionamento. Por fim, são reportadas considerações finais sobre o capítulo na seção \ref{sec:consideracoes-cap3}.
 
 \section{\perfMinerName} \label{sec:perfminer}
 
@@ -187,7 +183,7 @@ A classe \texttt{AnalyzedSystem} representa uma análise para dado sistema, em d
 
 A classe \texttt{AnalyzedScenario} reflete cada cenário analisado de determinadas versões. Possui propriedades para o nome do cenário, tempos de execução na versão anterior e posterior, total de nós do grafo de chamadas, quantidade de nós otimizados, degradados, adicionados, removidos e exibidos no grafo, data e hora do processamento da análise, um atributo booleano que indica se o cenário é de otimização ou degradação e um atributo que armazena o JSON que dá suporte à visualização do grafo de chamadas. Embora existam atributos que armazenem dados referentes a visualização do grafo de chamadas, essas classes foram modeladas de modo a dar suporte a todas as visualizações propostas neste trabalho.
 
-\section{Visualização da Sumarização de Cenários} \label{subsec:visualizacao1}
+\section{Visualização da Sumarização de Cenários} \label{sec:visualizacao1}
 
 A Sumarização dos Cenários permite ao usuário obter uma visualização dos cenários com desvios de desempenho entre duas versões do sistema. Para essa visualização foi utilizada uma variação do gráfico de rosca, que por sua vez é uma derivação do de pizza. O gráfico de pizza é considerado um gráfico de informação simples cujo principal objetivo é mostrar a relação de uma parte com o todo \cite{Spence2005}. No contexto da visualização apresentada, o todo se configura como sendo todos os cenários com desvios de desempenho para as versões analisadas, e as partes são cada cenário com suas características.
 
