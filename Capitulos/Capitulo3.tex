@@ -407,7 +407,7 @@ De maneira contrária ao que foi relatado sobre o nó adicionado, um cenário po
 
 \subsubsection{Nó de agrupamento} \label{subsec:no-agrupamento}
 
-Além dos que representam métodos com ou sem desvio de desempenho, e métodos adicionados e removidos, há um tipo de nó que representa um agrupamento de vários outros: o agrupado. Assim, os que não estão diretamente relacionados com nós de desvio, adicionados ou removidos, são omitidos e representados por um único nó agrupado. A figura \ref{fig:no-agrupamento} a seguir ilustra esse tipo de nó, seguido da descrição dos seus atributos visuais.
+Além dos que representam métodos com ou sem desvio de desempenho, e métodos adicionados e removidos, há um tipo de nó que representa um agrupamento de vários outros: o agrupado. Assim, os nós que não estão diretamente relacionados com nós de desvio, adicionados ou removidos, são omitidos e agrupados em um único nó, exceto os nós pai e, se houver, nós avôs, bisavôs, tataravôs e pentavôs. A figura \ref{fig:no-agrupamento} a seguir ilustra esse tipo de nó, seguido da descrição dos seus atributos visuais.
 
 \begin{figure}[htb]
    \centering
@@ -421,13 +421,37 @@ Além dos que representam métodos com ou sem desvio de desempenho, e métodos a
    \item \textit{Tempos de execução}: é exibido o tempo de execução total que representa a soma de todos os tempos de execução dos nós contidos no agrupamento. No exemplo, o tempo total é de \texttt{527,3} nanossegundos.
 \end{itemize}
 
-Cada nó no grafo de chamadas, da forma como foi apresentado até o momento, representa uma única execução deste. No entanto, um nó, para determinada hierarquia de chamadas, pode ser executado mais de uma vez (por exemplo, em um \textit{loop}). Com o intuito de não acrescentar nós ao grafo para representar essas situações, foi estabelecido que se um nó possuir uma borda espessa, significa que este executou mais de uma vez naquela hierarquia. A figura \ref{fig:no-borda-espessa} adiante exemplifica um nó com uma borda espessa.
+\paragraph{Algoritmo de Supressão de Nós Exibidos}
+
+O nó agrupado é criado a partir da execução de um algoritmo de supressão de nós exibidos. Esse algoritmo calcula os nós que devem ser apresentados para o usuário. Dessa forma, em um grafo de chamadas para determinado cenário, são exibidos os nós que têm relevância para o entendimento e identificação dos métodos possívelmente responsáveis pelo desvio de desempenho do cenário.
+
+O algoritmo parte da premissa de que todos os nós que representam os métodos com algum desvio de desempenho (degradação ou otimização), adicionados ou removidos devem ser exibidos para o usuário. A partir desses nós, é verificado se existem repetições deles, ou seja, se, para a mesma hierarquia de chamadas, um mesmo nó foi executado novamente, ele será marcado como repetido e terá uma borda espessa na visualização. Assim, evita-se que a hierarquia seja criada novamente na visualização para representar o mesmo nó. Casos como esse podem acontecer em \textit{loops}, por exemplo. A figura \ref{fig:no-borda-espessa} adiante exemplifica um nó com uma borda espessa.
 
 \begin{figure}[htb]
    \centering
    \frame{\includegraphics[scale=0.65]{Imagens/no_borda_espessa.png}}
    \textsf{\caption[Borda espessa de um nó, representando múltiplas execuções.]{Borda espessa de um nó, representando múltiplas execuções.\label{fig:no-borda-espessa}}}
 \end{figure}
+
+Uma vez identificadas todas as repetições, o algoritmo verifica todos os nós que podem ser transformados em nós de agrupamento. Os casos em que esse tipo de nó ocorre são: (i) durante a hierarquia de chamadas, (ii) em nós filhos dos nós a serem exibidos, (iii) em hierarquias de chamadas adjacentes não diretamente relacionadas com os nós a serem exibidos.
+
+Durante a hierarquia de chamadas a um nó com desvio de desempenho, adicionado ou removido, pode existir uma grande quantidade de nós. Para mostrar o referido nó e reduzir a quantidade de nós a serem exibidos no grafo, a maioria dos existentes nessa hierarquia de chamadas são agrupados em um único nó. A figura \ref{fig:no-agrupamento-hierarquia-chamadas} ilustra esse caso, onde o nó com desvio de desempenho a ser exibido é o \texttt{DefaultConverters.findConverterType(...)} e o indicado com a letra \texttt{A} é o nó agrupado que representa vários outros nós nessa hierarquia de chamadas.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.60]{Imagens/exemplo_no_agrupado_hierarquia_chamadas.png}}
+   \textsf{\caption[Exemplo de nós agrupados durante a hierarquia de chamadas.]{Exemplo de nós agrupados durante a hierarquia de chamadas.\label{fig:no-agrupamento-hierarquia-chamadas}}}
+\end{figure}
+
+Há caso em que existem nós filhos daqueles que possuíram algum tipo de desvio. Caso nenhum desses nós filhos também possua uma das características dos nós apresentáveis, eles serão agrupados para diminuir a quantidade de nós a serem exibidos. Esse caso é exemplificado na figura \ref{fig:no-agrupamento-arvore-adjacente}, onde o nó degradado \texttt{Exclusions.shouldSkipField(...)} possui filhos, no entanto, dentre eles não possui nenhum outro nó com prioridade a ser exibido (nós com desvios, adicionados ou removidos). Assim sendo, os nós filhos foram agrupados no nó indicado pela letra \texttt{B}.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.60]{Imagens/exemplo_no_agrupado_arvore_adjacente.png}}
+   \textsf{\caption[Exemplo de nós agrupados em hierarquias adjacentes (A) e em nós filhos (B).]{Exemplo de nós hierarquias em árvores adjacentes (A) e em nós filhos (B).\label{fig:no-agrupamento-arvore-adjacente}}}
+\end{figure}
+
+As hierarquias de chamadas adjacentes que não estão diretamente relacionadas com os nós a serem exibidos são agrupadas em um único nó. Na figura \ref{fig:no-agrupamento-arvore-adjacente}, o nó indicado com a letra \texttt{A} mostra que há uma ou mais hierarquias de chamadas agrupadas.
 
 As propriedades visuais apresentadas para a visualização do grafo de chamadas incluem, em suma, três partes: (i) seção de sumário, contendo informações gerais sobre o cenário; (ii) seção de histórico, mostrando o histórico do desempenho do cenário dentre as dez últimas versões analisadas; e (iii) seção do grafo de chamadas, onde a execução dos métodos é representada através de nós e arestas. Esta seção é a mais importante desta visualização, contendo características visuais que diferem os nós de acordo com sua classificação. Um resumo dessas características é apresentado na tabela \ref{tab:resumo-caracteristicas-nos} a seguir.
 
@@ -506,47 +530,47 @@ Depois, as arestas são determinadas de acordo com a relação de nós pais e fi
 
 Com a definição dos nós e suas características, e das arestas, a próxima atividade do processo é criar os elementos visuais na área de desenho, para, posteriormente, determinar o \textit{layout} (conforme citado anteriormente, o \textit{layout} utilizado é em árvore) e posicionamento dos nós. Por fim, o grafo de chamadas é renderizado para o usuário.
 
-\subsection{Exemplo de Uso da Ferramenta: Jetty {\color{red}fica ou sai?}} \label{subsec:exemplo-uso-jetty}
+% \subsection{Exemplo de Uso da Ferramenta: Jetty {\color{red}fica ou sai?}} \label{subsec:exemplo-uso-jetty}
 
-Foi realizado um estudo de caso para exemplificar o uso das visualizações. Para tanto, foi utilizado duas versões da aplicação Jetty \cite{Jetty2016}: 9.2.6 e 9.3.0.M1. Esse sistema faz parte do Projeto Eclipse e é um \textit{framework open-source} que provê um servidor web além de um servlet container Java. Essa aplicação foi escolhida para o estudo de caso pois todos os tipos de nós foram capazes de ser exemplificados.
+% Foi realizado um estudo de caso para exemplificar o uso das visualizações. Para tanto, foi utilizado duas versões da aplicação Jetty \cite{Jetty2016}: 9.2.6 e 9.3.0.M1. Esse sistema faz parte do Projeto Eclipse e é um \textit{framework open-source} que provê um servidor web além de um servlet container Java. Essa aplicação foi escolhida para o estudo de caso pois todos os tipos de nós foram capazes de ser exemplificados.
 
-Para a primeira fase do \textit{\perfMinerName}, a análise dinâmica, todos os testes automatizados foram considerados cenários. Como os testes são implementados em JUnit 4, o aspecto interceptou todos os métodos marcados com a anotação \texttt{@Test} como métodos de entrada de um cenário. A análise dinâmica, como mencionado anteriormente, foi executada no mesmo computador para ambas as versões, nas mesmas condições e com todos os serviços não essenciais desabilitados. A suíte de testes do Jetty foi executada 30 vezes para que as medições de desempenho fossem mais precisas em termos de tempo de execução \cite{Pinto2015}.
+% Para a primeira fase do \textit{\perfMinerName}, a análise dinâmica, todos os testes automatizados foram considerados cenários. Como os testes são implementados em JUnit 4, o aspecto interceptou todos os métodos marcados com a anotação \texttt{@Test} como métodos de entrada de um cenário. A análise dinâmica, como mencionado anteriormente, foi executada no mesmo computador para ambas as versões, nas mesmas condições e com todos os serviços não essenciais desabilitados. A suíte de testes do Jetty foi executada 30 vezes para que as medições de desempenho fossem mais precisas em termos de tempo de execução \cite{Pinto2015}.
 
-A resultado da análise foi um total de 11 cenários, sendo 7 com degradação do desempenho e 4 com otimização. No grafo gerado, é possível que dois nós representem o mesmo método, indicando duas execuções, e as arestas direcionadas representam invocações entre os métodos. A figura \ref{fig:exemplo-degradacao} exemplifica o grafo de um cenário com degradação.
+% A resultado da análise foi um total de 11 cenários, sendo 7 com degradação do desempenho e 4 com otimização. No grafo gerado, é possível que dois nós representem o mesmo método, indicando duas execuções, e as arestas direcionadas representam invocações entre os métodos. A figura \ref{fig:exemplo-degradacao} exemplifica o grafo de um cenário com degradação.
 
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.52]{Imagens/exemplo_degradacao.png}}
-   \textsf{\caption[Grafo de chamadas de um cenário com degradação de desempenho.]{Grafo de chamadas de um cenário com degradação de desempenho.\label{fig:exemplo-degradacao}}}
-\end{figure}
+% \begin{figure}[!htb]
+%    \centering
+%    \frame{\includegraphics[scale=0.52]{Imagens/exemplo_degradacao.png}}
+%    \textsf{\caption[Grafo de chamadas de um cenário com degradação de desempenho.]{Grafo de chamadas de um cenário com degradação de desempenho.\label{fig:exemplo-degradacao}}}
+% \end{figure}
 
-O grafo exibido destaca que o nó raiz, \texttt{DefaultServletTest.testFiltered()}, teve uma degradação de desempenho de mais de 75\%, indicado pela cor do nó, laranja amarelo, e pelas quatro setas vermelhas para baixo. É possível notar também que dois nós que representam o método \texttt{Server.doStart()} foram adicionados. Isso significa que durante a execução do cenário \texttt{Entry point for DefaultServletTest.testFiltered} duas chamadas a esse método foram efetuadas na versão 9.3.0.M1, e elas não existiam na versão 9.3.6. Os nós adicionados são indicados como potenciais causadores de degradação de desempenho, de modo que, possivelmente, esses nós influenciaram na degradação do raiz. Na visualização há nós que não têm relação com os desvios, representados como agrupados, e nós sem desvio, representados na cor marrom claro.
+% O grafo exibido destaca que o nó raiz, \texttt{DefaultServletTest.testFiltered()}, teve uma degradação de desempenho de mais de 75\%, indicado pela cor do nó, laranja amarelo, e pelas quatro setas vermelhas para baixo. É possível notar também que dois nós que representam o método \texttt{Server.doStart()} foram adicionados. Isso significa que durante a execução do cenário \texttt{Entry point for DefaultServletTest.testFiltered} duas chamadas a esse método foram efetuadas na versão 9.3.0.M1, e elas não existiam na versão 9.3.6. Os nós adicionados são indicados como potenciais causadores de degradação de desempenho, de modo que, possivelmente, esses nós influenciaram na degradação do raiz. Na visualização há nós que não têm relação com os desvios, representados como agrupados, e nós sem desvio, representados na cor marrom claro.
 
-Na mesma figura, além do próprio grafo, na parte superior da seção \textit{Call Graph} é encontrada uma barra de ferramentas com botões de \textit{Zoom Out}, \textit{Zoom to Fit} e \textit{Zoom In}; e na parte inferior é exibida uma legenda ajudando os usuários a identificarem os nós do grafo. Os botões de \textit{zoom} e a legenda são exibidos para todos os grafos, independente da quantidade de nós ou do tipo de desvio ocorrido.
+% Na mesma figura, além do próprio grafo, na parte superior da seção \textit{Call Graph} é encontrada uma barra de ferramentas com botões de \textit{Zoom Out}, \textit{Zoom to Fit} e \textit{Zoom In}; e na parte inferior é exibida uma legenda ajudando os usuários a identificarem os nós do grafo. Os botões de \textit{zoom} e a legenda são exibidos para todos os grafos, independente da quantidade de nós ou do tipo de desvio ocorrido.
 
-Na figura \ref{fig:exemplo-detalhes-degradacao} adiante, a seção \textit{Details} desse cenário é exibida expandida, indicando, no rótulo, que o cenário teve o seu desempenho degradado entre as versões, e que o total de nós para esse cenário foi de 1695.
+% Na figura \ref{fig:exemplo-detalhes-degradacao} adiante, a seção \textit{Details} desse cenário é exibida expandida, indicando, no rótulo, que o cenário teve o seu desempenho degradado entre as versões, e que o total de nós para esse cenário foi de 1695.
 
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.48]{Imagens/exemplo_detalhes_degradacao.png}}
-   \textsf{\caption[Detalhes de um cenário com degradação de desempenho.]{Detalhes de um cenário com degradação de desempenho.\label{fig:exemplo-detalhes-degradacao}}}
-\end{figure}
+% \begin{figure}[!htb]
+%    \centering
+%    \frame{\includegraphics[scale=0.48]{Imagens/exemplo_detalhes_degradacao.png}}
+%    \textsf{\caption[Detalhes de um cenário com degradação de desempenho.]{Detalhes de um cenário com degradação de desempenho.\label{fig:exemplo-detalhes-degradacao}}}
+% \end{figure}
 
-A figura \ref{fig:exemplo-otimizacao} a seguir apresenta o cenário \texttt{Entry point for ServletContextHandler\\Test.testFallThrough} com otimização de desempenho. Dois nós contribuíram para esse desvio, identificados pela cor verde claro: \texttt{Server.doStart()} e \texttt{ServletContextHandler.\\relinkHandlers()}. No primeiro, a variação foi entre 50\% e 75\%, ao passo que no segundo foi de mais de 75\%. Há ainda a representação de nós agrupados e sem desvio.
+% A figura \ref{fig:exemplo-otimizacao} a seguir apresenta o cenário \texttt{Entry point for ServletContextHandler\\Test.testFallThrough} com otimização de desempenho. Dois nós contribuíram para esse desvio, identificados pela cor verde claro: \texttt{Server.doStart()} e \texttt{ServletContextHandler.\\relinkHandlers()}. No primeiro, a variação foi entre 50\% e 75\%, ao passo que no segundo foi de mais de 75\%. Há ainda a representação de nós agrupados e sem desvio.
 
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.52]{Imagens/exemplo_otimizacao.png}}
-   \textsf{\caption[Grafo de chamadas de um cenário com otimização de desempenho.]{Grafo de chamadas de um cenário com otimização de desempenho.\label{fig:exemplo-otimizacao}}}
-\end{figure}
+% \begin{figure}[!htb]
+%    \centering
+%    \frame{\includegraphics[scale=0.52]{Imagens/exemplo_otimizacao.png}}
+%    \textsf{\caption[Grafo de chamadas de um cenário com otimização de desempenho.]{Grafo de chamadas de um cenário com otimização de desempenho.\label{fig:exemplo-otimizacao}}}
+% \end{figure}
 
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.48]{Imagens/exemplo_detalhes_otimizacao.png}}
-   \textsf{\caption[Detalhes de um cenário com otimização de desempenho.]{Detalhes de um cenário com otimização de desempenho.\label{fig:exemplo-detalhes-otimizacao}}}
-\end{figure}
+% \begin{figure}[!htb]
+%    \centering
+%    \frame{\includegraphics[scale=0.48]{Imagens/exemplo_detalhes_otimizacao.png}}
+%    \textsf{\caption[Detalhes de um cenário com otimização de desempenho.]{Detalhes de um cenário com otimização de desempenho.\label{fig:exemplo-detalhes-otimizacao}}}
+% \end{figure}
 
-A seção \textit{Details} expandida pode ser vista na figura \ref{fig:exemplo-detalhes-otimizacao}. O rótulo de otimização é exibido no canto superior esquerdo indicando o tipo de desvio ocorrido no cenário. A figura indica um total de 986 nós para esse cenário.
+% A seção \textit{Details} expandida pode ser vista na figura \ref{fig:exemplo-detalhes-otimizacao}. O rótulo de otimização é exibido no canto superior esquerdo indicando o tipo de desvio ocorrido no cenário. A figura indica um total de 986 nós para esse cenário.
 
 % A tabela \ref{tab:jetty-v9.2.6-v9.3.0.M1} a seguir mostra uma lista com todos os cenários para o sistema Jetty, versões 9.2.6 para 9.3.0.M1. Nela, são exibidas as porcentagens de desvio de degradação ou otimização para os cenários.
 

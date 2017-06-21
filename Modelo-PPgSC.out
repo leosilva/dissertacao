@@ -11,7 +11,7 @@
 \BOOKMARK [1][-]{section.2.2}{Visualiza\347\343o de Software}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.1}{Visualiza\347\343o de Arquitetura de Software}{section.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.2}{Visualiza\347\343o da Evolu\347\343o da Arquitetura de Software}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.3}{Estudos Emp\355ricos em Visualiza\347\343o de Software red fica ou sai?}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Estudos Emp\355ricos em Visualiza\347\343o de Software}{section.2.2}% 14
 \BOOKMARK [1][-]{section.2.3}{Ferramentas de An\341lise de Desempenho}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.4}{Considera\347\365es}{chapter.2}% 16
 \BOOKMARK [0][-]{chapter.3}{Performance QA Evolution}{}% 17
@@ -39,9 +39,9 @@
 \BOOKMARK [3][-]{subsubsection.3.4.3.4}{N\363 adicionado}{subsection.3.4.3}% 39
 \BOOKMARK [3][-]{subsubsection.3.4.3.5}{N\363 removido}{subsection.3.4.3}% 40
 \BOOKMARK [3][-]{subsubsection.3.4.3.6}{N\363 de agrupamento}{subsection.3.4.3}% 41
-\BOOKMARK [2][-]{subsection.3.4.4}{Intera\347\343o}{section.3.4}% 42
-\BOOKMARK [2][-]{subsection.3.4.5}{Funcionamento}{section.3.4}% 43
-\BOOKMARK [2][-]{subsection.3.4.6}{Exemplo de Uso da Ferramenta: Jetty redfica ou sai?}{section.3.4}% 44
+\BOOKMARK [4][-]{paragraph.3.4.3.6.1}{Algoritmo de Supress\343o de N\363s Exibidos}{subsubsection.3.4.3.6}% 42
+\BOOKMARK [2][-]{subsection.3.4.4}{Intera\347\343o}{section.3.4}% 43
+\BOOKMARK [2][-]{subsection.3.4.5}{Funcionamento}{section.3.4}% 44
 \BOOKMARK [1][-]{section.3.5}{Considera\347\365es}{chapter.3}% 45
 \BOOKMARK [0][-]{chapter.4}{Avalia\347\343o}{}% 46
 \BOOKMARK [1][-]{section.4.1}{Projeto}{chapter.4}% 47
@@ -57,7 +57,7 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{An\341lise do Comportamento das Visualiza\347\365es}{section.4.2}% 57
 \BOOKMARK [3][-]{subsubsection.4.2.1.1}{Sumariza\347\343o de Cen\341rios}{subsection.4.2.1}% 58
 \BOOKMARK [3][-]{subsubsection.4.2.1.2}{Grafo de Chamadas}{subsection.4.2.1}% 59
-\BOOKMARK [4][-]{paragraph.4.2.1.2.1}{Supress\343o de N\363s Exibidos}{subsubsection.4.2.1.2}% 60
+\BOOKMARK [4][-]{paragraph.4.2.1.2.1}{Algoritmo de Supress\343o de N\363s Exibidos}{subsubsection.4.2.1.2}% 60
 \BOOKMARK [4][-]{paragraph.4.2.1.2.2}{Casos Especiais}{subsubsection.4.2.1.2}% 61
 \BOOKMARK [2][-]{subsection.4.2.2}{Question\341rio Online}{section.4.2}% 62
 \BOOKMARK [3][-]{subsubsection.4.2.2.1}{Grafo de Chamadas}{subsection.4.2.2}% 63

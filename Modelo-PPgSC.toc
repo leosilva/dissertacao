@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Visualiza\IeC {\c c}\IeC {\~a}o de Software}{23}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Visualiza\IeC {\c c}\IeC {\~a}o de Arquitetura de Software}{24}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Visualiza\IeC {\c c}\IeC {\~a}o da Evolu\IeC {\c c}\IeC {\~a}o da Arquitetura de Software}{26}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Estudos Emp\IeC {\'\i }ricos em Visualiza\IeC {\c c}\IeC {\~a}o de Software {\color {red} fica ou sai?}}{27}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Estudos Emp\IeC {\'\i }ricos em Visualiza\IeC {\c c}\IeC {\~a}o de Software}{27}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Ferramentas de An\IeC {\'a}lise de Desempenho}{29}{section.2.3}
 \contentsline {section}{\numberline {2.4}Considera\IeC {\c c}\IeC {\~o}es}{31}{section.2.4}
 \contentsline {chapter}{\numberline {3}Performance QA Evolution}{32}{chapter.3}
@@ -40,55 +40,55 @@
 \contentsline {subsubsection}{\numberline {3.4.3.4}N\IeC {\'o} adicionado}{55}{subsubsection.3.4.3.4}
 \contentsline {subsubsection}{\numberline {3.4.3.5}N\IeC {\'o} removido}{56}{subsubsection.3.4.3.5}
 \contentsline {subsubsection}{\numberline {3.4.3.6}N\IeC {\'o} de agrupamento}{56}{subsubsection.3.4.3.6}
-\contentsline {subsection}{\numberline {3.4.4}Intera\IeC {\c c}\IeC {\~a}o}{57}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{60}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Exemplo de Uso da Ferramenta: Jetty {\color {red}fica ou sai?}}{62}{subsection.3.4.6}
-\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{65}{section.3.5}
-\contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{67}{chapter.4}
-\contentsline {section}{\numberline {4.1}Projeto}{67}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{68}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{68}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Sistemas}{69}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Procedimentos}{70}{subsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.4.1}Passo 1 - Coleta e Prepara\IeC {\c c}\IeC {\~a}o dos Dados}{70}{subsubsection.4.1.4.1}
-\contentsline {subsubsection}{\numberline {4.1.4.2}Passo 2 - Aplica\IeC {\c c}\IeC {\~a}o da Abordagem}{70}{subsubsection.4.1.4.2}
-\contentsline {subsubsection}{\numberline {4.1.4.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{72}{subsubsection.4.1.4.3}
-\contentsline {subsection}{\numberline {4.1.5}Caracteriza\IeC {\c c}\IeC {\~a}o dos Participantes}{74}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Resultados}{75}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{75}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{75}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{81}{subsubsection.4.2.1.2}
-\contentsline {paragraph}{\numberline {4.2.1.2.1}Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{81}{paragraph.4.2.1.2.1}
-\contentsline {paragraph}{\numberline {4.2.1.2.2}Casos Especiais}{84}{paragraph.4.2.1.2.2}
-\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{88}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{89}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{92}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{94}{subsubsection.4.2.2.3}
-\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{96}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Medi\IeC {\c c}\IeC {\~a}o do Desempenho}{96}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Testes Unit\IeC {\'a}rios}{97}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Falsos Negativos e Falsos Positivos}{97}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Dados Tabulares}{97}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Generaliza\IeC {\c c}\IeC {\~a}o e Limita\IeC {\c c}\IeC {\~a}o dos Resultados}{98}{subsection.4.3.5}
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{99}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{99}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ferramentas APM}{100}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{101}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{102}{chapter.6}
-\contentsline {section}{\numberline {6.1}Limita\IeC {\c c}\IeC {\~o}es}{102}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Seguran\IeC {\c c}a e Desempenho}{102}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Escalabilidade}{102}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Acessibilidade}{103}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Automatiza\IeC {\c c}\IeC {\~a}o}{103}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Dispositivos M\IeC {\'o}veis}{104}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{104}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Atributos de Qualidade Adicionais}{104}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{105}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{105}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{106}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Automatiza\IeC {\c c}\IeC {\~a}o}{106}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{106}{subsection.6.2.6}
-\contentsline {chapter}{Refer\^encias}{107}{subsection.6.2.6}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{113}{chapter.appen.A}
-\contentsline {section}{\numberline {A.1}Tipo 1}{113}{section.appen.A.1}
-\contentsline {section}{\numberline {A.2}Tipo 2}{116}{section.appen.A.2}
+\contentsline {paragraph}{\numberline {3.4.3.6.1}Algoritmo de Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{57}{paragraph.3.4.3.6.1}
+\contentsline {subsection}{\numberline {3.4.4}Intera\IeC {\c c}\IeC {\~a}o}{59}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{62}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{64}{section.3.5}
+\contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{66}{chapter.4}
+\contentsline {section}{\numberline {4.1}Projeto}{66}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{67}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Objetivos e Quest\IeC {\~o}es de Pesquisa}{67}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Sistemas}{68}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Procedimentos}{69}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}Passo 1 - Coleta e Prepara\IeC {\c c}\IeC {\~a}o dos Dados}{69}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}Passo 2 - Aplica\IeC {\c c}\IeC {\~a}o da Abordagem}{69}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{71}{subsubsection.4.1.4.3}
+\contentsline {subsection}{\numberline {4.1.5}Caracteriza\IeC {\c c}\IeC {\~a}o dos Participantes}{73}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Resultados}{74}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{74}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{74}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{80}{subsubsection.4.2.1.2}
+\contentsline {paragraph}{\numberline {4.2.1.2.1}Algoritmo de Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{80}{paragraph.4.2.1.2.1}
+\contentsline {paragraph}{\numberline {4.2.1.2.2}Casos Especiais}{81}{paragraph.4.2.1.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{85}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{86}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{89}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{91}{subsubsection.4.2.2.3}
+\contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{93}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Medi\IeC {\c c}\IeC {\~a}o do Desempenho}{93}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Testes Unit\IeC {\'a}rios}{94}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Falsos Negativos e Falsos Positivos}{94}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Dados Tabulares}{94}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Generaliza\IeC {\c c}\IeC {\~a}o e Limita\IeC {\c c}\IeC {\~a}o dos Resultados}{95}{subsection.4.3.5}
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{96}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{96}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ferramentas APM}{97}{section.5.2}
+\contentsline {section}{\numberline {5.3}Abordagens de Degrada\IeC {\c c}\IeC {\~a}o de Desempenho}{98}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}Limita\IeC {\c c}\IeC {\~o}es}{99}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Seguran\IeC {\c c}a e Desempenho}{99}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Escalabilidade}{99}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Acessibilidade}{100}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Automatiza\IeC {\c c}\IeC {\~a}o}{100}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Dispositivos M\IeC {\'o}veis}{101}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{101}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Atributos de Qualidade Adicionais}{101}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{102}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{102}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{103}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Automatiza\IeC {\c c}\IeC {\~a}o}{103}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{103}{subsection.6.2.6}
+\contentsline {chapter}{Refer\^encias}{104}{subsection.6.2.6}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{110}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{110}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{113}{section.appen.A.2}
