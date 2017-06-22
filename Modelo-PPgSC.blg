@@ -12,6 +12,7 @@ A level-1 auxiliary file: Capitulos/Capitulo4.aux
 A level-1 auxiliary file: Capitulos/Capitulo5.aux
 A level-1 auxiliary file: Capitulos/Consideracoes.aux
 The style file: abnt-num.bst
+A level-1 auxiliary file: Capitulos/ApendiceA.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,6 +21,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10037 items from 5000.
 Database file #1: Capitulos/library.bib
 Warning--I didn't find a database entry for "abnt-url-package=hyperref"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -28,51 +30,50 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo note vazio em JProfiler
-Warning--faltando school em ApacheWi
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 71 entries,
+You've used 72 entries,
             6480 wiz_defined-function locations,
-            1707 strings with 24376 characters,
-and the built_in function-call counts, 56645 in all, are:
-= -- 4679
-> -- 1867
-< -- 106
-+ -- 758
-- -- 561
-* -- 4156
-:= -- 7390
-add.period$ -- 305
-call.type$ -- 71
-change.case$ -- 768
-chr.to.int$ -- 131
+            1720 strings with 25082 characters,
+and the built_in function-call counts, 57813 in all, are:
+= -- 4777
+> -- 1894
+< -- 111
++ -- 768
+- -- 569
+* -- 4237
+:= -- 7521
+add.period$ -- 312
+call.type$ -- 72
+change.case$ -- 780
+chr.to.int$ -- 135
 cite$ -- 73
-duplicate$ -- 2826
-empty$ -- 4103
-format.name$ -- 2892
-if$ -- 13497
+duplicate$ -- 2904
+empty$ -- 4210
+format.name$ -- 2933
+if$ -- 13793
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 1229
-newline$ -- 412
-num.names$ -- 285
-pop$ -- 1651
+missing$ -- 1251
+newline$ -- 415
+num.names$ -- 289
+pop$ -- 1676
 preamble$ -- 1
-purify$ -- 289
+purify$ -- 293
 quote$ -- 0
-skip$ -- 2990
+skip$ -- 3044
 stack$ -- 1
-substring$ -- 2581
-swap$ -- 1414
-text.length$ -- 86
+substring$ -- 2650
+swap$ -- 1462
+text.length$ -- 90
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
-warning$ -- 2
-while$ -- 490
+type$ -- 10
+warning$ -- 1
+while$ -- 501
 width$ -- 0
-write$ -- 1020
-(There were 3 warnings)
+write$ -- 1040
+(There were 2 warnings)

@@ -1,9 +1,17 @@
 % Considerações finais
 \chapter{Conclusão} \label{ch:conclusao}
 
-Este capítulo apresenta na seção aadadasdsa. Na seção \ref{sec:limitacoes} são mostradas algumas limitações já conhecidas deste trabalho.
+Este trabalho apresentou uma ferramenta web, chamada \textit{\toolName} cujo objetivo é aplicar técnicas de visualização de software para ajudar desenvolvedores e arquitetos a analisar a evolução do atributo de qualidade de desempenho, em termos de tempo de execução, ao longo das versões de um software. Essa ferramenta foi implementada como extensão a outra já existente, o \textit{\perfMinerName}. Foram implementadas duas visualizações:
+\begin{itemize}
+	\item \textit{Sumarização de Cenários}: visualização que apresenta uma visão geral dos cenários com desvios de desempenho, onde o usuário é capaz de distinguir se um cenário foi degradado ou otimizado, qual o cenário com maior tempo de execução e qual possuiu o maior desvio de desempenho dentre os apresentados;
+	\item \textit{Grafo de Chamadas}: objetiva mostrar, para determinado cenário, os métodos que potencialmente causaram o desvio de desempenho. Tais métodos são dispostos em um grafo de chamadas com propriedades visuais que destacam quais deles tiveram desvios de desempenho, foram adiconados ou removidos, além de exibir os \textit{commits} que possívelmente foram os causadores desses desvios.
+\end{itemize}
 
-\section{Limitações} \label{sec:limitacoes}
+Através dos estudos conduzidos, espera-se que os desenvolvedores e arquitetos dos sistemas sejam beneficiados ao dispor de uma ferramenta para gerenciar a evolução do atributo de qualidade de desempenho. Os resultados do estudo indicaram que a visualização da sumarização de cenários {\color{red}CONTINUAR...}. Para a visualização do grafo de chamadas, o estudo apontou que é eficaz utilizá-la para identificar métodos com desvios de desempenho e suas possíveis causas. Além disso, o estudo indicou que a ferramenta pode ser utilizada como parte integrande do processo de desenvolvimento. Com isso, os desenvolvedores e arquitetos podem identificar as causas dos desvios de desempenho das aplicações, tomar ações para sanar problemas inesperados além de acompanhar a evolução, planejada ou não, desse atributo de qualidade.
+
+O restante deste capítulo está organizado como segue: na seção \ref{sec:consideracoes-limitacoes} são mostradas as limitações do trabalho e a seção \ref{sec:consideracoes-trabalhos-futuros} apresenta perspectivas para trabalhos futuros e melhorias da ferramenta.
+
+\section{Limitações} \label{sec:consideracoes-limitacoes}
 
 Este trabalho possui limitações no tocante à ferramenta e sua implementação, conforme descritas a seguir nesta seção.
 
@@ -15,7 +23,7 @@ A implementação do \textit{\toolName} não levou em consideração requisitos 
 
 Conforme mostrado na subseção \ref{subsec:avaliacao-comportamento-sumarizacao-cenarios}, existem limitações com relação a escalabilidade da visualização da sumarização de cenários. Para a análise de um par de releases, quando a quantidade de cenários indicados com desvios de desempenho é grande (acima de 20) e há cenários com baixas porcentagens de desvio de desempenho em relação aos demais, a identificação destes pode ser prejudicada ou até mesmo inviabilizada.
 
-O grafo de chamadas também possui limitações de escalabilidade. A quantidade dos nós com desvios de desempenho de uma versão para outra de um software pode ser em grande quantidade de modo a comprometer o desempenho da própria visualização, comprometer a sua usabilidade e visibilidade ou, até mesmo, inviabilizá-la. Embora medidas tenham sido tomadas para minimizar esse impacto - como, por exemplo, o agrupamento de nós não relacionados com nós de desvio, adicionados ou removidos - há possibilidades de acontecer. 
+O grafo de chamadas também possui limitações de escalabilidade. A quantidade dos nós com desvios de desempenho de uma versão para outra de um software pode ser grande de modo a comprometer o desempenho da própria visualização, comprometer a sua usabilidade e visibilidade ou, até mesmo, inviabilizá-la. Embora medidas tenham sido tomadas para minimizar esse impacto - como, por exemplo, o agrupamento de nós não relacionados com nós de desvio, adicionados ou removidos - há possibilidades de acontecer.
 
 No caso de serem analisadas duas versões muitos distantes entre si, podem existir muitas modificações, fazendo com que o grafo gerado seja grande e complexo, resultando no problema do tamanho do grafo apresentado no parágrafo anterior. O ideal ao utilizar a ferramenta é analisar versões próximas para beneficiar-se da baixa granularidade apresentada pelo grafo de chamadas.
 

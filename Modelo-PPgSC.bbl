@@ -71,6 +71,26 @@ Dispon{\'\i}vel em:
 ISSN 21906807.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.4230/OASIcs.VLUDS.2011.25$>$.}
 
+\bibitem{BeladyLaszloA.andLehman1976}
+\abntrefinfo{Belady e Lehman}{BELADY; LEHMAN}{1976}
+{BELADY, L.~A.; LEHMAN, M.~M. {A model of large program development}.
+\emph{IBM Systems Journal}, v.~15, n.~3, p. 225--252, 1976.
+ISSN 0018-8670.}
+
+\bibitem{LehmanMeirMandRamilJuanFandWernickPaulDandPerryDewayneEandTurski}
+\abntrefinfo{{Lehman, Ramil, Wernick, Perry}}{{Lehman, Ramil, Wernick,
+  Perry}}{1997}
+{{Lehman, Ramil, Wernick, Perry}, T. {Metrics and laws of soft- ware
+  evolution—the nineties view}. In:  \emph{IEEE, Piscataway}. [S.l.]: IEEE,
+  1997. p. 20--32.}
+
+\bibitem{Molyneaux2009}
+\abntrefinfo{Molyneaux}{MOLYNEAUX}{2009}
+{MOLYNEAUX, I. \emph{{The Art of Application Performance Testing}}. O'Reilly
+  Media, Inc., 2009. 159~p.
+ISBN 9780596551056. Dispon{\'\i}vel em:
+  $<$http://it-ebooks.info/book/323/{\%}5Cnhttp://books.google.com.br/books?id=TKUP3pxxsJsC{\%}5Cnhttp://books.google.com/books?hl=en{\&}lr={\&}id=TKUP3pxxsJsC{\&}oi=fnd{\&}pg=PR3{\&}dq=The+Art+of+Application+Performance+Testing:+Help+for+Programmers+and+Quality+Assurance{\&}ots=gJuq$>$.}
+
 \bibitem{SandovalAlcocer2013}
 \abntrefinfo{{Sandoval Alcocer} et al.}{{Sandoval Alcocer} et al.}{2013}
 {{Sandoval Alcocer}, J.~P. et al. {Performance evolution blueprint:
@@ -137,6 +157,16 @@ Dispon{\'\i}vel em: $<$https://github.com/naver/pinpoint$>$.}
 154~p. Tese (Doutorado) --- UFRN - Universidade Federal do Rio Grande do Norte,
   2015.}
 
+\bibitem{Malik2013}
+\abntrefinfo{Malik, Hemmati e Hassan}{MALIK; HEMMATI; HASSAN}{2013}
+{MALIK, H.; HEMMATI, H.; HASSAN, A.~E. {Automatic detection of performance
+  deviations in the load testing of Large Scale Systems}. In:
+  \emph{Proceedings - International Conference on Software Engineering}.
+  [s.n.], 2013. p. 1012--1021.
+ISBN 9781467330763.
+ISSN 02705257. Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/document/6606651/?arnumber=6606651{\&}tag=1{\%}5Cnhttp://ieeexplore.ieee.org/ielx7/6596173/6606539/06606651.pdf?tp={\&}arnumber=6606651{\&}isnumber=6606539$>$.}
+
 \bibitem{Taylor2009}
 \abntrefinfo{Taylor, Medvidovic e Dashofy}{TAYLOR; MEDVIDOVIC; DASHOFY}{2009}
 {TAYLOR, R.~N.; MEDVIDOVIC, N.; DASHOFY, E.~M. \emph{{Software architecture:
@@ -168,16 +198,6 @@ Dispon{\'\i}vel em:
   knowledge engineering}, p. 819--826, 2002.
 Dispon{\'\i}vel em:
   $<$http://portal.acm.org/citation.cfm?doid=568760.568900$>$.}
-
-\bibitem{Malik2013}
-\abntrefinfo{Malik, Hemmati e Hassan}{MALIK; HEMMATI; HASSAN}{2013}
-{MALIK, H.; HEMMATI, H.; HASSAN, A.~E. {Automatic detection of performance
-  deviations in the load testing of Large Scale Systems}. In:
-  \emph{Proceedings - International Conference on Software Engineering}.
-  [s.n.], 2013. p. 1012--1021.
-ISBN 9781467330763.
-ISSN 02705257. Dispon{\'\i}vel em:
-  $<$http://ieeexplore.ieee.org/document/6606651/?arnumber=6606651{\&}tag=1{\%}5Cnhttp://ieeexplore.ieee.org/ielx7/6596173/6606539/06606651.pdf?tp={\&}arnumber=6606651{\&}isnumber=6606539$>$.}
 
 \bibitem{Babar2004}
 \abntrefinfo{Babar e Gorton}{BABAR; GORTON}{2004}
@@ -465,18 +485,6 @@ Dispon{\'\i}vel em: $<$http://www.eclipse.org/jetty/$>$.}
 \abntrefinfo{VRaptor}{VRAPTOR}{2017}
 {VRAPTOR. \emph{{VRaptor}}. 2017.
 Dispon{\'\i}vel em: $<$http://www.vraptor.org$>$.}
-
-\bibitem{ApacheWi}
-\abntrefinfo{Wicket}{WICKET}{2016}
-{WICKET, A.
-\emph{{Wicket}}.
-Tese (Doutorado), 2016.
-Dispon{\'\i}vel em: $<$https://wicket.apache.org$>$.}
-
-\bibitem{Netty2016}
-\abntrefinfo{Netty}{NETTY}{2016}
-{NETTY. \emph{{Netty}}. 2016.
-Dispon{\'\i}vel em: $<$http://netty.io$>$.}
 
 \bibitem{Eick1992}
 \abntrefinfo{Eick, Steffen e Sumner}{EICK; STEFFEN; SUMNER}{1992}

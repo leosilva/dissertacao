@@ -353,7 +353,7 @@ A tabela \ref{tab:avaliacao-casos-especiais} a seguir resume alguns dados desses
   }
 \end{table}
 
-O cenário C2 foi o cenário com a maior quantidade de nós otimizados: \texttt{8}. Assim como o cenário \texttt{C1}, também houve nós degradados (\texttt{1}), adicionados (\texttt{6}) e removidos (\texttt{3}). O resultado das otimizações e degradações impostas por esses nós foi um cenário degradado em \texttt{4,07\%}, apesar da alta quantidade de nós otimizados. Esses nós percentem a mesma classe do sistema: \texttt{Log}; e os métodos otimizados têm um baixo tempo de execução em nanosegundos. Diante disso, todas as \texttt{8} otimizações foram entre 0 e 25\% do tempo, fazendo com que os nós permanecessem, então, com um baixo tempo de execução. Por outro lado, os nós adicionados, alguns deles executando em \textit{loop}, e o removido adicionaram tempos de execução suficientes para que o cenário se degradasse.
+O cenário C2 foi o cenário com a maior quantidade de nós otimizados: \texttt{8}. Assim como o cenário \texttt{C1}, também houve nós degradados (\texttt{1}), adicionados (\texttt{6}) e removidos (\texttt{3}). O resultado das otimizações e degradações impostas por esses nós foi um cenário degradado em \texttt{4,07\%}, apesar da alta quantidade de nós otimizados. Esses nós percentem a mesma classe do sistema: \texttt{Log}; e os métodos otimizados têm um baixo tempo de execução em nanosegundos. Diante disso, todas as \texttt{8} otimizações foram entre 0 e 25\% do tempo, fazendo com que os nós permanecessem, então, com um baixo tempo de execução. Por outro lado, os nós adicionados, alguns deles executando em loop, e o removido adicionaram tempos de execução suficientes para que o cenário se degradasse.
 
 A menor porcentagem de redução de nós exibidos foi no cenário \texttt{C3}. A quantidade de nós exibidos é exatamente o total de nós que o cenário possui: \texttt{2}, sendo eles o nó raiz, que é o método da classe de teste automatizado que dá nome ao cenário, e o nó \texttt{SafeResourceBundle.handleGetObject(java.lang.String)}. O \textit{commit} que modificou este método indica uma mudança no mecanismo de \textit{log} que potencialmente é a causa da degradação de \texttt{124,49\%} do cenário. A figura \ref{fig:avaliacao-casos-especiais-c3} a seguir ilustra o grafo de chamadas do cenário \texttt{C3}.
 
@@ -485,12 +485,12 @@ Os \texttt{2} (15\%) que talvez vejam benefícios na ferramenta também merecem 
   \centering
   \begin{subfigure}{.50\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_17.png}}
+   \frame{\includegraphics[scale=0.55]{Imagens/avaliacao_questao_17.png}}
    \textsf{\caption[Benefícios da ferramenta.]{Benefícios da ferramenta.\label{fig:avaliacao-questao-17}}}
    \end{subfigure}%
    \begin{subfigure}{.50\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.65]{Imagens/avaliacao_questao_18.png}}
+   \frame{\includegraphics[scale=0.55]{Imagens/avaliacao_questao_18.png}}
    \textsf{\caption[Utilidade da ferramenta.]{Utilidade da ferramenta.\label{fig:avaliacao-questao-18}}}
    \end{subfigure}
    \caption{Questões sobre os benefícios e utilidade da ferramenta.}
@@ -514,11 +514,11 @@ A ferramenta foi capaz de mostrar visualmente a evolução do desempenho dos cen
 
 A expectativa, através dos resultados desse estudo, é ajudar os desenvolvedores e arquitetos a analisar o desempenho dos sistemas, facilitando a correção de gargalos de desempenho, através da identificação das suas causas, inseridos durante o desenvolvimento de determinada release. Dessa forma, integrada ao processo de desenvolvimento de software, a ferramenta pode ser usada de maneira preventiva, evitando a liberação de releases com problemas de desempenho desconhecidos. Embora nem toda degradação de desempenho seja passível de correção (por exemplo, a inserção de verificações de segurança de maneira planejada), a ferramenta provê a possibilidade de acompanhá-las.
 
-Assim, as principais contribuições são: (i) a identificação visual dos cenários que mais tiveram desvios de desempenho para os sistemas Jetty e VRaptor, a partir da análise de múltiplas releases; (ii) a identificação visual dos cenários com maior tempo de execução para os sistemas analisados; (iii) para os mesmos sistemas, a percepção visual do tipo de desvio dos cenários através da análise de múltiplas releases; (iv) a distinção visual dos nós que tiveram desvio de desempenho (degradação ou otimização), foram adicionados ou removidos para cada cenário dos sistemas analisados; (v) para cada um desses nós, a indicação das potenciais causas dos desvios de desempenho, adição ou remoção ocorridos; ... O restante desta seção comenta algumas limitações e ameaças a validade do estudo.
+Assim, as principais contribuições são: (i) a identificação visual dos cenários que mais tiveram desvios de desempenho para os sistemas Jetty e VRaptor, a partir da análise de múltiplas releases; (ii) a identificação visual dos cenários com maior tempo de execução para os sistemas analisados; (iii) para os mesmos sistemas, a percepção visual do tipo de desvio dos cenários através da análise de múltiplas releases; (iv) a distinção visual dos nós que tiveram desvio de desempenho (degradação ou otimização), foram adicionados ou removidos para cada cenário dos sistemas analisados; (v) para cada um desses nós, a indicação das potenciais causas dos desvios de desempenho, adição ou remoção ocorridos; ... {\color{red} continuar...} O restante desta seção comenta algumas limitações e ameaças a validade do estudo.
 
 \subsection{Medição do Desempenho}
 
-O \textit{\perfMinerName} se baseia em múltiplas execuções dos cenários para aumentar a confiança das medidas dos tempos de execução. Nesse estudo, todos os cenários foram executados 10 vezes para a análise do desvio de desempenho, mesmo assim alguns métodos em particular podem ter sido executados mais vezes. Por exemplo, os métodos podem ter várias hierarquias de chamadas, podem ser chamados em \textit{loops}, etc. Para diminuir os riscos de viés na medição dos tempos de execução, foram tomadas precauções como desabilitar os serviços não essenciais do sistema operacional, cada teste foi executado em uma sua própria JVM e cada teste foi executado em ordem randômica \cite{Pinto2015}.
+O \textit{\perfMinerName} se baseia em múltiplas execuções dos cenários para aumentar a confiança das medidas dos tempos de execução. Nesse estudo, todos os cenários foram executados 10 vezes para a análise do desvio de desempenho, mesmo assim alguns métodos em particular podem ter sido executados mais vezes. Por exemplo, os métodos podem ter várias hierarquias de chamadas, podem ser chamados em loops, etc. Para diminuir os riscos de viés na medição dos tempos de execução, foram tomadas precauções como desabilitar os serviços não essenciais do sistema operacional, cada teste foi executado em uma sua própria JVM e cada teste foi executado em ordem randômica \cite{Pinto2015}.
 
 \subsection{Testes Unitários} \label{subsec:avaliacao-consideracoes-testes-unitarios}
 
