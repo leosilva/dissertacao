@@ -48,27 +48,27 @@
 \contentsline {section}{\numberline {4.1}Projeto}{66}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Objetivos e Quest\IeC {\~o}es de Pesquisa}{67}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Sistemas}{68}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Procedimentos}{69}{subsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.3.1}Passo 1 - Coleta e Prepara\IeC {\c c}\IeC {\~a}o dos Dados}{69}{subsubsection.4.1.3.1}
+\contentsline {subsection}{\numberline {4.1.3}Procedimentos}{68}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Passo 1 - Coleta e Prepara\IeC {\c c}\IeC {\~a}o dos Dados}{68}{subsubsection.4.1.3.1}
 \contentsline {subsubsection}{\numberline {4.1.3.2}Passo 2 - Aplica\IeC {\c c}\IeC {\~a}o da Abordagem}{69}{subsubsection.4.1.3.2}
-\contentsline {subsubsection}{\numberline {4.1.3.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{71}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Passo 3 - Elabora\IeC {\c c}\IeC {\~a}o e Aplica\IeC {\c c}\IeC {\~a}o dos Question\IeC {\'a}rios}{70}{subsubsection.4.1.3.3}
 \contentsline {subsection}{\numberline {4.1.4}Caracteriza\IeC {\c c}\IeC {\~a}o dos Participantes}{72}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Resultados}{74}{section.4.2}
+\contentsline {section}{\numberline {4.2}Resultados}{73}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{74}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{74}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{79}{subsubsection.4.2.1.2}
-\contentsline {paragraph}{\numberline {4.2.1.2.1}Algoritmo de Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{80}{paragraph.4.2.1.2.1}
-\contentsline {paragraph}{\numberline {4.2.1.2.2}Casos Especiais}{81}{paragraph.4.2.1.2.2}
+\contentsline {paragraph}{\numberline {4.2.1.2.1}Algoritmo de Supress\IeC {\~a}o de N\IeC {\'o}s Exibidos}{79}{paragraph.4.2.1.2.1}
+\contentsline {paragraph}{\numberline {4.2.1.2.2}Casos Especiais}{80}{paragraph.4.2.1.2.2}
 \contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{85}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{85}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{89}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{88}{subsubsection.4.2.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{90}{subsubsection.4.2.2.3}
 \contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{92}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Medi\IeC {\c c}\IeC {\~a}o do Desempenho}{93}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Testes Unit\IeC {\'a}rios}{94}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Falsos Negativos e Falsos Positivos}{94}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.2}Testes Unit\IeC {\'a}rios}{93}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Falsos Negativos e Falsos Positivos}{93}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Dados Tabulares}{94}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Generaliza\IeC {\c c}\IeC {\~a}o e Limita\IeC {\c c}\IeC {\~a}o dos Resultados}{95}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.5}Generaliza\IeC {\c c}\IeC {\~a}o e Limita\IeC {\c c}\IeC {\~a}o dos Resultados}{94}{subsection.4.3.5}
 \contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{96}{chapter.5}
 \contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{96}{section.5.1}
 \contentsline {section}{\numberline {5.2}Ferramentas APM}{97}{section.5.2}

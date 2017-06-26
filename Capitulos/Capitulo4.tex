@@ -17,33 +17,15 @@ O questionário foi enviado para todos os contribuidores no GitHub dos sistemas 
 
 Os principais objetivos deste estudo são investigar se a ferramenta \textit{\toolName}, com suas visualizações e propriedades visuais oferecidas, é capaz de representar as evoluções de desempenho dos cenários analisados, se os usuários conseguem identificar esses desvios através das representações visuais oferecidas e se é útil para as equipes de desenvolvimento dos sistemas analisados. Ao utilizar a ferramenta, os usuários poderão identificar os cenários com desvios de desempenho e, a partir da análise do grafo de chamadas de cada um deles, tomar conhecimento sobre os \textit{commits} dos métodos que possivelmente foram os responsáveis pelo desvio. A partir de então, ações podem ser tomadas pela equipe de desenvolvimento para sanar possíveis problemas no desempenho das aplicações. O estudo foi guiado pelas seguintes questões de pesquisa:
 
-\textbf{QP1. As visualizações implementadas na ferramenta se mostraram suficientes (?) para representar os cenários e suas propriedades?}
+{\color{red}DESENVOLVER TEXTOS PARA AS QPS.}
 
-\textbf{QP1. Quais as vantagens e desvantagens de se exibir as informações dos cenários utilizando as representações visuais implementadas na ferramenta?}
+\textbf{QP1: Os cenários identificados com desvios de desempenho são apresentados claramente nas visualizações implementadas pela ferramenta?}
 
-\textbf{QP1. A ferramenta e suas visualizações fornecem informações sobre os cenários de modo que pode ser utilizada como uma ferramenta de apoio a decisão com relação a análise de desempenho dos sistemas?}
+\textbf{QP2. O algoritmo de redução de nós aplicado pela ferramenta é capaz de reduzir significativamente o número de nós no grafo de chamadas para sistemas reais?}
 
-\textbf{QP2. Há indícios de que os usuários conseguem identificar os métodos com desvios de desempenho e os respectivos \textit{commits} usando as visualizações disponíveis na ferramenta?}
+\textbf{QP3: Desenvolvedores e arquitetos conseguem identificar os cenários com variações de desempenho e suas potenciais causas, em termos de métodos e \textit{commits}, através do auxílio visual da ferramenta?}
 
-{\color{red}INÍCIO DAS SUGESTÕES DE FELIPE:}
-
-\textbf{QP1. As visualizações implementadas na ferramenta permitem que desenvolvedores identifiquem variações de desempenho em cenários de interesse?}
-
-\textbf{QP2: As visualizações implementadas pela ferramenta são mais adequadas para o entendimento claro das variações do que simplesmente apresentar os dados de forma tabular?}
-
-\textbf{QP3: Há interesse por parte de desenvolvedores e arquitetos em usar uma ferramenta desse tipo integrada no seu processo de desenvolvimento para realizar análises de variação de desempenho?}
-
-\textbf{QP4: Desenvolvedores e arquitetos conseguem identificar as potenciais causas das variações de desempenho, em termos de métodos e \textit{commits}, através do auxílio visual da ferramenta?}
-
-\textbf{QP5. O algoritmo de redução de nós aplicado pela ferramenta é capaz de reduzir significativamente o número de nós no grafo de chamadas para sistemas reais?}
-
-{\color{red}FIM DAS SUGESTÕES DE FELIPE}
-
-%\textbf{QP1. A ferramenta proposta é capaz de exibir representações visuais que fornecem informações sobre os cenários de determinados releases de um sistema que tiveram o maior desvio de desempenho dentre os analisados?} Após as análises realizadas nos releases dos sistemas, a expectativa é que a visualização da sumarização de cenários seja capaz de exibir metáforas visuais que permitam aos usuários identificar informações sobre os cenários. É esperado que a complexidade na identificação dessas informações seja baixa através da metáfora visual e interações oferecidas para ajudar os usuários nessa identificação.
-
-%\textbf{QP2. A ferramenta proposta é capaz de exibir visualmente, para determinado cenário analisado, os métodos identificados com desvios de desempenho, além dos \textit{commits} que possivelmente causaram esses desvios?} A expectativa é que a visualização do grafo de chamada seja capaz de exibir elementos visuais que permitam aos usuários encontrar as informações sobre os métodos com desvios de desempenho, além das suas possíveis causas. Espera-se, também, que a complexidade de identificação dessas informações seja baixa através das metáforas visuais oferecidas e das interações implementadas. É importante que os usuários tomem conhecimento sobre as modificações no código-fonte que geraram algum impacto no desempenho dos sistemas.
-
-%\textbf{QP3. Os usuários dos sistemas analisados veem benefícios ou vantagens de se usar a ferramenta proposta em seus processos de desenvolvimento?} Espera-se, com essa questão de pesquisa, verificar se os usuários dos sistemas analisados utilizariam a ferramenta em seus processos de desenvolvimento. Além disso, outro aspecto interessante é saber em qual momento desse processo os desenvolvedores vislumbram que a ferramenta pode ser usada.
+\textbf{QP4: Há indícios de que as visualizações implementadas pela ferramenta são mais eficazes do que os dados tabulares para se encontrar informações sobre os cenários, métodos e \textit{commits}?}
 
 \subsection{Sistemas} \label{subsec:avaliacao-sistemas}
 
@@ -397,9 +379,7 @@ O último cenário destacado é o \texttt{C8}, que possuiu a menor otimização.
    \textsf{\caption[Grafo de Chamadas do cenário \texttt{C8}.]{Grafo de Chamadas do cenário \texttt{C8}.\label{fig:avaliacao-casos-especiais-c8}}}
 \end{figure}
 
-\begin{framed}
-  \noindent A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados, independente da quantidade de nós a ser exibido. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, além de, através dos \textit{commits}, tomar conhecimento sobre as mudanças que potencialmente causaram esses desvios de desempenho.
-\end{framed}
+A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, além de, através dos \textit{commits}, tomar conhecimento sobre as mudanças que potencialmente causaram esses desvios de desempenho.
 
 \subsection{Questionário Online} \label{subsec:avaliacao-questionario-online}
 
