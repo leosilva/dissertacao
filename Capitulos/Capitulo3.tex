@@ -155,7 +155,7 @@ Para a visualização da sumarização de cenários, os dados gerais de todos os
 
 Os bancos de dados DAM e QAV mencionados anteriormente têm funções distintas. O DAM é utilizado pelo \textit{\perfMinerName} para armazenar os dados coletados na análise dinâmica. Já o QAV é próprio da ferramenta \textit{\toolName} e armazena os dados que dão suporte às visualizações, funcionando também como um \textit{cache}, minimizando o tempo de resposta do servidor para o usuário.
 
-\paragraph{DAM - \textit{Dynamic Analysis Model}} \label{par:estrutura-dados-dam}
+\noindent \textbf{DAM - \textit{Dynamic Analysis Model}}
 
 O resultado do processamento da fase 1 do \textit{\perfMinerName} gera um modelo de análise dinâmica que contém informações sobre os \textit{traces} de execução do sistema, como mencionado na subseção \ref{subsec:fase1}. Esse modelo é persistido no banco de dados DAM, sendo usado, posteriormente, na extensão proposta por este trabalho para gerar as visualizações. A figura \ref{fig:perfminer-class-diagram} a seguir mostra o diagrama de classes parcial desse modelo.
 
@@ -169,7 +169,7 @@ A classe \texttt{Execution} representa uma execução específica do \textit{\pe
 
 A classe \texttt{Node} representa todo membro (método ou construtor) executado dentro de um cenário em particular. Essa classe possui atributos para indicar a assinatura do método ou construtor, uma mensagem se alguma exceção acontecer durante a execução, o tempo de execução total do membro, o tempo de execução do próprio membro, uma propriedade booleana que indica se o nó representa ou não um construtor e dois autorrelacionamentos: um para indicar o nó pai e outro para indicar os nós filhos. Uma atenção especial merece ser dada aos dois tempos de execução: a propriedade \texttt{executionRealTime} indica o tempo de execução do próprio método ou construtor, sem considerar os tempos de execução dos nós filhos. Já a propriedade \texttt{executionTime} representa o tempo total de execução do membro, considerando os tempos dos membros filhos.
 
-\paragraph{QAV - \textit{Quality Attribute Visualization}} \label{par:estrutura-dados-qav}
+\noindent \textbf{QAV - \textit{Quality Attribute Visualization}}
 
 A ferramenta faz uso de outro banco de dados além do DAM: o QAV. Essa base de dados é responsável por armazenar os dados que darão suporte às visualizações. A figura \ref{fig:archvis-class-diagram} a seguir mostra o diagrama de classes para esse modelo.
 
@@ -421,7 +421,7 @@ Além dos que representam métodos com ou sem desvio de desempenho, e métodos a
    \item \textit{Tempos de execução}: é exibido o tempo de execução total que representa a soma de todos os tempos de execução dos nós contidos no agrupamento. No exemplo, o tempo total é de \texttt{527,3} nanossegundos.
 \end{itemize}
 
-\paragraph{Algoritmo de Supressão de Nós Exibidos} \label{par:capitulo3-visualizacao2-algoritmo-supressao-nos}
+\noindent \textbf{Algoritmo de Supressão de Nós Exibidos}
 
 O nó agrupado é criado a partir da execução de um algoritmo de supressão de nós exibidos. Esse algoritmo calcula os nós que devem ser apresentados para o usuário. Dessa forma, em um grafo de chamadas para determinado cenário, são exibidos os nós que têm relevância para o entendimento e identificação dos métodos possívelmente responsáveis pelo desvio de desempenho do cenário.
 
@@ -604,7 +604,7 @@ Com a definição dos nós e suas características, e das arestas, a próxima at
 
 \section{Considerações} \label{sec:consideracoes-cap3}
 
-Um dos principais desafios do processo de manutenção de um software é compreendê-lo adequadamente, em especial, a sua arquitetura. A falta de acompanhamento da evolução da arquitetura ao longo do tempo pode levar a sua degradação, impactando os seus atributos de qualidade. Este capítulo apresentou visualizações de arquitetura de software que visam tornar direta e fácil a monitoração da evolução arquitetural, com relação ao atributo de qualidade de desempenho. Uma vez que as ferramentas existentes se mostram complexas ou ineficientes para essa finalidade, as visualizações foram propostas a serem implementadas como extensões da ferramenta \textit{\perfMinerName}. Em suma, são as seguintes:
+Durante o processo de manutenção, as modificações podem ter consequências negativas, diminuindo a qualidade do software, aumentando a sua complexidade além de, também, poder afetar o desempenho dos sistemas ao longo do tempo \cite{BeladyLaszloA.andLehman1976}\cite{LehmanMeirMandRamilJuanFandWernickPaulDandPerryDewayneEandTurski}\cite{Molyneaux2009}. Este capítulo apresentou o \textit{\toolName} e suas visualizações, que visam tornar direta e clara a monitoração do atributo de qualidade de desempenho. Uma vez que as ferramentas existentes se mostram complexas ou ineficientes para essa finalidade, as visualizações foram propostas a serem implementadas como extensões da ferramenta \textit{\perfMinerName}. Em suma, são as seguintes:
 \begin{enumerate}[(i)]
    \item \textit{Sumarização dos Cenários}: a sumarização dos cenários com desvio de desempenho objetiva mostrar, de maneira sucinta, quais cenários analisados tiveram desvio de desempenho, seja degradação ou otimização;
    \item \textit{Grafo de Chamadas}: a visualização do grafo de chamadas exibe, para cada cenário, as chamadas dos métodos que tiveram desvio de desempenho. Dessa forma, o usuário pode localizar em qual trecho de código da execução do cenário houve o desvio.

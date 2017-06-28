@@ -19,7 +19,7 @@ Os principais objetivos deste estudo são investigar se a ferramenta \textit{\to
 
 \begin{itemize}
   \item[\textbf{QP1.}] \textbf{Os cenários identificados com desvios de desempenho são apresentados claramente nas visualizações implementadas pela ferramenta?} A expectativa é que esta questão de pesquisa seja respondida através da visualização da sumarização de cenários, uma vez que ela é responsável por dar uma visão geral dos cenários identificados com desvios de desempenho após a análise de duas releases de um sistema. Nessa visualização, os usuários podem identificar, prioritariamente, o cenário com maior/menor porcentagem de desvio, o cenário com maior/menor tempo de execução e o tipo de desvio (degradação ou otimização) dos cenários. Espera-se que os cenários com desvios apontados pela ferramenta, para cada versão, sejam apresentados pela visualização de maneira clara, sem prejuízos para a sua identificação.
-  \item[\textbf{QP2.}] \textbf{O algoritmo de redução de nós aplicado pela ferramenta é capaz de reduzir significativamente o número de nós no grafo de chamadas para sistemas reais?} A quantidade de nós de cada cenário das releases analisadas são suficientemente grandes para dificultar ou inviabilizar o tamanho da hierarquia de chamadas na visualização do grafo de chamadas. A expectativa desta questão de pesquisa é a de que o algoritmo de redução de nós exibidos (apresentado na subseção \ref{par:capitulo3-visualizacao2-algoritmo-supressao-nos}) implementado reduza consideravelmente a quantidade de nós a serem exibidos para o usuário, diminuindo a complexidade da visualização e permitindo que os métodos com desvios de desempenho sejam identificados, juntamente com as possíveis causas de tais desvios. 
+  \item[\textbf{QP2.}] \textbf{O algoritmo de redução de nós aplicado pela ferramenta é capaz de reduzir significativamente o número de nós no grafo de chamadas para sistemas reais?} A quantidade de nós de cada cenário das releases analisadas são suficientemente grandes para dificultar ou inviabilizar o tamanho da hierarquia de chamadas na visualização do grafo de chamadas. A expectativa desta questão de pesquisa é a de que o algoritmo de redução de nós exibidos (apresentado na subseção \ref{subsec:no-agrupamento}) implementado reduza consideravelmente a quantidade de nós a serem exibidos para o usuário, diminuindo a complexidade da visualização e permitindo que os métodos com desvios de desempenho sejam identificados, juntamente com as possíveis causas de tais desvios. 
   \item[\textbf{QP3.}] \textbf{Desenvolvedores e arquitetos conseguem identificar os cenários com variações de desempenho e suas potenciais causas, em termos de métodos e \textit{commits}, através do auxílio visual da ferramenta?} Através da ferramenta, uma vez executada uma análise para um par de versões de um sistema, os usuários podem identificar os cenários que tiveram algum desvio de desempenho pela visualização da sumarização de cenários e conhecer suas possíveis causas (métodos e \textit{commits}) através da visualização do grafo de chamadas. A expectativa é que os participantes do questionário online (contribuidores dos projetos Jetty e VRaptor) consigam identificar corretamente essas características através dos elementos visuais fornecidos pelas visualizações.
   \item[\textbf{QP4.}] \textbf{Há indícios de que as visualizações implementadas pela ferramenta são mais eficazes do que os dados tabulares para se encontrar informações sobre os cenários, métodos e \textit{commits}?} Os participantes do questionário online o responderam em dois grupos, conforme será destacado adiante na subseção de Procedimentos (\ref{subsec:avaliacao-procedimentos}). Cada grupo respondeu a uma visualização através da ferramenta e a outra visualização através de dados tabulares. Através da comparação dessas respostas, a expectativa é obter indícios de se as visualizações implementadas são mais eficazes do que os dados tabulares para encontrar as informações solicitadas pelo questionário.
 \end{itemize}
@@ -272,33 +272,40 @@ Para resolver ou minimizar essa situação, podem ser feitas adaptações na imp
 
 Cada um dos 244 cenários identificados com desvios de desempenho pela ferramenta possuem nós a serem dispostos na visualização do grafo de chamadas. Nesta subseção serão destacados o resultado do algoritmo de supressão dos nós exibidos, bem como serão comentados 8 casos especiais de grafos.
 
-\paragraph{Algoritmo de Supressão de Nós Exibidos}
+\noindent \textbf{Algoritmo de Supressão de Nós Exibidos}
 
-Com a execução do algoritmo de supressão de nós exibidos (explicado na seção \ref{par:capitulo3-visualizacao2-algoritmo-supressao-nos}) para cada grafo de chamada gerado pela ferramenta, a redução da quantidade de nós a serem mostrados foi importante, consequentemente, diminuindo a complexidade de se encontrar informações. O gráfico exibido na figura \ref{fig:boxplot-porcentagem} indica que em 75\% dos cenários analisados a redução de nós se deu entre 73,77\% e 99,83\% e a mediana de redução de nós considerando todos os cenários é de 90,26\%. Os \textit{outliers} desse gráfico indicam os casos em que a porcentagem de redução foi considerada baixa. Isso pode acontecer, por exemplo, em cenários com poucos nós no total, onde a redução de nós a serem exibidos é baixa ou até mesmo inexistente.
+Com a execução do algoritmo de supressão de nós exibidos (explicado na seção \ref{subsec:no-agrupamento}) para cada grafo de chamada gerado pela ferramenta, a redução da quantidade de nós a serem mostrados foi importante, consequentemente, diminuindo a complexidade de se encontrar informações. O gráfico exibido na figura \ref{fig:boxplot-porcentagem} indica que em 75\% dos cenários analisados a redução de nós se deu entre 73,77\% e 99,83\% e a mediana de redução de nós considerando todos os cenários é de 90,26\%. Os \textit{outliers} desse gráfico indicam os casos em que a porcentagem de redução foi considerada baixa. Isso pode acontecer, por exemplo, em cenários com poucos nós no total, onde a redução de nós a serem exibidos é baixa ou até mesmo inexistente.
 
-O gráfico da figura \ref{fig:boxplot-reducao-nos} reforça o resultado do algoritmo, mostrando a distribuição da quantidade de nós exibidos no grafo de chamadas para os cenários analisados. Nesse gráfico, em 75\% dos cenários a quantidade de nós exibidos é entre 2 e 16 e a mediana de exibição dos nós considerando todos os cenários é de 9,5, indicando a baixa complexidade do grafo, na maioria dos casos. Entretanto, embora na maioria dos cenários a quantidade de nós exibidos seja baixa, houve casos em que essa quantidade pode ser considerada alta, conforme indicado pelos \textit{outliers} do gráfico. Por exemplo, o caso com maior quantidade de nós no grafo foi o cenário \texttt{Entry point for DispatcherForwardTest.testQueryRetai-\\nedByForwardWithoutQuery}, do Jetty, versões 9.3.16 para 9.4.0. Nesse cenário são exibidos 92 nós de um total de 5.376. Nesse caso, apesar de a quantidade de nós seja alta e seja considerado um \textit{outlier} no gráfico da figura \ref{fig:boxplot-reducao-nos}, a porcentagem de redução foi de 98,29\%, indicando a eficiência do algoritmo.
+O gráfico da figura \ref{fig:boxplot-reducao-nos} reforça o resultado do algoritmo, mostrando a distribuição da quantidade de nós exibidos no grafo de chamadas para os cenários analisados. Nesse gráfico, em 75\% dos cenários a quantidade de nós exibidos é entre 2 e 16, e a mediana de exibição dos nós considerando todos os cenários é de 9,5, indicando a baixa complexidade do grafo, na maioria dos casos. Entretanto, embora na maioria dos cenários a quantidade de nós exibidos seja baixa, houve casos em que essa quantidade pode ser considerada alta, conforme indicado pelos \textit{outliers} do gráfico. Por exemplo, o caso com maior quantidade de nós no grafo foi o cenário \texttt{Entry point for DispatcherForwardTest.testQueryRetai-\\nedByForwardWithoutQuery}, do Jetty, versões 9.3.16 para 9.4.0. Nesse cenário são exibidos 92 nós de um total de 5.376. Nesse caso, apesar de a quantidade de nós seja alta e seja considerado um \textit{outlier} no gráfico da figura \ref{fig:boxplot-reducao-nos}, a porcentagem de redução foi de 98,29\%, indicando a eficiência do algoritmo.
 
 \begin{figure}[!htb]
   \centering
+  \begin{subfigure}{.5\textwidth}
+   \centering
+   \frame{\includegraphics[scale=0.50]{Imagens/boxplot_quantidade_nos_cenarios.png}}
+   \textsf{\caption[Quantidade total de nós dos cenários.]{Quantidade total de nós dos cenários.\label{fig:boxplot-quantidade-nos-cenarios}}}
+   \end{subfigure}
    \begin{subfigure}{.5\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.53]{Imagens/boxplot_porcentagem_reducao.png}}
+   \frame{\includegraphics[scale=0.50]{Imagens/boxplot_porcentagem_reducao_atual.png}}
    \textsf{\caption[Porcentagem de nós reduzidos.]{Porcentagem de nós reduzidos.\label{fig:boxplot-porcentagem}}}
    \end{subfigure}%
    \begin{subfigure}{.5\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.53]{Imagens/boxplot_nos_exibidos.png}}
+   \frame{\includegraphics[scale=0.50]{Imagens/boxplot_nos_exibidos_atual.png}}
    \textsf{\caption[Quantidade de nós exibidos.]{Quantidade de nós exibidos.\label{fig:boxplot-reducao-nos}}}
    \end{subfigure}
    \caption{Gráficos \textit{boxplot} sobre o algoritmo de redução de nós.}
   \label{fig:boxplot-porcentagem-reducao-nos}
 \end{figure}
 
+O gráfico da figura \ref{fig:boxplot-quantidade-nos-cenarios} exibe a distribuição da quantidade total de nós dos cenários analisados, para ambos os sistemas. Em 75\% dos cenários a quantidade de nós é entre 2 e 670, e a mediana é de 119,5 nós. Um dos \textit{outliers} mostrados no gráfico é o cenário \texttt{Entry point for DefaultServletTest.testListingContextBreakout}, que teve maior quantidade de nós: 7816. Após aplicação desse algoritmo, a quantidade de nós a serem exibidos para esse cenário caiu para 56, ou seja, uma redução de 99,28\%. Esse caso e a distribuição apresentada no gráfico evidencia que, sem a eficácia do algoritmo de supressão de nós, a complexidade da visualização do grafo de chamadas seria alta ou até mesmo inviável de ser produzida e interpretada.
+
 \begin{framed}
   \noindent \textbf{QP2. O algoritmo de redução de nós aplicado pela ferramenta é capaz de reduzir significativamente o número de nós no grafo de chamadas para sistemas reais?} O algoritmo de supressão de nós exibidos conseguiu reduzir, para 75\% dos cenários analisados, entre 73,77\% e 99,83\% a quantidade de nós a serem mostrados no grafo. Essa quantidade é de 2 a 16 nós exibidos, para 75\% dos cenários analisados.
 \end{framed}
 
-\paragraph{Casos Especiais}
+\noindent \textbf{Casos Especiais}
 
 Dentre os cenários analisados para os sistemas Jetty e VRaptor, alguns deles podem ser destacados por serem casos especiais de situações envolvendo a quantidade de nós degradados e otimizados, a porcentagem de redução dos nós exibidos e a porcentagem de desvio de desempenho de cenários. Os cenários que exemplificam esses casos são os seguintes:
 \begin{itemize}
