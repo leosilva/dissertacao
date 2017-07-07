@@ -21,7 +21,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10037 items from 5000.
 Database file #1: Capitulos/library.bib
 Warning--I didn't find a database entry for "abnt-url-package=hyperref"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -35,45 +34,45 @@ Warning--campo note vazio em JProfiler
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 72 entries,
+You've used 71 entries,
             6480 wiz_defined-function locations,
-            1720 strings with 25082 characters,
-and the built_in function-call counts, 57813 in all, are:
-= -- 4777
-> -- 1894
-< -- 111
-+ -- 768
-- -- 569
-* -- 4237
-:= -- 7521
-add.period$ -- 312
-call.type$ -- 72
-change.case$ -- 780
-chr.to.int$ -- 135
-cite$ -- 73
-duplicate$ -- 2904
-empty$ -- 4210
-format.name$ -- 2933
-if$ -- 13793
+            1712 strings with 25035 characters,
+and the built_in function-call counts, 57177 in all, are:
+= -- 4717
+> -- 1875
+< -- 102
++ -- 764
+- -- 563
+* -- 4179
+:= -- 7441
+add.period$ -- 307
+call.type$ -- 71
+change.case$ -- 775
+chr.to.int$ -- 125
+cite$ -- 72
+duplicate$ -- 2876
+empty$ -- 4167
+format.name$ -- 2925
+if$ -- 13638
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 1251
-newline$ -- 415
-num.names$ -- 289
-pop$ -- 1676
+missing$ -- 1243
+newline$ -- 409
+num.names$ -- 285
+pop$ -- 1674
 preamble$ -- 1
-purify$ -- 293
+purify$ -- 290
 quote$ -- 0
-skip$ -- 3044
+skip$ -- 3013
 stack$ -- 1
-substring$ -- 2650
-swap$ -- 1462
-text.length$ -- 90
+substring$ -- 2617
+swap$ -- 1438
+text.length$ -- 84
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 1
-while$ -- 501
+while$ -- 494
 width$ -- 0
-write$ -- 1040
+write$ -- 1020
 (There were 2 warnings)
