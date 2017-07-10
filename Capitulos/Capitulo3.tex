@@ -49,7 +49,7 @@ A estratégia de teste estatístico utilizado pela ferramenta é o Mann-Whitney 
 
 \subsection{Fase 3: Mineração de Repositório} \label{subsec:fase3}
 
-A última fase realiza a mineração nos repositórios de controle de versões e gerenciador de tarefas com o intuito de encontrar os \textit{commits} e tarefas que alteraram os métodos identificados na fase anterior. Para cada método detectado com desvio de desempenho (degradação ou otimização), esta fase recupera os commits do sistema de controle de versões. Se esse \textit{commit} alterou linhas dentro do método detectado, o número da respectiva tarefa é procurado na mensagem de \textit{commit}. O número da tarefa é usado para procurá-la no sistema de gerenciamento de tarefas em busca de informações extras, tais como o tipo da tarefa (defeito, melhoria, nova funcionalidade, etc) \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase3} ilustra essa fase.
+A última fase realiza a mineração nos repositórios de controle de versões e gerenciador de tarefas com o intuito de encontrar os \textit{commits} e tarefas que alteraram os métodos identificados na fase anterior. Para cada método detectado com desvio de desempenho (degradação ou otimização), esta fase recupera os \textit{commits} do sistema de controle de versões. Se esse \textit{commit} alterou linhas dentro do método detectado, o número da respectiva tarefa é procurado na mensagem de \textit{commit}. O número da tarefa é usado para procurá-la no sistema de gerenciamento de tarefas em busca de informações extras, tais como o tipo da tarefa (defeito, melhoria, nova funcionalidade, etc) \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase3} ilustra essa fase.
 
 \begin{figure}[!htb]
    \centering
@@ -183,7 +183,7 @@ A classe \texttt{AnalyzedScenario} reflete cada cenário analisado de determinad
 
 A Sumarização dos Cenários permite ao usuário obter uma visualização dos cenários com desvios de desempenho entre duas versões do sistema. Para essa visualização foi utilizada uma variação do gráfico de rosca, que por sua vez é uma derivação do de pizza. O gráfico de pizza é considerado um gráfico de informação simples cujo principal objetivo é mostrar a relação de uma parte com o todo \cite{Spence2005}. No contexto da visualização apresentada, o todo se configura como sendo todos os cenários com desvios de desempenho para as versões analisadas, e as partes são cada cenário com suas características.
 
-A algura, a largura e a cor de uma fatia do grático são as características visuais que possuem significado nessa visualização:
+A altura, a largura e a cor de uma fatia do gráfico são as características visuais que possuem significado nessa visualização:
 
 \begin{itemize}
    \item \textit{Largura}: a largura de uma fatia do gráfico indica a porcentagem de desvio de desempenho do cenário na versão atual relacionado com a versão anterior. Quanto mais larga a fatia, maior foi o desvio de desempenho. De maneira contrária, quanto mais fina a fatia, menor o desvio;
@@ -329,7 +329,7 @@ As características visuais deste nó são bem semelhantes às apresentadas para
 \begin{itemize}
    \item \textit{Cor}: os nós que degradaram o desempenho são mostrados em laranja amarelo;
    \item \textit{Tempos de execução}: além dos tempos total e do próprio nó, um nó com desvio de desempenho, seja otimização ou degradação, apresenta a diferença entre os tempos de execução da versão anterior para a posterior entre parênteses, no canto superior direito. No exemplo da figura, o nó degradou o seu tempo em \texttt{12.202,79} nanossegundos;
-   \item \textit{Setas}: no canto inferior direito são mostradas setas indicativas de quão forte ou fraca foi a variação de desempenho. No caso de nós com degradação, são exibidas setas vermelhas apontadas para baixo, onde cada uma delas representa 25\% de desvio do tempo com relação à versão anterior. Sendo assim, uma única seta representa um desvio de 0 a 25\%, duas setas de 25\% a 50\%, três setas de 50\% a 75\% e quatro setas de 75\% ou superior. No exemplo apresentado na Figura \ref{fig:no-degradado}, a degradação se deu entre 0 e 25\% do tempo de exeução em relação ao desempenho anterior.
+   \item \textit{Setas}: no canto inferior direito são mostradas setas indicativas de quão forte ou fraca foi a variação de desempenho. No caso de nós com degradação, são exibidas setas vermelhas apontadas para baixo, onde cada uma delas representa 25\% de desvio do tempo com relação à versão anterior. Sendo assim, uma única seta representa um desvio de 0 a 25\%, duas setas de 25\% a 50\%, três setas de 50\% a 75\% e quatro setas de 75\% ou superior. No exemplo apresentado na Figura \ref{fig:no-degradado}, a degradação se deu entre 0 e 25\% do tempo de execução em relação ao desempenho anterior.
    %\item \textit{Detalhes}: esta seção possui as mesmas informações dos nós relatados até aqui, como podem ser vistas na figura \ref{fig:detalhes-no-degradado} a seguir.
 \end{itemize}
 
@@ -353,7 +353,7 @@ As características visuais deste nó, além das comentadas anteriormente, são:
 \begin{itemize}
    \item \textit{Cor}: os nós que otimizaram o atributo de qualidade desempenho são mostrados em um tom de verde;
    \item \textit{Tempos de execução}: também são exibidos os tempos de execução total, do próprio nó e o desvio de desempenho. No exemplo, o nó otimizou o tempo em \texttt{1,07} milissegundos;
-   \item \textit{Setas}: as setas indicativas de variação de desempenho para nós de otimização são apontadas para cima, de cor verde. No exemplo, a otimização se deu em mais de 75\% do desempenho em relação à versão anteiror.
+   \item \textit{Setas}: as setas indicativas de variação de desempenho para nós de otimização são apontadas para cima, de cor verde. No exemplo, a otimização se deu em mais de 75\% do desempenho em relação à versão anterior.
    %\item \textit{Detalhes}: esta seção para os nós com otimização de desempenho possui informações diferentes das relatadas anteriormente, como podem ser vistas na Figura \ref{fig:detalhes-no-otimizado}. Além das informações sobre o pacote e os parâmetros, também são apresentadas sobre os tempos de execução da versão anterior e posterior, além da variação de tempo.
 \end{itemize}
 
@@ -418,7 +418,7 @@ Além dos que representam métodos com ou sem desvio de desempenho, e métodos a
 
 \noindent \textbf{Algoritmo de Supressão de Nós Exibidos}
 
-O nó agrupado é criado a partir da execução de um algoritmo de supressão de nós exibidos. Esse algoritmo calcula os nós que devem ser apresentados para o usuário. Dessa forma, em um grafo de chamadas para determinado cenário, são exibidos os nós que têm relevância para o entendimento e identificação dos métodos possívelmente responsáveis pelo desvio de desempenho do cenário.
+O nó agrupado é criado a partir da execução de um algoritmo de supressão de nós exibidos. Esse algoritmo calcula os nós que devem ser apresentados para o usuário. Dessa forma, em um grafo de chamadas para determinado cenário, são exibidos os nós que têm relevância para o entendimento e identificação dos métodos possivelmente responsáveis pelo desvio de desempenho do cenário.
 
 O algoritmo parte da premissa de que todos os nós que representam os métodos com algum desvio de desempenho (degradação ou otimização), adicionados ou removidos devem ser exibidos para o usuário. A partir desses nós, é verificado se existem repetições deles, ou seja, se, para a mesma hierarquia de chamadas, um mesmo nó foi executado novamente, ele será marcado como repetido e terá uma borda espessa na visualização. Assim, evita-se que a hierarquia seja criada novamente na visualização para representar o mesmo nó. Casos como esse podem acontecer em loops, por exemplo. A Figura \ref{fig:no-borda-espessa} adiante exemplifica um nó com uma borda espessa.
 
