@@ -96,11 +96,6 @@ ISBN 9780596551056.}
 \emph{2013 1st IEEE Working Conference on Software Visualization - Proceedings
   of VISSOFT 2013}, 2013.}
 
-\bibitem{Vis}
-\abntrefinfo{VisualVM}{VISUALVM}{2016}
-{VISUALVM. \emph{{VisualVM}}. 2016.
-Dispon{\'\i}vel em: $<$https://visualvm.github.io$>$.}
-
 \bibitem{JProfiler}
 \abntrefinfo{JProfiler}{JPROFILER}{2016}
 {JPROFILER. {JProfiler}. 2016. Dispon{\'\i}vel em:
@@ -110,6 +105,11 @@ Dispon{\'\i}vel em: $<$https://visualvm.github.io$>$.}
 \abntrefinfo{Profiler}{PROFILER}{2016}
 {PROFILER, Y.~J. \emph{{YourKit Java Profiler}}. 2016.
 Dispon{\'\i}vel em: $<$https://www.yourkit.com/java/profiler/features/$>$.}
+
+\bibitem{Vis}
+\abntrefinfo{VisualVM}{VISUALVM}{2016}
+{VISUALVM. \emph{{VisualVM}}. 2016.
+Dispon{\'\i}vel em: $<$https://visualvm.github.io$>$.}
 
 \bibitem{Ahmed2016}
 \abntrefinfo{Ahmed et al.}{AHMED et al.}{2016}
@@ -139,6 +139,31 @@ Dispon{\'\i}vel em: $<$http://www.dynatrace.com/$>$.}
 \abntrefinfo{Pinpoint}{PINPOINT}{2016}
 {PINPOINT. \emph{{Pinpoint}}. 2016.
 Dispon{\'\i}vel em: $<$https://github.com/naver/pinpoint$>$.}
+
+\bibitem{Bergel}
+\abntrefinfo{Bergel, Robbes e Binder}{BERGEL; ROBBES; BINDER}{2010}
+{BERGEL, A.; ROBBES, R.; BINDER, W. {Visualizing dynamic metrics with profiling
+  blueprints}.
+\emph{Lecture Notes in Computer Science (including subseries Lecture Notes in
+  Artificial Intelligence and Lecture Notes in Bioinformatics)}, v. 6141 LNCS,
+  p. 291--309, 2010.
+ISSN 03029743.}
+
+\bibitem{Mostafa2009}
+\abntrefinfo{Mostafa e Krintz}{MOSTAFA; KRINTZ}{2009}
+{MOSTAFA, N.; KRINTZ, C. {Tracking performance across software revisions}.
+\emph{Proceedings of the 7th International Conference on Principles and
+  Practice of Programming in Java - PPPJ '09}, p. 162--171, 2009.
+Dispon{\'\i}vel em:
+  $<$http://portal.acm.org/citation.cfm?doid=1596655.1596682$>$.}
+
+\bibitem{Bezemer2015}
+\abntrefinfo{Bezemer, Pouwelse e Gregg}{BEZEMER; POUWELSE; GREGG}{2015}
+{BEZEMER, C.~P.; POUWELSE, J.; GREGG, B. {Understanding software performance
+  regressions using differential flame graphs}. In:  \emph{2015 IEEE 22nd
+  International Conference on Software Analysis, Evolution, and Reengineering,
+  SANER 2015 - Proceedings}. [S.l.: s.n.], 2015. p. 535--539.
+ISBN 9781479984695.}
 
 \bibitem{Pinto2015}
 \abntrefinfo{Pinto}{PINTO}{2015}
@@ -491,35 +516,10 @@ ISSN 01677055.}
   219--228, 2008.
 ISSN 10951350.}
 
-\bibitem{Bergel}
-\abntrefinfo{Bergel, Robbes e Binder}{BERGEL; ROBBES; BINDER}{2010}
-{BERGEL, A.; ROBBES, R.; BINDER, W. {Visualizing dynamic metrics with profiling
-  blueprints}.
-\emph{Lecture Notes in Computer Science (including subseries Lecture Notes in
-  Artificial Intelligence and Lecture Notes in Bioinformatics)}, v. 6141 LNCS,
-  p. 291--309, 2010.
-ISSN 03029743.}
-
-\bibitem{Mostafa2009}
-\abntrefinfo{Mostafa e Krintz}{MOSTAFA; KRINTZ}{2009}
-{MOSTAFA, N.; KRINTZ, C. {Tracking performance across software revisions}.
-\emph{Proceedings of the 7th International Conference on Principles and
-  Practice of Programming in Java - PPPJ '09}, p. 162--171, 2009.
-Dispon{\'\i}vel em:
-  $<$http://portal.acm.org/citation.cfm?doid=1596655.1596682$>$.}
-
 \bibitem{Pablo2013}
 \abntrefinfo{Pablo, Alcocer e Bergel}{PABLO; ALCOCER; BERGEL}{2013}
 {PABLO, J.; ALCOCER, S.; BERGEL, A. {Tracking performance failures with rizel}.
 \emph{International Workshop on Principles of Software Evolution (IWPSE)},
   n.~Dcc, p. 38--42, 2013.}
-
-\bibitem{Bezemer2015}
-\abntrefinfo{Bezemer, Pouwelse e Gregg}{BEZEMER; POUWELSE; GREGG}{2015}
-{BEZEMER, C.~P.; POUWELSE, J.; GREGG, B. {Understanding software performance
-  regressions using differential flame graphs}. In:  \emph{2015 IEEE 22nd
-  International Conference on Software Analysis, Evolution, and Reengineering,
-  SANER 2015 - Proceedings}. [S.l.: s.n.], 2015. p. 535--539.
-ISBN 9781479984695.}
 
 \end{thebibliography}

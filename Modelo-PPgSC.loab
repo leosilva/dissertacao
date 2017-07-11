@@ -1,8 +1,6 @@
 \contentsline {abreviatura}{SCM -- \textit {Source Code Management}}{13}{chapter.1}
 \contentsline {abreviatura}{BTS -- \textit {Bug Tracking System}}{13}{chapter.1}
 \contentsline {abreviatura}{JDK -- \textit {Java Development Kit}}{15}{section.1.2}
-\contentsline {abreviatura}{JVM -- \textit {Java Virtual Machine}}{15}{section.1.2}
-\contentsline {abreviatura}{APM -- \textit {Application Performance Management}}{16}{section.1.2}
 \contentsline {abreviatura}{CASE -- \textit {Collaborative \& Automated Software Engineering Research Group}}{18}{section.1.4}
 \contentsline {abreviatura}{DIMAp -- Departamento de Inform\IeC {\'a}tica e Matem\IeC {\'a}tica Aplicada}{18}{section.1.4}
 \contentsline {abreviatura}{UFRN -- Universidade Federal do Rio Grande do Norte}{18}{section.1.4}
@@ -11,5 +9,6 @@
 \contentsline {abreviatura}{QAV -- \textit {Quality Attribute Visualization}}{40}{figure.caption.15}
 \contentsline {abreviatura}{JSON -- \textit {JavaScript Object Notation}}{46}{figure.caption.21}
 \contentsline {abreviatura}{CDI -- \textit {Contexts and Dependency Injection}}{66}{subsection.4.1.2}
-\contentsline {abreviatura}{CCT -- \textit {Context Call Tree}}{101}{figure.caption.58}
+\contentsline {abreviatura}{JVM -- \textit {Java Virtual Machine}}{87}{figure.caption.55}
+\contentsline {abreviatura}{CCT -- \textit {Context Call Tree}}{102}{figure.caption.58}
 \contentsline {abreviatura}{SINFO -- Superintend\IeC {\^e}ncia de Inform\IeC {\'a}tica}{110}{subsection.6.3.2}
