@@ -38,7 +38,7 @@
 \contentsline {subsubsection}{\numberline {3.4.3.5}N\IeC {\'o} removido}{55}{subsubsection.3.4.3.5}
 \contentsline {subsubsection}{\numberline {3.4.3.6}N\IeC {\'o} de agrupamento}{55}{subsubsection.3.4.3.6}
 \contentsline {subsection}{\numberline {3.4.4}Intera\IeC {\c c}\IeC {\~a}o}{58}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{61}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.5}Funcionamento}{60}{subsection.3.4.5}
 \contentsline {section}{\numberline {3.5}Considera\IeC {\c c}\IeC {\~o}es}{62}{section.3.5}
 \contentsline {chapter}{\numberline {4}Avalia\IeC {\c c}\IeC {\~a}o}{64}{chapter.4}
 \contentsline {section}{\numberline {4.1}Projeto do Estudo Emp\IeC {\'\i }rico}{64}{section.4.1}
@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{72}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{72}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{77}{subsubsection.4.2.1.2}
-\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{83}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{84}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{84}{subsubsection.4.2.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{88}{subsubsection.4.2.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{89}{subsubsection.4.2.2.3}
@@ -67,21 +67,21 @@
 \contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{96}{section.5.1}
 \contentsline {section}{\numberline {5.2}Ferramentas APM}{98}{section.5.2}
 \contentsline {section}{\numberline {5.3}Abordagens de Varia\IeC {\c c}\IeC {\~a}o de Desempenho}{98}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{106}{chapter.6}
-\contentsline {section}{\numberline {6.1}Revis\IeC {\~a}o das Quest\IeC {\~o}es de Pesquisa}{107}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{108}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Escalabilidade}{108}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Automatiza\IeC {\c c}\IeC {\~a}o}{109}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Depend\IeC {\^e}ncia de Linguagem de Programa\IeC {\c c}\IeC {\~a}o ou Plataforma}{109}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{110}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{110}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{110}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{110}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{111}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Automatiza\IeC {\c c}\IeC {\~a}o}{111}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{112}{subsection.6.3.6}
-\contentsline {subsection}{\numberline {6.3.7}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{112}{subsection.6.3.7}
-\contentsline {chapter}{Refer\^encias}{113}{subsection.6.3.7}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{119}{chapter.appen.A}
-\contentsline {section}{\numberline {A.1}Tipo 1}{119}{section.appen.A.1}
-\contentsline {section}{\numberline {A.2}Tipo 2}{122}{section.appen.A.2}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{107}{chapter.6}
+\contentsline {section}{\numberline {6.1}Revis\IeC {\~a}o das Quest\IeC {\~o}es de Pesquisa}{108}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{109}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Escalabilidade}{109}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Automatiza\IeC {\c c}\IeC {\~a}o}{110}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Depend\IeC {\^e}ncia de Linguagem de Programa\IeC {\c c}\IeC {\~a}o ou Plataforma}{110}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{111}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{111}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{111}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{111}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{112}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Automatiza\IeC {\c c}\IeC {\~a}o}{112}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{113}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{113}{subsection.6.3.7}
+\contentsline {chapter}{Refer\^encias}{114}{subsection.6.3.7}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{120}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{120}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{123}{section.appen.A.2}

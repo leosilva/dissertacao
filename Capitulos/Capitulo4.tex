@@ -374,15 +374,17 @@ Outro caso especial que merece ser destacado é o cenário \texttt{C7}, que poss
    \textsf{\caption[Grafo de Chamadas do cenário \texttt{C7}.]{Grafo de Chamadas do cenário \texttt{C7}.\label{fig:avaliacao-casos-especiais-c7}}}
 \end{figure}
 
-O último cenário destacado é o \texttt{C8}, que possuiu a menor otimização. Como exibe o grafo da Figura \ref{fig:avaliacao-casos-especiais-c8}, um único nó foi responsável por esse desvio, \texttt{XStreamBuilderImpl.xml-\\Instance()}. Esse nó teve uma otimização no seu desempenho de 0 a 25\% causada por uma mudança na chamada de um construtor. Isso fez com que o cenário otimizasse em apenas \texttt{0,21\%}.
-
 \begin{figure}[!htb]
    \centering
    \frame{\includegraphics[scale=0.60]{Imagens/exemplo_casos_especiais_c8.png}}
    \textsf{\caption[Grafo de Chamadas do cenário \texttt{C8}.]{Grafo de Chamadas do cenário \texttt{C8}.\label{fig:avaliacao-casos-especiais-c8}}}
 \end{figure}
 
+O último cenário destacado é o \texttt{C8}, que possuiu a menor otimização. Como exibe o grafo da Figura \ref{fig:avaliacao-casos-especiais-c8}, um único nó foi responsável por esse desvio, \texttt{XStreamBuilderImpl.xml-\\Instance()}. Esse nó teve uma otimização no seu desempenho de 0 a 25\% causada por uma mudança na chamada de um construtor. Isso fez com que o cenário otimizasse em apenas \texttt{0,21\%}.
+
 A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, além de, através dos \textit{commits}, tomar conhecimento sobre as mudanças que potencialmente causaram esses desvios de desempenho.
+
+\FloatBarrier
 
 \subsection{Questionário Online} \label{subsec:avaliacao-questionario-online}
 
@@ -515,6 +517,8 @@ Um dos participantes (P11GA) que respondeu ao questionário online aplicado most
 \noindent \textbf{Dados Tabulares}
 
 Os questionários elaborados para o estudo foram de dois tipos, conforme destacado na subseção \ref{subsec:avaliacao-procedimentos-passo-3}: tipo 1 e tipo 2. Em ambos, os participantes responderam a questões relacionadas a uma visualização através da ferramenta proposta e a outra visualização através dos dados tabulares, isto é, sem ter acesso à visualização. Essa estratégia foi adotada para que se pudesse obter evidências da eficácia das visualizações, analisando as respostas dos dois tipos de questionários. Os dados tabulares utilizados são fruto do processamento feito pelo \textit{\perfMinerName}, portanto, são dados já pré-processados. Dessa forma, mesmo sem o acesso à visualização, os participantes conseguiram responder às questões de maneira razoável.
+
+\hfill
 
 \noindent \textbf{Experiência dos Participantes}
 

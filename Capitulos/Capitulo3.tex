@@ -428,7 +428,7 @@ O algoritmo parte da premissa de que todos os nós que representam os métodos c
    \textsf{\caption[Borda espessa de um nó, representando múltiplas execuções.]{Borda espessa de um nó, representando múltiplas execuções.\label{fig:no-borda-espessa}}}
 \end{figure}
 
-Uma vez identificadas todas as repetições, o algoritmo verifica todos os nós que podem ser transformados em nós de agrupamento. Os casos em que esse tipo de nó ocorre são: (i) durante a hierarquia de chamadas, (ii) em nós filhos dos nós a serem exibidos, (iii) em hierarquias de chamadas adjacentes não diretamente relacionadas com os nós a serem exibidos.
+Uma vez identificadas todas as repetições, o algoritmo verifica todos os nós que podem ser transformados em nós de agrupamento. Os casos em que esse tipo de nó ocorre são: (i) durante a hierarquia de chamadas, (ii) em nós filhos dos nós a serem exibidos, (iii) em hierarquias de chamadas irmãs não diretamente relacionadas com os nós a serem exibidos.
 
 Durante a hierarquia de chamadas a um nó com desvio de desempenho, adicionado ou removido, pode existir uma grande quantidade de nós. Para mostrar o referido nó e reduzir a quantidade de nós a serem exibidos no grafo, a maioria dos existentes nessa hierarquia de chamadas são agrupados em um único nó. A Figura \ref{fig:no-agrupamento-hierarquia-chamadas} ilustra esse caso, onde o nó com desvio de desempenho a ser exibido é o \texttt{DefaultConverters.findConverterType(...)} e o indicado com a letra \texttt{A} é o nó agrupado que representa vários outros nós nessa hierarquia de chamadas.
 
@@ -443,10 +443,10 @@ Há caso em que existem nós filhos daqueles que possuíram algum tipo de desvio
 \begin{figure}[!htb]
    \centering
    \frame{\includegraphics[scale=0.60]{Imagens/exemplo_no_agrupado_arvore_adjacente.png}}
-   \textsf{\caption[Exemplo de nós agrupados em hierarquias adjacentes (A) e em nós filhos (B).]{Exemplo de nós hierarquias em árvores adjacentes (A) e em nós filhos (B).\label{fig:no-agrupamento-arvore-adjacente}}}
+   \textsf{\caption[Exemplo de nós agrupados em hierarquias irmãs (A) e em nós filhos (B).]{Exemplo de nós agrupados em hierarquias irmãs (A) e em nós filhos (B).\label{fig:no-agrupamento-arvore-adjacente}}}
 \end{figure}
 
-As hierarquias de chamadas adjacentes que não estão diretamente relacionadas com os nós a serem exibidos são agrupadas em um único nó. Na Figura \ref{fig:no-agrupamento-arvore-adjacente}, o nó indicado com a letra \texttt{A} mostra que há uma ou mais hierarquias de chamadas agrupadas.
+As hierarquias de chamadas irmãs que não estão diretamente relacionadas com os nós a serem exibidos são agrupadas em um único nó. Na Figura \ref{fig:no-agrupamento-arvore-adjacente}, o nó indicado com a letra \texttt{A} mostra que há uma ou mais hierarquias de chamadas agrupadas.
 
 As propriedades visuais apresentadas para a visualização do grafo de chamadas incluem, em suma, três partes: (i) seção de sumário, contendo informações gerais sobre o cenário; (ii) seção de histórico, mostrando o histórico do desempenho do cenário dentre as dez últimas versões analisadas; e (iii) seção do grafo de chamadas, onde a execução dos métodos é representada através de nós e arestas. Esta seção é a mais importante desta visualização, contendo características visuais que diferem os nós de acordo com sua classificação. Um resumo dessas características é apresentado na Tabela \ref{tab:resumo-caracteristicas-nos} a seguir.
 
