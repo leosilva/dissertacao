@@ -9,7 +9,7 @@ O estudo da arquitetura de software é o estudo de como sistemas de software sã
 
 A arquitetura de software pode ser definida como a estrutura ou estruturas do sistema, que compreendem os elementos de software, as propriedades externamente visíveis desses elementos e as relações entre eles \cite{Bass2007}. Adicionalmente, de acordo com \citeauthor{Taylor2009}, a arquitetura de um software incorpora todas as decisões de projeto tomadas pelos seus arquitetos, que podem afetar muitos dos seus módulos, incluindo sua estrutura e atributos de qualidade.
 
-Antes da implementação do sistema, decisões arquiteturais tais como quais componentes pertencem a arquitetura do software, quais serviços ou propriedades desses componentes serão externamente visíveis e como eles estão relacionados uns com os outros, devem ser tomadas e deveriam permanecer atendidas durante todo o ciclo de vida do sistema. É igualmente importante o fato de  perceber que a arquitetura do software é essencial para o sistema alcançar os requisitos relacionados aos atributos de qualidade \cite{Kazman2001}.
+Antes da implementação do sistema, decisões arquiteturais tais como quais componentes pertencem a arquitetura do software, quais serviços ou propriedades desses componentes serão externamente visíveis e como eles estão relacionados uns com os outros, devem ser tomadas e deveriam permanecer atendidas durante todo o ciclo de vida do sistema. A arquitetura do software é essencial para o sistema alcançar os requisitos relacionados aos atributos de qualidade \cite{Kazman2001}.
 
 \subsection{Atributos de Qualidade} \label{subsec:atributos-qualidade}
 
@@ -39,7 +39,7 @@ Nesse contexto, os cenários se tornam especialmente úteis quando os programado
 
 A área visualização de software é parte da visualização da informação e pode ser definida, de maneira ampla, como a visualização de artefatos relacionados ao software e seu processo de desenvolvimento. Adicionalmente ao código-fonte do programa, esses artefatos incluem documentação de requisitos e projeto, mudanças no código-fonte e relatório de \textit{bugs}, por exemplo \cite{Diehl2007}. Ainda de acordo com \citeauthor{Diehl2007}, a visualização de software é a arte e ciência de gerar representações visuais de vários aspectos de um software e de seu processo de desenvolvimento. O objetivo principal é ajudar a compreender sistemas de software e aumentar a produtividade do processo de desenvolvimento.
 
-Essas representações são necessárias para que os analistas, arquitetos e desenvolvedores examinem os sistemas de software devido à sua natureza complexa, abstrata e difícil de observar \cite{Petre2006}. Tais dificuldades são ainda piores em sistemas de grande escala.
+Essas representações são necessárias para que os desenvolvedores examinem os sistemas de software devido à sua natureza complexa, abstrata e difícil de observar \cite{Petre2006}. Tais dificuldades são ainda piores em sistemas de grande escala.
 
 Existem três tipos de aspectos do software que a visualização pode abordar \cite{Diehl2007}:
 \begin{enumerate}[(i)]
@@ -62,7 +62,7 @@ As representações visuais mais comuns para visualizar a estrutura hierárquica
   	\textsf{\caption[EvoSpaces.]{EvoSpaces \cite{Alam2007}.\label{fig:evospaces}}}
 \end{figure}
 
-O EvoSpaces \cite{Alam2007}, mostrado na Figura \ref{fig:evospaces}, é uma ferramenta que provê a visualização da arquitetura do software em um ambiente virtual. Aproveita o fato de que os sistemas são, muitas vezes, estruturados hierarquicamente para sugerir o uso de uma metáfora de cidades. As entidades, junto com suas relações, são representadas como glifos residenciais (casa, apartamento, escritório, etc), ao passo que as métricas dessas entidades são exibidas como posições e escalas visuais (tamanho, valor da cor, etc). A ferramenta possui diferentes modos de interação, como \textit{zoom} e capacidades de navegação.
+O EvoSpaces \cite{Alam2007}, mostrado na Figura \ref{fig:evospaces}, é uma ferramenta que provê a visualização da arquitetura do software em um ambiente virtual. Aproveita o fato de que os sistemas são, muitas vezes, estruturados hierarquicamente para sugerir o uso de uma metáfora de cidades. As entidades, junto com suas relações, são representadas como glifos residenciais (casa, apartamento, escritório, etc), ao passo que as métricas dessas entidades são exibidas como posições e escalas visuais (tamanho, valor da cor, etc). A ferramenta possui diferentes modos de interação, como \textit{zoom} e outras formas de navegação no ambiente virtual.
 
 \begin{figure}[htb]
 	\centering
@@ -74,7 +74,7 @@ O Areas of Interest \cite{Byelas2009}, mostrado na Figura \ref{fig:areas-of-inte
 
 \subsection{Visualização da Evolução da Arquitetura de Software} \label{subsec:visualizacao-evolucao-arquitetura-software}
 
-A evolução de um software tem sido destacada como um dos tópicos mais importantes na engenharia de software \cite{Novais2013}. Trata-se de uma tarefa complexa por gerar grande quantidade de dados e lidar com isso é complicada: estima-se que 60\% do esforço na etapa de manutenção é para entender o software \cite{Corbi1989}. A visualização de software visa ajudar os \textit{stakeholders} a melhorar a compreensão do software, no entanto, elaborar metáforas visuais que representem efetivamente a dimensão tempo com todas as informações relacionadas a evolução do software é uma tarefa difícil \cite{Magnavita2015}.
+A evolução de um software tem sido destacada como um dos tópicos mais importantes na engenharia de software \cite{Novais2013}. Trata-se de uma tarefa complexa por ter que lidar com uma grande quantidade de dados: estima-se que 60\% do esforço na etapa de manutenção é para entender o software \cite{Corbi1989}. A visualização de software visa ajudar os \textit{stakeholders} a melhorar a compreensão do software, no entanto, elaborar metáforas visuais que representem efetivamente a dimensão tempo com todas as informações relacionadas a evolução do software é uma tarefa difícil \cite{Magnavita2015}.
 
 No contexto da visualização da evolução da arquitetura de um software, um dos grandes desafios, além da quantidade de dados provenientes da evolução, é o crescente tamanho e complexidade do software. Apesar da dificuldade, é importante prover visualizações gerais da arquitetura, dos relacionamentos entre os módulos e das métricas, para cada versão \cite{Khan2012}.
 
@@ -130,7 +130,7 @@ Como resultados, os autores destacam que 78,16\% dos artigos analisados utilizar
 
 O tamanho e a complexidade das aplicações modernas aumentaram a demanda por ferramentas que coletem dados sobre o comportamento dinâmico dos programas, e portanto permitam aos desenvolvedores identificarem gargalos de desempenho nas suas aplicações com um mínimo de esforço. O processo de coleta automática e apresentação dos dados de desempenho de sistemas em execução é chamado de \textit{profiling} \cite{Dmitriev2004}.
 
-Nesse contexto, o \textit{profiling} de \abrv[CPU -- \textit{Central Processing Unit}]{CPU}determina quanto tempo o programa gastou executando várias partes do código. Com isso, se pode calcular o desempenho, em termos de tempo de execução, de determinada funcionalidade ou rotina. Já o \textit{profiling} de memória determina o número, tipos e ciclos de vida dos objetos que o programa aloca \cite{Dmitriev2004}. Existem outras modalidades, no entanto a de CPU e memória são as mais usadas.
+Nesse contexto, o \textit{profiling} de \abrv[CPU -- \textit{Central Processing Unit}]{CPU}determina quanto tempo o programa gastou executando várias partes do código. Com isso, pode-se calcular o desempenho, em termos de tempo de execução, de determinada funcionalidade ou rotina. Já o \textit{profiling} de memória determina o número, tipos e ciclos de vida dos objetos que o programa aloca \cite{Dmitriev2004}. Existem outras modalidades, no entanto a de CPU e memória são as mais usadas.
 
 Das diferentes técnicas de se realizar o \textit{profiling}, a baseada em instrumentação é a mais comum. Essa técnica trabalha inserindo, ou injetando, trechos especiais de código, chamados de código de instrumentação, na aplicação. A execução desses trechos gera eventos, como entrada/saída de métodos ou alocação de objetos. Esses dados são coletados, processados e, eventualmente, apresentados ao usuário. Com relação ao \textit{profiling} de CPU, essa técnica grava exatamente o número exato de eventos, ao invés de uma aproximação estatística (como acontece com o \textit{profiling} baseado em amostragem) \cite{Dmitriev2004}.
 
@@ -145,10 +145,74 @@ Existem no mercado várias ferramentas que realizam a medição do atributo de q
 
 Além das ferramentas de \textit{profiling}, outra maneira de se realizar a análise de desempenho de aplicações é utilizando ferramentas de gerenciamento de desempenho de aplicações, as chamadas APM. Essas ferramentas integram abordagens de mineração de dados de desempenho em ferramentas de monitoramento de desempenho disponíveis no mercado e são frequentemente utilizadas para detectar anomalias no desempenho \cite{Ahmed2016}. Exemplos desse tipo de ferramentas são o \textit{New Relic} \cite{Relic2016}, \textit{AppDynamics} \cite{Appdynamics}, \textit{Dynatrace} \cite{Dynatrace2016} e \textit{Pinpoint} \cite{Pinpoint2016}.
 
+\section{\perfMinerName} \label{sec:perfminer}
+
+A ferramenta \textit{\toolName} foi desenvolvida como uma extensão da ferramenta \textit{\perfMinerName}, a qual provê a avaliação de cenários de execução do sistema no que diz respeito a desvios de desempenho, de forma a minimizar a erosão de tal atributo de qualidade \cite{Pinto2015}.
+
+A principal funcionalidade do \textit{\perfMinerName} é realizar a análise de desvio de desempenho entre duas versões de um sistema, revelando de maneira automatizada, as potenciais causas para o desvio nos cenários. Para isso, técnicas de análise dinâmica e mineração de repositório são usadas para estabelecer uma abordagem baseada em cenários para a avaliação do atributo de qualidade de desempenho, medido em termos de tempos de execução \cite{Pinto2015}.
+
+Para atingir o objetivo de realizar a análise de desvio de desempenho, o \textit{\perfMinerName} define três fases, descritas nas subseções a seguir: (i) análise dinâmica; (ii) análise de desvio; e (iii) mineração de repositório.
+
+\subsection{Fase 1: Análise Dinâmica} \label{subsec:fase1}
+
+A fase de análise dinâmica consiste em realizar a execução dos cenários através de uma suíte de testes automatizados. Como resultado, essa fase gera um modelo de análise dinâmica, que é persistido em um banco de dados e contém informações sobre os \textit{traces} de execução do sistema, modelados por um grafo de chamadas dinâmico que representa cada execução dos cenários selecionados para determinada versão \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase1} ilustra esta fase.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.52]{Imagens/perfminer_fase_1.png}}
+   \textsf{\caption[Fase 1 do \perfMinerName.]{Fase 1 do \perfMinerName.\label{fig:perfminer-fase1}}}
+\end{figure}
+
+O grafo é montado interceptando os métodos de entrada de cada cenário e instrumentando suas execuções, calculando o tempo de execução de cada nó, bem como informações sobre se o cenário falhou ou não. Esse grafo pode ser interpretado como uma estrutura em árvore onde cada nó é a execução de um método, onde os métodos de entrada representam os nós raiz \cite{Pinto2015}.
+
+Duas informações são importantes nesse processo:
+\begin{enumerate}[(i)]
+   \item É fundamental que cada versão do sistema analisado possua testes automatizados para que o sistema seja executado. Caso o sistema não tenha testes automatizados, uma estratégia alternativa é utilizar ferramentas de teste de desempenho, como o \textit{JMeter} \cite{ApacheJMeter2016}, para submeter requisições que exercitem os cenários em um sistema web;
+   \item Cada teste de sistema executado é considerado um cenário. Dessa forma, cada cenário analisado é representado na ferramenta com o seguinte nome: \textit{``Entry point for SimpleClassName.testMethodName''}.
+\end{enumerate}
+
+A ferramenta usa \textit{AspectJ} para definir um aspecto que instrumenta as execuções dos cenários, interceptando os métodos de entrada para montar o grafo de chamadas e calcular os tempos de execução dos cenários e dos seus métodos \cite{Pinto2015}. Vale salientar que todo o processo dessa fase deve ser executado uma vez para cada versão do sistema a ser analisado. Dessa forma, serão gerados dois modelos de análise dinâmica que são utilizados para calcular os desvios de desempenho dos cenários e métodos na fase seguinte.
+
+A análise dinâmica é executada no mesmo computador para todas as versões, nas mesmas condições e com todos os serviços não essenciais desabilitados (por exemplo: atualizações, antivírus, memória virtual). A suíte de testes para cada versão é executada 10 vezes. Essa quantidade de execuções ajuda a ter medições de desempenho mais precisas em termos de tempo de execução.
+
+\subsection{Fase 2: Análise de Desvio} \label{subsec:fase2}
+
+A segunda fase é a análise de desvio, que consiste em realizar a comparação do modelo de análise dinâmica, extraído durante a fase de análise dinâmica, para cada uma das duas versões do sistema. Essa comparação revela os cenários e métodos que foram degradados ou otimizados durante a evolução. O artefato de saída desta fase é um relatório contendo os cenários e métodos degradados ou otimizados em termos de tempo de execução \cite{Pinto2015}. Esta fase pode ser vista na Figura \ref{fig:perfminer-fase2} adiante.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.60]{Imagens/perfminer_fase_2.png}}
+   \textsf{\caption[Fase 2 do \perfMinerName.]{Fase 2 do \perfMinerName.\label{fig:perfminer-fase2}}}
+\end{figure}
+
+Para realizar a comparação entre os tempos de execução, o \textit{\perfMinerName} pode utilizar duas estratégias: média aritmética e teste estatístico. A primeira compara a média do tempo de execução para cada método em ambas as versões. Se o valor da versão mais nova aumentou ou diminuiu mais do que um limiar configurado, é considerado que o método teve um desvio de desempenho. Já a segunda, usa um teste estatístico para observar se duas amostras independentes têm a mesma tendência. Neste caso, as amostras são formadas pelo conjunto dos valores dos tempos de execução para cada método comum em cada cenário \cite{Pinto2015}.
+
+A estratégia de teste estatístico utilizado pela ferramenta é o Mann-Whitney U-Test \cite{Neuhauser2011}. Para esse teste, a ferramenta usa um valor padrão para o nível de significância (\textit{alpha}) de 0,05. Dado um método, se o \textit{p-value} calculado for igual ou menor do que o nível de significância, houve um desvio de desempenho para este método. Para os casos em que há o desvio, o tempo médio de execução é usado para determinar se houve uma degradação ou otimização. Embora, no geral, os desenvolvedores e arquitetos estejam interessados em degradações, a ferramenta também sinaliza as otimizações. Isso pode se tornar interessante, pois os desenvolvedores podem checar se algumas modificações esperadas realmente diminuíram o tempo de execução \cite{Pinto2015}.
+
+\subsection{Fase 3: Mineração de Repositório} \label{subsec:fase3}
+
+A última fase realiza a mineração nos repositórios de controle de versões e gerenciador de tarefas com o intuito de encontrar os \textit{commits} e tarefas que alteraram os métodos identificados na fase anterior. Para cada método detectado com desvio de desempenho (degradação ou otimização), esta fase recupera os \textit{commits} do sistema de controle de versões. Se esse \textit{commit} alterou linhas dentro do método detectado, o número da respectiva tarefa é procurado na mensagem de \textit{commit}. O número da tarefa é usado para procurá-la no sistema de gerenciamento de tarefas em busca de informações extras, tais como o tipo da tarefa (defeito, melhoria, nova funcionalidade, etc) \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase3} ilustra essa fase.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.62]{Imagens/perfminer_fase_3.png}}
+   \textsf{\caption[Fase 3 do \perfMinerName.]{Fase 3 do \perfMinerName.\label{fig:perfminer-fase3}}}
+\end{figure}
+
+É importante notar que os métodos identificados com desvios de desempenho nas fases anteriores, mas que não foram alterados durante a evolução, são também selecionados e armazenados, contudo, não estarão presentes no relatório final por, provavelmente, não representar causas reais do desvio de desempenho do cenário. Eles podem ter sido impactados por outros métodos na hierarquia de chamadas \cite{Pinto2015}.
+
+A abordagem completa do \textit{\perfMinerName} pode ser vista na Figura \ref{fig:perfminer-completo} adiante. Os artefatos de saída são usados como entradas para as fases seguintes, até a geração do relatório final. Os testes de sistemas em ambas as versões são considerados como os cenários para a análise e apenas os cenários e métodos comuns entre as versões são comparados.
+
+\begin{figure}[!htb]
+   \centering
+   \frame{\includegraphics[scale=0.50]{Imagens/perfminer_completo.png}}
+   \textsf{\caption[Abordagem completa do \perfMinerName.]{Abordagem completa do \perfMinerName.\label{fig:perfminer-completo}}}
+\end{figure}
+
 \section{Considerações} \label{sec:consideracoes-cap2}
 
 Os conceitos apresentados neste capítulo são importantes para o entendimento da proposta. Com relação ao conceito de arquitetura de software, a ferramenta \textit{\perfMinerName} é focada principalmente na implementação do sistema, e não nos componentes arquiteturais ou relacionamentos entre eles. Além disso, apesar de existirem vários atributos de qualidade, apenas o de desempenho, medido em termos de tempo de execução, é considerado. Com relação aos cenários, é a forma com a qual a avaliação da arquitetura do software é guiada e eles são definidos, no contexto deste trabalho, como sendo um caso de teste automatizado do sistema.
 
 A respeito da visualização de software, a ferramenta proposta utiliza representações visuais para exibir aspectos dinâmicos e a evolução do atributo de qualidade de desempenho ao longo das versões do sistema. Assim, como o \textit{\perfMinerName} não trata dos componentes arquiteturais ou dos seus relacionamentos, não são usadas representações visuais para tal fim na ferramenta proposta.
 
-Foram mencionadas neste capítulo ferramentas de análise de desempenho, como as de \textit{profiling} e APM, pois é possível medir o desempenho de aplicações utilizando-as. Entretanto, há diferenças para a ferramenta \textit{\toolName}, principalmente no tocante a identificação da evolução do desempenho. Com relação a técnica de coleta automática de dados, o \textit{\perfMinerName} utiliza a instrumentação de código através do \textit{AspectJ}.
+Foram mencionadas neste capítulo ferramentas de análise de desempenho, como as de \textit{profiling} e APM, pois é possível medir o desempenho de aplicações utilizando-as. Entretanto, a ferramenta \textit{\toolName} se diferencia pela identificação automatizada da evolução do desempenho e a sua apresentação através de metáforas visuais. Com relação a técnica de coleta automática de dados, o \textit{\perfMinerName} utiliza a instrumentação de código através do \textit{AspectJ}.

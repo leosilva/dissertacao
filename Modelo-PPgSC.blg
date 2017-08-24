@@ -37,7 +37,7 @@ Warning--campo note vazio em JProfiler
 +---------------------------------------------------------+
 You've used 72 entries,
             6480 wiz_defined-function locations,
-            1719 strings with 24803 characters,
+            1719 strings with 24831 characters,
 and the built_in function-call counts, 58066 in all, are:
 = -- 4776
 > -- 1916

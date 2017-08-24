@@ -3,83 +3,19 @@
 
 Este capítulo apresenta o conjunto de visualizações proposto como extensão à ferramenta \textit{\perfMinerName}. A seção \ref{sec:perfminer} destaca o funcionamento dessa ferramenta. A seção \ref{sec:visao-geral-performance-qa-evolution} mostra uma visão geral sobre o funcionamento da ferramenta proposta. As seções \ref{sec:visualizacao1} e \ref{sec:visualizacao2} descrevem as visualizações da sumarização de cenários e grafo de chamadas, respectivamente, com suas características, propriedades visuais e funcionamento. Por fim, são reportadas considerações finais sobre o capítulo na seção \ref{sec:consideracoes-cap3}.
 
-\section{\perfMinerName} \label{sec:perfminer}
+\section{Visão Geral do \toolName} \label{sec:visao-geral-performance-qa-evolution}
 
-A implementação das visualizações foi desenvolvida como uma extensão da ferramenta \textit{\perfMinerName}, a qual provê a avaliação de cenários de execução do sistema no que diz respeito a desvios de desempenho, de forma a minimizar a erosão de tal atributo de qualidade \cite{Pinto2015}.
+A extensão ao \textit{\perfMinerName} foi implementada na forma de uma aplicação web, intitulada de \textit{\toolName}. O processamento do \textit{\perfMinerName} em suas fases 1, 2 e 3 (conforme explicado na seção \ref{sec:perfminer}) não foi alterado, continuando \textit{standalone}. A escolha por esse tipo de aplicação se deu pelo fato de sua execução ocorrer em um ambiente distribuído, onde cada parte que compõe a aplicação está localizada em locais diferentes. Por exemplo, a interface com o usuário reside em sua estação de trabalho, ao passo que o servidor e o banco de dados estão localizados em outro computador.
 
-A principal funcionalidade do \textit{\perfMinerName} é realizar a análise de desvio de desempenho entre duas versões de um sistema, revelando de maneira automatizada, as potenciais causas para o desvio nos cenários. Para isso, técnicas de análise dinâmica e mineração de repositório são usadas para estabelecer uma abordagem baseada em cenários para a avaliação do atributo de qualidade de desempenho, medido em termos de tempos de execução \cite{Pinto2015}.
-
-Para atingir o objetivo de realizar a análise de desvio de desempenho, o \textit{\perfMinerName} define três fases, descritas nas subseções a seguir: (i) análise dinâmica; (ii) análise de desvio; e (iii) mineração de repositório.
-
-\subsection{Fase 1: Análise Dinâmica} \label{subsec:fase1}
-
-A fase de análise dinâmica consiste em realizar a execução dos cenários através de uma suíte de testes automatizados. Como resultado, essa fase gera um modelo de análise dinâmica, que é persistido em um banco de dados e contém informações sobre os \textit{traces} de execução do sistema, modelados por um grafo de chamadas dinâmico que representa cada execução dos cenários selecionados para determinada versão \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase1} ilustra esta fase.
+Por ser web, os usuários da aplicação, como os desenvolvedores e arquitetos, podem utilizá-la sem a necessidade de instalar nenhum módulo nas suas estações de trabalho. Essa é uma importante característica da extensão à ferramenta, fazendo com que esta se diferencie das outras ferramentas mencionadas neste trabalho. A ideia é que distribuição e facilidade de acesso façam com que a equipe de desenvolvimento acompanhe mais adequadamente a evolução do atributo de qualidade de desempenho.
 
 \begin{figure}[!htb]
    \centering
-   \frame{\includegraphics[scale=0.52]{Imagens/perfminer_fase_1.png}}
-   \textsf{\caption[Fase 1 do \perfMinerName.]{Fase 1 do \perfMinerName.\label{fig:perfminer-fase1}}}
-\end{figure}
-
-O grafo é montado interceptando os métodos de entrada de cada cenário e instrumentando suas execuções, calculando o tempo de execução de cada nó, bem como informações sobre se o cenário falhou ou não. Esse grafo pode ser interpretado como uma estrutura em árvore onde cada nó é a execução de um método, onde os métodos de entrada representam os nós raiz \cite{Pinto2015}.
-
-Duas informações são importantes nesse processo:
-\begin{enumerate}[(i)]
-   \item É fundamental que cada versão do sistema analisado possua testes automatizados para que o sistema seja executado. Caso o sistema não tenha testes automatizados, uma estratégia alternativa é utilizar ferramentas de teste de desempenho, como o \textit{JMeter} \cite{ApacheJMeter2016}, para submeter requisições que exercitem os cenários em um sistema web;
-   \item Cada teste de sistema executado é considerado um cenário. Dessa forma, cada cenário analisado é representado na ferramenta com o seguinte nome: \textit{``Entry point for SimpleClassName.testMethodName''}.
-\end{enumerate}
-
-A ferramenta usa \textit{AspectJ} para definir um aspecto que instrumenta as execuções dos cenários, interceptando os métodos de entrada para montar o grafo de chamadas e calcular os tempos de execução dos cenários e dos seus métodos \cite{Pinto2015}. Vale salientar que todo o processo dessa fase deve ser executado uma vez para cada versão do sistema a ser analisado. Dessa forma, serão gerados dois modelos de análise dinâmica que são utilizados para calcular os desvios de desempenho dos cenários e métodos na fase seguinte.
-
-A análise dinâmica é executada no mesmo computador para todas as versões, nas mesmas condições e com todos os serviços não essenciais desabilitados (por exemplo: atualizações, antivírus, memória virtual). A suíte de testes para cada versão é executada, no mínimo, 10 vezes. Essa quantidade de execuções ajuda a ter medições de desempenho mais precisas em termos de tempo de execução.
-
-\subsection{Fase 2: Análise de Desvio} \label{subsec:fase2}
-
-A segunda fase é a análise de desvio, que consiste em realizar a comparação do modelo de análise dinâmica, extraído durante a fase de análise dinâmica, para cada uma das duas versões do sistema. Essa comparação revela os cenários e métodos que foram degradados ou otimizados durante a evolução. O artefato de saída desta fase é um relatório contendo os cenários e métodos degradados ou otimizados em termos de tempo de execução \cite{Pinto2015}. Esta fase pode ser vista na Figura \ref{fig:perfminer-fase2} adiante.
-
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.60]{Imagens/perfminer_fase_2.png}}
-   \textsf{\caption[Fase 2 do \perfMinerName.]{Fase 2 do \perfMinerName.\label{fig:perfminer-fase2}}}
-\end{figure}
-
-Para realizar a comparação entre os tempos de execução, o \textit{\perfMinerName} pode utilizar duas estratégias: média aritmética e teste estatístico. A primeira compara a média do tempo de execução para cada método em ambas as versões. Se o valor da versão mais nova aumentou ou diminuiu mais do que um limiar configurado, é considerado que o método teve um desvio de desempenho. Já a segunda, usa um teste estatístico para observar se duas amostras independentes têm a mesma tendência. Neste caso, as amostras são formadas pelo conjunto dos valores dos tempos de execução para cada método comum em cada cenário \cite{Pinto2015}.
-
-A estratégia de teste estatístico utilizado pela ferramenta é o Mann-Whitney U-Test \cite{Neuhauser2011}. Para esse teste, a ferramenta usa um valor padrão para o nível de significância (\textit{alpha}) de 0,05. Dado um método, se o \textit{p-value} calculado for igual ou menor do que o nível de significância, houve um desvio de desempenho para este método. Para os casos em que há o desvio, o tempo médio de execução é usado para determinar se houve uma degradação ou otimização. Embora, no geral, os desenvolvedores e arquitetos estejam interessados em degradações, a ferramenta também sinaliza as otimizações. Isso pode se tornar interessante, pois os desenvolvedores podem checar se algumas modificações esperadas realmente diminuíram o tempo de execução \cite{Pinto2015}.
-
-\subsection{Fase 3: Mineração de Repositório} \label{subsec:fase3}
-
-A última fase realiza a mineração nos repositórios de controle de versões e gerenciador de tarefas com o intuito de encontrar os \textit{commits} e tarefas que alteraram os métodos identificados na fase anterior. Para cada método detectado com desvio de desempenho (degradação ou otimização), esta fase recupera os \textit{commits} do sistema de controle de versões. Se esse \textit{commit} alterou linhas dentro do método detectado, o número da respectiva tarefa é procurado na mensagem de \textit{commit}. O número da tarefa é usado para procurá-la no sistema de gerenciamento de tarefas em busca de informações extras, tais como o tipo da tarefa (defeito, melhoria, nova funcionalidade, etc) \cite{Pinto2015}. A Figura \ref{fig:perfminer-fase3} ilustra essa fase.
-
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.62]{Imagens/perfminer_fase_3.png}}
-   \textsf{\caption[Fase 3 do \perfMinerName.]{Fase 3 do \perfMinerName.\label{fig:perfminer-fase3}}}
-\end{figure}
-
-É importante notar que os métodos identificados com desvios de desempenho nas fases anteriores, mas que não foram alterados durante a evolução, são também selecionados e armazenados, contudo, não estarão presentes no relatório final por, provavelmente, não representar causas reais do desvio de desempenho do cenário. Eles podem ter sido impactados por outros métodos na hierarquia de chamadas \cite{Pinto2015}.
-
-A abordagem completa do \textit{\perfMinerName} pode ser vista na Figura \ref{fig:perfminer-completo} adiante. Os artefatos de saída são usados como entradas para as fases seguintes, até a geração do relatório final. Os testes de sistemas em ambas as versões são considerados como os cenários para a análise e apenas os cenários e métodos comuns entre as versões são comparados.
-
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.50]{Imagens/perfminer_completo.png}}
-   \textsf{\caption[Abordagem completa do \perfMinerName.]{Abordagem completa do \perfMinerName.\label{fig:perfminer-completo}}}
-\end{figure}
-
-\begin{figure}[!htb]
-   \centering
-   \frame{\includegraphics[scale=0.60]{Imagens/perfminer_fase_4.png}}
+   \frame{\includegraphics[scale=0.52]{Imagens/perfminer_fase_4_atual.png}}
    \textsf{\caption[Fase 4 do \perfMinerName.]{Fase 4 do \perfMinerName.\label{fig:perfminer-fase4}}}
 \end{figure}
 
-As visualizações propostas como extensão da ferramenta utilizam os artefatos de saída gerados após a execução completa da abordagem, caracterizando assim mais uma fase da ferramenta: a Fase 4. Como ilustra a Figura \ref{fig:perfminer-fase4} a seguir, os artefatos de saída utilizados pelas visualizações são: (i) os modelos de análise dinâmica de ambas as versões, (ii) os relatórios de cenários e métodos com desvios de desempenho, (iii) os métodos potencialmente responsáveis pelo desvio de desempenho dos cenários e (iv) os \textit{commits} que introduziram mudanças aos métodos, bem como suas informações de desenvolvimento associadas. Cada uma das visualizações implementadas utilizam total ou parcialmente os artefatos gerados nas fases anteriores, de acordo com o seu propósito.
-
-\section{Visão Geral do \toolName} \label{sec:visao-geral-performance-qa-evolution}
-
-A extensão ao \textit{\perfMinerName} foi implementada na forma de uma aplicação web, intitulada de \textit{\toolName}. O processamento do \textit{\perfMinerName} em suas fases 1, 2 e 3 não foi alterado, continuando \textit{standalone}. A escolha por esse tipo de aplicação se deu pelo fato de sua execução ocorrer em um ambiente distribuído, onde cada parte que compõe a aplicação está localizada em locais diferentes. Por exemplo, a interface com o usuário reside em sua estação de trabalho, ao passo que o servidor e o banco de dados estão localizados em outro computador.
-
-Por ser web, os usuários da aplicação, como os desenvolvedores e arquitetos, podem utilizá-la sem a necessidade de instalar nenhum módulo nas suas estações de trabalho. Essa é uma importante característica da extensão à ferramenta, fazendo com que esta se diferencie das outras ferramentas mencionadas neste trabalho. A ideia é que distribuição e facilidade de acesso façam com que a equipe de desenvolvimento acompanhe mais adequadamente a evolução do atributo de qualidade de desempenho.
+As visualizações propostas como extensão da ferramenta utilizam os artefatos de saída gerados após a execução completa da abordagem, caracterizando assim mais uma fase da ferramenta: a fase 4. Como ilustra a Figura \ref{fig:perfminer-fase4}, os artefatos de saída utilizados pelas visualizações são: (i) os modelos de análise dinâmica de ambas as versões, (ii) os relatórios de cenários e métodos com desvios de desempenho, (iii) os métodos potencialmente responsáveis pelo desvio de desempenho dos cenários e (iv) os \textit{commits} que introduziram mudanças aos métodos, bem como suas informações de desenvolvimento associadas. Cada uma das visualizações implementadas utilizam total ou parcialmente os artefatos gerados nas fases anteriores, de acordo com o seu propósito.
 
 A implementação foi feita utilizando o \textit{framework} web Grails\footnote{\href{https://grails.org}{https://grails.org}}, banco de dados relacional PostgreSQL\footnote{\href{https://www.postgresql.org}{https://www.postgresql.org}} e o \textit{layout} das páginas foi implementado usando o \textit{framework front-end} Bootstrap\footnote{\href{http://getbootstrap.com}{http://getbootstrap.com}}. As visualizações foram geradas a partir de \textit{scripts} em JavaScript através da biblioteca JointJS\footnote{\href{https://www.jointjs.com}{https://www.jointjs.com}}. A estrutura das páginas web da ferramenta é dividida em três partes: canto superior, canto esquerdo e centro.
 
@@ -117,7 +53,7 @@ Nessa página, o usuário precisa informar os dados e arquivos necessários para
 
 \subsubsection{Funcionamento} \label{subsec:new-analysis-overview}
 
-O funcionamento geral desta funcionalidade é ilustrado na Figura \ref{fig:funcionamento-geral-nova-analise}. Vale salientar que esse processamento faz parte da fase 4 do \textit{\perfMinerName}, conforme exposto na Figura \ref{fig:perfminer-fase4}. No primeiro passo desse processo (passo 1), o usuário realiza a requisição solicitando que uma nova análise seja realizada, de acordo com os parâmetros e arquivos informados na página da Figura \ref{fig:new-analysis}.
+O funcionamento geral desta funcionalidade é ilustrado na Figura \ref{fig:funcionamento-geral-nova-analise}. Vale salientar que esse processamento faz parte da fase 4 do \textit{\perfMinerName}, conforme exposto na Figura \ref{fig:perfminer-fase4}. No primeiro passo desse processo (passo 1), o usuário realiza uma requisição assíncrona solicitando que uma nova análise seja realizada, de acordo com os parâmetros e arquivos informados na página da Figura \ref{fig:new-analysis}.
 
 \begin{figure}[!htb]
    \centering
@@ -125,9 +61,11 @@ O funcionamento geral desta funcionalidade é ilustrado na Figura \ref{fig:funci
    \textsf{\caption[Funcionamento do processamento de uma nova análise.]{Funcionamento do processamento de uma nova análise.\label{fig:funcionamento-geral-nova-analise}}}
 \end{figure}
 
-Quando o servidor (\textit{\toolName}) recebe essa requisição, inicia-se o processamento em lote (passo 2). Esse processamento recupera os arquivos contendo os cenários e métodos com desvio de desempenho que foram enviados pelo usuário, os arquivos de \textit{backups} referentes a versão anterior e atual a ser analisada. Os bancos de dados são restaurados e, então, os modelos de análise dinâmica para cada uma das versões são recuperadas desse banco de dados (identificado por \abrv[DAM -- \textit{Dynamic Analysis Model}]{DAM}– \textit{Dynamic Analysis Model}). De posse de todos esses dados, é realizado um processamento para determinar todos os dados que dão suporte às visualizações oferecidas pela ferramenta. Após isso, no passo 3, os dados resultantes são salvos em um banco de dados (identificado por \abrv[QAV -- \textit{Quality Attribute Visualization}]{QAV}– \textit{Quality Attribute Visualization}). Ao final, o usuário recebe a resposta de que o processamento requisitado foi efetuado com sucesso, no passo 4.
+Quando o servidor (\textit{\toolName}) recebe essa requisição, é verificado que todos os arquivos foram enviados e que não existe uma análise já realizada para o sistema e versões indicadas, o usuário recebe a resposta (passo 2) de que o processamento requisitado está em andamento (\texttt{PENDING}). A requisição assíncrona evita que o usuário necessite esperar o processamento terminar para continuar utilizando a ferramenta. A partir do momento em que a resposta é enviada, o usuário pode acompanhar o processamento da sua requisição na página inicial da ferramenta (Figura \ref{fig:pagina-inicial}).
 
-Detalhadamente, no processamento em lote, iniciado no passo 2, os arquivos de saída do \textit{\perfMinerName} contendo informações sobre os cenários e métodos com desvio de desempenho são lidos e os modelos de análise dinâmica de ambas as versões são recuperados do banco de dados DAM. A partir de então, os dados para cada visualização começam a ser processados. Os passos 2 e 3 da Figura \ref{fig:funcionamento-geral-nova-analise} são detalhados no diagrama de atividades da Figura \ref{fig:nova-analise-passos-2-3}.
+Dando continuidade ao processo requisitado, o sistema recupera os arquivos de \textit{backup} dos modelos de análise dinâmica enviados pelo usuário e os restaura no banco de dados DAM \abrv[DAM -- \textit{Dynamic Analysis Model}]{(\textit{Dynamic Analysis Model}),}como indica o passo 3. Após isso, inicia-se o processamento em lote (passo 4). De posse dos dados informados, é realizado um processamento para determinar todos os dados que dão suporte às visualizações oferecidas pela ferramenta. Após isso, no passo 5, os dados resultantes são salvos em um banco de dados (identificado por \abrv[QAV -- \textit{Quality Attribute Visualization}]{QAV}– \textit{Quality Attribute Visualization}).
+
+Detalhadamente, no processamento em lote, iniciado no passo 4, os arquivos de saída do \textit{\perfMinerName} contendo informações sobre os cenários e métodos com desvio de desempenho são lidos e os modelos de análise dinâmica de ambas as versões são recuperados do banco de dados DAM. A partir de então, os dados para cada visualização começam a ser processados. Os passos 4 e 5 da Figura \ref{fig:funcionamento-geral-nova-analise} são detalhados no diagrama de atividades da Figura \ref{fig:nova-analise-passos-4-5}.
 
 De posse desses artefatos, os nós do grafo de chamadas são recuperados e a partir deles são determinados os métodos que foram adicionados ou removidos comparando os nós da versão atual com os da anterior. Depois disso, a partir dos métodos indicados pelos arquivos de saída do \textit{\perfMinerName}, são determinados os nós com desvios de desempenho, seja degradação ou otimização.
 
@@ -136,12 +74,12 @@ Na ferramenta, os nós identificados como adicionados, removidos e com desvio de
 \begin{figure}[!htb]
    \centering
    \frame{\includegraphics[scale=0.45]{Imagens/funcionamento_geral_nova_analise_diagrama_atividades.png}}
-   \textsf{\caption[Passos 2 e 3 da realização de uma nova análise.]{Passos 2 e 3 da realização de uma nova análise.\label{fig:nova-analise-passos-2-3}}}
+   \textsf{\caption[Passos 4 e 5 da realização de uma nova análise.]{Passos 4 e 5 da realização de uma nova análise.\label{fig:nova-analise-passos-4-5}}}
 \end{figure}
 
 Após determinar os nós com desvios de desempenho, são criados nós de agrupamento para representar os que não serão exibidos na visualização. Depois disso, os tempos médios dos nós a serem exibidos são calculados, levando em consideração todas as ocorrências do método no cenário.
 
-Para a visualização da sumarização de cenários, os dados gerais de todos os cenários são calculados e, juntamente com os dados da visualização do grafo de chamadas calculados anteriormente, são salvos no banco de dados QAV no passo 3, marcando o fim do processo.
+Para a visualização da sumarização de cenários, os dados gerais de todos os cenários são calculados e, juntamente com os dados da visualização do grafo de chamadas calculados anteriormente, são salvos no banco de dados QAV no passo 5, marcando o fim do processo. Após isso, o \textit{status} da análise é alterado para \texttt{COMPLETED}, caso nenhum erro tenha acontecido durante o processamento. Caso contrário, o \textit{status} da análise é alterado para \texttt{ERROR} e o usuário precisará repetir o procedimento.
 
 É importante frisar que o processamento em lote é executado apenas uma vez para duas versões de um sistema, sendo necessário para gerar os dados que possibilitam aos usuários um rápido tempo de resposta na requisição das visualizações.
 
@@ -201,6 +139,8 @@ A Figura \ref{fig:visualizacao-1-visal-geral} exibe uma visão geral desta visua
 
 A partir do gráfico da Figura \ref{fig:visualizacao-1-visal-geral}, podem ser vistos 4 cenários com degradação de desempenho e 1 cenário com otimização. Dos cenários com degradação, 3 deles possuem os maiores tempos de execução perante o restante (altura da fatia). A respeito do cenário com otimização, pode-se notar que possui baixo tempo de execução com relação aos demais (altura da fatia) e tem o menor desvio de desempenho com relação à versão anterior analisada (largura da fatia). O cenário indicado pela letra \texttt{A} foi o cenário com maior tempo de execução dentre os analisados, como evidencia a altura da fatia. Já o cenário indicado pela letra \texttt{B} foi o que possuiu a maior variação de desempenho, destacado pela largura da fatia.
 
+Os cenários de destaque nessa visualização são dois, em particular: o que possuiu maior porcentagem de desvio de desempenho e o que possuiu maior tempo de execução, indicados, respectivamente, pela largura e altura de uma fatia. Dentre esses dois cenários, a principal indicação da visualização é o que possuiu maior porcentagem desvio de desempenho em relação a versão anterior: o cenário com maior largura no gráfico. Assim sendo, o cenário \texttt{B} requer maior atenção por parte dos desenvolvedores do que o cenário \texttt{A}.
+
 \subsection{Interação} \label{subsec:visualizacao1-interacao}
 
 O gráfico desta visualização é passível de ações do usuário, a fim de (i) obter maiores informações sobre determinado cenário ou (ii) avançar para a visualização do grafo de chamadas, descrita mais adiante neste trabalho. Para a primeira ação, o usuário deve posicionar o ponteiro do \textit{mouse} sobre uma das fatias do gráfico e então um \textit{tooltip} é apresentado, como pode ser visto na Figura \ref{fig:visualizacao-1-tooltip}.
@@ -239,7 +179,15 @@ Esta visualização tem o objetivo de mostrar, para dadas duas versões de um si
 
 Os grafos podem ser utilizados quando os dados a serem representados são estruturados, ou seja, quando existe uma relação inerente entre os elementos de dados a serem visualizados \cite{Herman2000}. Há uma vasta quantidade de áreas onde os grafos podem ser aplicados, por exemplo: hierarquia de arquivos em formato de árvore, mapas de sites, mapas moleculares e genéticos, diagramas de fluxos de dados, entre outros \cite{Herman2000}.
 
-Nesse sentido, em uma chamada de métodos é evidente a relação entre eles, uma vez que os objetos, em um sistema orientado a objetos, trocam mensagens entre si através da invocação dos métodos. O grafo é exibido utilizando o \textit{layout} em árvore, onde os nós filhos estão dispostos abaixo dos nós ancestrais, e a direção dos nós é \textit{top-down}. Um exemplo do grafo é exibido na Figura \ref{fig:grafo-chamadas-exemplo}. Nesta seção serão detalhadas as suas propriedades visuais, o seu funcionamento básico, além de descrever a seção de Sumário e Histórico desta visualização.
+Nesse sentido, em uma chamada de métodos é evidente a relação entre eles, uma vez que os objetos, em um sistema orientado a objetos, trocam mensagens entre si através da invocação dos métodos. O grafo é exibido utilizando o \textit{layout} em árvore, onde os nós filhos estão dispostos abaixo dos nós ancestrais, e a direção dos nós é \textit{top-down}. A Figura \ref{fig:pagina-grafo-chamadas-exemplo} mostra um trecho da página web que apresenta o grafo de chamadas. Essa trecho é dividido em três seções: Sumário, Histórico e o próprio Grafo de Chamadas, as quais são descritas mais detalhadamente a seguir. Por limitações de espaço neste documento, a seção do Grafo de Chamadas foi suprimido na Figura \ref{fig:pagina-grafo-chamadas-exemplo}, no entanto um exemplo desse grafo pode ser visto na Figura \ref{fig:grafo-chamadas-exemplo}.
+
+%Nesta seção serão detalhadas as suas propriedades visuais, o seu funcionamento básico, além de descrever a seção de Sumário e Histórico desta visualização.
+
+\begin{figure}[htb]
+   \centering
+   \frame{\includegraphics[scale=0.41]{Imagens/pagina_grafo_chamadas_exemplo.png}}
+   \textsf{\caption[Trecho de exemplo da página web do grafo de chamadas.]{Trecho de exemplo da página web do grafo de chamadas.\label{fig:pagina-grafo-chamadas-exemplo}}}
+\end{figure}
 
 \begin{figure}[htb]
    \centering
@@ -306,7 +254,7 @@ O primeiro e mais básico tipo de nó é o que representa um método que não te
 \begin{itemize}
    \item \textit{Cor}: esta é a principal característica que diferencia os nós uns dos outros. No caso deste nó, a cor é marrom claro;
    \item \textit{Nome do nó}: posicionado ao centro, são mostrados o nome da classe e o nome do método executado, no formato \texttt{ClassName.methodName()}. Para otimizar e evitar a exibição de grande quantidade de texto, o nome do pacote e os parâmetros do método foram ocultados, sendo estes, quando houver, representados por três pontos (...). Essa definição serve para todos os tipos de nós dessa visualização;
-   \item \textit{Tempos de execução}: localizados no canto superior do nó, são apresentados dois tempos de execução: à esquerda, o tempo total do nó, que representa a soma dos tempos de execução dos nós filhos com o tempo do próprio nó. No exemplo da figura, o tempo total foi de \texttt{9.542,8} nanossegundos; e à direita, o tempo do próprio nó, desconsiderando o tempo dos nós filhos. Na figura, o tempo foi de \texttt{7.661,05} nanossegundos.
+   \item \textit{Tempos de execução}: localizados na parte superior do nó, são apresentados dois tempos de execução: à esquerda, o tempo total do nó, que representa a soma dos tempos de execução dos nós filhos com o tempo do próprio nó. No exemplo da figura, o tempo total foi de \texttt{9.542,8} nanossegundos; e à direita, o tempo do próprio nó, desconsiderando o tempo dos nós filhos. Na figura, o tempo foi de \texttt{7.661,05} nanossegundos.
    %\item \textit{Detalhes}: no canto superior esquerdo é exibido um ícone onde, ao passar o cursor do \textit{mouse}, o usuário pode obter mais informações sobre o nó. No caso de um nó sem desvio de desempenho, as informações exibidas nesta seção são o nome do pacote e os parâmetros do método, se houver. A figura \ref{fig:detalhes-no-sem-desvio} a seguir mostra essa seção.
 \end{itemize}
 
@@ -327,7 +275,7 @@ O primeiro e mais básico tipo de nó é o que representa um método que não te
 
 As características visuais deste nó são bem semelhantes às apresentadas para os nós otimizados:
 \begin{itemize}
-   \item \textit{Cor}: os nós que degradaram o desempenho são mostrados em laranja amarelo;
+   \item \textit{Cor}: os nós que degradaram o desempenho são mostrados na cor mostarda;
    \item \textit{Tempos de execução}: além dos tempos total e do próprio nó, um nó com desvio de desempenho, seja otimização ou degradação, apresenta a diferença entre os tempos de execução da versão anterior para a posterior entre parênteses, no canto superior direito. No exemplo da figura, o nó degradou o seu tempo em \texttt{12.202,79} nanossegundos;
    \item \textit{Setas}: no canto inferior direito são mostradas setas indicativas de quão forte ou fraca foi a variação de desempenho. No caso de nós com degradação, são exibidas setas vermelhas apontadas para baixo, onde cada uma delas representa 25\% de desvio do tempo com relação à versão anterior. Sendo assim, uma única seta representa um desvio de 0 a 25\%, duas setas de 25\% a 50\%, três setas de 50\% a 75\% e quatro setas de 75\% ou superior. No exemplo apresentado na Figura \ref{fig:no-degradado}, a degradação se deu entre 0 e 25\% do tempo de execução em relação ao desempenho anterior.
    %\item \textit{Detalhes}: esta seção possui as mesmas informações dos nós relatados até aqui, como podem ser vistas na figura \ref{fig:detalhes-no-degradado} a seguir.
@@ -438,7 +386,7 @@ Durante a hierarquia de chamadas a um nó com desvio de desempenho, adicionado o
    \textsf{\caption[Exemplo de nós agrupados durante a hierarquia de chamadas.]{Exemplo de nós agrupados durante a hierarquia de chamadas.\label{fig:no-agrupamento-hierarquia-chamadas}}}
 \end{figure}
 
-Há caso em que existem nós filhos daqueles que possuíram algum tipo de desvio. Caso nenhum desses nós filhos também possua uma das características dos nós apresentáveis, eles serão agrupados para diminuir a quantidade de nós a serem exibidos. Esse caso é exemplificado na Figura \ref{fig:no-agrupamento-arvore-adjacente}, onde o nó degradado \texttt{Exclusions.shouldSkipField(...)} possui filhos, no entanto, dentre eles não possui nenhum outro nó com prioridade a ser exibido (nós com desvios, adicionados ou removidos). Assim sendo, os nós filhos foram agrupados no nó indicado pela letra \texttt{B}.
+Há casos em que existem nós filhos daqueles que possuíram algum tipo de desvio. Caso nenhum desses nós filhos também possua uma das características dos nós apresentáveis, eles serão agrupados para diminuir a quantidade de nós a serem exibidos. Esse caso é exemplificado na Figura \ref{fig:no-agrupamento-arvore-adjacente}, onde o nó degradado \texttt{Exclusions.shouldSkipField(...)} possui filhos, no entanto, dentre eles não possui nenhum outro nó com prioridade a ser exibido (nós com desvios, adicionados ou removidos). Assim sendo, os nós filhos foram agrupados no nó indicado pela letra \texttt{B}.
 
 \begin{figure}[!htb]
    \centering
@@ -457,7 +405,7 @@ As propriedades visuais apresentadas para a visualização do grafo de chamadas 
    \begin{tabular}{c|c|c|c}
    \textbf{Tipo} & \textbf{Cor}   & \textbf{Tempos de Execução} & \textbf{Setas} \\ \hline
    Sem desvio    & Marrom claro   & Total e próprio         & Sem setas \\ \hline
-   Degradado     & Vermelho claro & Total, próprio e desvio & Vermelhas, para baixo \\ \hline
+   Degradado     & Mostarda & Total, próprio e desvio & Vermelhas, para baixo \\ \hline
    Otimizado     & Verde claro    & Total, próprio e desvio & Verdes, para cima \\ \hline
    Adicionado    & Salmão claro   & Total e próprio         & Sem setas \\ \hline
    Removido      & Cinza          & Total e próprio         & Sem setas \\ \hline

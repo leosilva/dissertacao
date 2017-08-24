@@ -13,32 +13,32 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{Visualiza\347\343o da Evolu\347\343o da Arquitetura de Software}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.3}{Estudos Emp\355ricos em Visualiza\347\343o de Software}{section.2.2}% 14
 \BOOKMARK [1][-]{section.2.3}{Ferramentas de An\341lise de Desempenho}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Considera\347\365es}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{PerfMiner Visualizer}{}% 17
-\BOOKMARK [1][-]{section.3.1}{PerfMiner}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.1.1}{Fase 1: An\341lise Din\342mica}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.2}{Fase 2: An\341lise de Desvio}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.3}{Fase 3: Minera\347\343o de Reposit\363rio}{section.3.1}% 21
-\BOOKMARK [1][-]{section.3.2}{Vis\343o Geral do PerfMiner Visualizer}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Nova An\341lise}{section.3.2}% 23
-\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Funcionamento}{subsection.3.2.1}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.1.2}{Bancos de Dados}{subsection.3.2.1}% 25
-\BOOKMARK [1][-]{section.3.3}{Visualiza\347\343o da Sumariza\347\343o de Cen\341rios}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.1}{Intera\347\343o}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.2}{Funcionamento}{section.3.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Visualiza\347\343o do Grafo de Chamadas}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.4.1}{Sum\341rio}{section.3.4}% 30
-\BOOKMARK [2][-]{subsection.3.4.2}{Hist\363rico}{section.3.4}% 31
-\BOOKMARK [2][-]{subsection.3.4.3}{Grafo de Chamadas}{section.3.4}% 32
-\BOOKMARK [3][-]{subsubsection.3.4.3.1}{N\363 sem desvio}{subsection.3.4.3}% 33
-\BOOKMARK [3][-]{subsubsection.3.4.3.2}{N\363 degradado}{subsection.3.4.3}% 34
-\BOOKMARK [3][-]{subsubsection.3.4.3.3}{N\363 otimizado}{subsection.3.4.3}% 35
-\BOOKMARK [3][-]{subsubsection.3.4.3.4}{N\363 adicionado}{subsection.3.4.3}% 36
-\BOOKMARK [3][-]{subsubsection.3.4.3.5}{N\363 removido}{subsection.3.4.3}% 37
-\BOOKMARK [3][-]{subsubsection.3.4.3.6}{N\363 de agrupamento}{subsection.3.4.3}% 38
-\BOOKMARK [2][-]{subsection.3.4.4}{Intera\347\343o}{section.3.4}% 39
-\BOOKMARK [2][-]{subsection.3.4.5}{Funcionamento}{section.3.4}% 40
-\BOOKMARK [1][-]{section.3.5}{Considera\347\365es}{chapter.3}% 41
+\BOOKMARK [1][-]{section.2.4}{PerfMiner}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Fase 1: An\341lise Din\342mica}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Fase 2: An\341lise de Desvio}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.3}{Fase 3: Minera\347\343o de Reposit\363rio}{section.2.4}% 19
+\BOOKMARK [1][-]{section.2.5}{Considera\347\365es}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{PerfMiner Visualizer}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Vis\343o Geral do PerfMiner Visualizer}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.1.1}{Nova An\341lise}{section.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.1.1}{Funcionamento}{subsection.3.1.1}% 24
+\BOOKMARK [3][-]{subsubsection.3.1.1.2}{Bancos de Dados}{subsection.3.1.1}% 25
+\BOOKMARK [1][-]{section.3.2}{Visualiza\347\343o da Sumariza\347\343o de Cen\341rios}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{Intera\347\343o}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{Funcionamento}{section.3.2}% 28
+\BOOKMARK [1][-]{section.3.3}{Visualiza\347\343o do Grafo de Chamadas}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.1}{Sum\341rio}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.2}{Hist\363rico}{section.3.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.3}{Grafo de Chamadas}{section.3.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.3.1}{N\363 sem desvio}{subsection.3.3.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.3.2}{N\363 degradado}{subsection.3.3.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.3.3.3}{N\363 otimizado}{subsection.3.3.3}% 35
+\BOOKMARK [3][-]{subsubsection.3.3.3.4}{N\363 adicionado}{subsection.3.3.3}% 36
+\BOOKMARK [3][-]{subsubsection.3.3.3.5}{N\363 removido}{subsection.3.3.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.3.3.6}{N\363 de agrupamento}{subsection.3.3.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.4}{Intera\347\343o}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.5}{Funcionamento}{section.3.3}% 40
+\BOOKMARK [1][-]{section.3.4}{Considera\347\365es}{chapter.3}% 41
 \BOOKMARK [0][-]{chapter.4}{Avalia\347\343o}{}% 42
 \BOOKMARK [1][-]{section.4.1}{Projeto do Estudo Emp\355rico}{chapter.4}% 43
 \BOOKMARK [2][-]{subsection.4.1.1}{Objetivos e Quest\365es de Pesquisa}{section.4.1}% 44
