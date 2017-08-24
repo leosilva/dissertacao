@@ -1,7 +1,7 @@
 % Capíulo 4
 \chapter{Avaliação} \label{ch:avaliacao}
 
-Este capítulo descreve o estudo empírico realizado em dois sistemas \textit{open source} de diferentes domínios cujos objetivos são avaliar se as visualizações são úteis para representar os desvios de desempenho encontrados durante a análise desses sistemas, avaliar se os usuários conseguem encontrar as informações sobre os desvios através das visualizações oferecidas e a verificar a possível aplicabilidade da ferramenta como parte integrante dos processos de desenvolvimento dos sistemas analisados.
+Este capítulo descreve o estudo empírico realizado em dois sistemas \textit{open source} de diferentes domínios cujo objetivo é avaliar se as visualizações são úteis para representar os desvios de desempenho encontrados durante a análise desses sistemas, avaliar se os usuários conseguem encontrar as informações sobre os desvios através das visualizações oferecidas e a verificar a possível aplicabilidade da ferramenta como parte integrante dos processos de desenvolvimento dos sistemas analisados.
 
 O restante deste capítulo está organizado como segue: a seção \ref{sec:avaliacao-projeto} apresenta como o estudo foi projetado; a seção \ref{sec:avaliacao-resultados} exibe os resultados do estudo e a seção \ref{sec:avaliacao-consideracoes} conclui o capítulo, apresentando as principais contribuições do estudo, as ameaças à validade e as limitações da avaliação aplicada.
 
@@ -22,7 +22,7 @@ Os principais objetivos deste estudo são investigar se a ferramenta \textit{\to
 
 \subsection{Sistemas} \label{subsec:avaliacao-sistemas}
 
-Neste estudo foram usados dois sistemas \textit{open source} de diferentes domínios selecionados através dos seguintes critérios:
+Neste estudo foram usados dois sistemas de diferentes domínios selecionados através dos seguintes critérios:
 \begin{itemize}
   \item Ser \textit{open source};
   \item Ser desenvolvido na linguagem de programação Java;
@@ -38,7 +38,13 @@ O VRaptor é um \textit{framework} MVC para desenvolvimento web em Java que visa
 
 \subsection{Procedimentos} \label{subsec:avaliacao-procedimentos}
 
-Esta subseção descreve os procedimentos seguidos após a escolha dos sistemas, organizados sequencialmente nos passos a seguir.
+Esta subseção descreve os procedimentos seguidos após a escolha dos sistemas, organizados sequencialmente em três passos: \texttt{Coleta e Preparação dos Dados}, \texttt{Aplicação da Abordagem} e \texttt{Elaboração e Aplicação dos Questionários}, conforme ilustra a Figura \ref{fig:procedimentos-avaliacao}.
+
+\begin{figure}[!htb]
+   \centering
+   \includegraphics[scale=0.45]{Imagens/procedimentos_avaliacao.png}
+   \textsf{\caption[Procedimentos da Avaliação.]{Procedimentos da Avaliação.\label{fig:procedimentos-avaliacao}}}
+\end{figure}
 
 \subsubsection{Passo 1 - Coleta e Preparação dos Dados} \label{subsec:avaliacao-procedimentos-passo-1}
 
@@ -183,6 +189,8 @@ Ao final da análise das releases selecionadas, foram encontrados um total de 24
 \end{table}
 
 Nas tabelas, três pares de versões não possuíram nenhum cenário identificado como degradado ou otimizado: \texttt{9.3.13}/\texttt{9.3.14} para o Jetty, \texttt{4.1.0.Final}/\texttt{4.1.1} e \texttt{4.1.3}/\texttt{4.1.4} para o VRaptor. Isso significa que esses pares de versões tiveram os seus cenários exercitados e seus tempos de execução medidos, no entanto, o \textit{\perfMinerName} não encontrou diferenças estatisticamente relevantes nos seus tempos de execução entre a versão anterior e a posterior.
+
+\hfill \break
 
 \noindent\textbf{Visualização sem Prejuízos}
 
@@ -382,7 +390,7 @@ Outro caso especial que merece ser destacado é o cenário \texttt{C7}, que poss
 
 O último cenário destacado é o \texttt{C8}, que possuiu a menor otimização. Como exibe o grafo da Figura \ref{fig:avaliacao-casos-especiais-c8}, um único nó foi responsável por esse desvio, \texttt{XStreamBuilderImpl.xml-\\Instance()}. Esse nó teve uma otimização no seu desempenho de 0 a 25\% causada por uma mudança na chamada de um construtor. Isso fez com que o cenário otimizasse em apenas \texttt{0,21\%}.
 
-A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, além de, através dos \textit{commits}, tomar conhecimento sobre as mudanças que potencialmente causaram esses desvios de desempenho.
+A visualização do grafo de chamadas se mostrou eficaz na disposição dos nós dos cenários analisados. Através do grafo, é possível identificar os nós degradados, otimizados, adicionados e removidos, podendo, assim, indicar, através dos \textit{commits}, as mudanças que potencialmente causaram esses desvios de desempenho.
 
 \FloatBarrier
 
@@ -439,14 +447,14 @@ Novamente, após a questão anterior, os participantes responderam à questão \
 \end{framed}
 
 \begin{framed}
-\noindent \textbf{QP4. Há indícios de que as visualizações implementadas pela ferramenta são mais eficazes do que os dados tabulares para se encontrar informações sobre os cenários, métodos e \textit{commits}?} Diante do exposto para as questões anteriores, não há indícios suficientes para concluir se a visualização da sumarização de cenários é mais eficaz na identificação dos cenários com maior desvio de desempenho ou com maior tempo de execução dentre os exibidos, uma vez que o resultado foi semelhante com o uso de dados tabulares.
+\noindent \textbf{QP4. Há indícios de que as visualizações implementadas pela ferramenta são mais eficazes do que os dados tabulares para se encontrar informações sobre os cenários, métodos e \textit{commits}?} Diante do exposto para as questões anteriores, não há indícios para concluir se a visualização da sumarização de cenários é mais eficaz na identificação dos cenários com maior desvio de desempenho ou com maior tempo de execução dentre os exibidos, uma vez que o resultado foi semelhante com o uso de dados tabulares.
 \end{framed}
 
 De maneira análoga a seção dos questionários referentes a visualização do grafo de chamadas, os participantes responderam a questão \textit{``Você poderia mencionar aspectos dessa visualização que você gostou? E quais outros aspectos você não gostou? Você tem alguma sugestão de melhoria ou comentário para essa visualização?''}. O sentimento foi dividido. O participante P1GD não se sentiu confortável com o gráfico de rosca utilizado para a visualização: \textit{``gráficos em torta ou semelhantes normalmente querem representar 100\% de algo. Usar a largura versus altura não foi intuitivo pra mim. Talvez separar mesmo em dois gráficos e dar a opção de ordenar ou por um ou por outro''}. Por outro lado, o participante P6GD gostou e comentou que \textit{``utilizar a largura, cor e altura da fatia me pareceu uma boa definição para identificação dos aspectos analisados''}.
 
 \subsubsection{Questões Finais}
 
-Após responderem sobre as visualizações, a seção final do questionário convidou os participantes a responderem a questões gerais sobre os benefícios, a utilidade da ferramenta além de comentários gerais. Na primeira das questões dessa seção, os participantes responderam a questão \textit{``Você vê benefícios de usar a ferramenta de visualização de desvios de desempenho apresentada? Se sim, quais?''}. Do total de participantes com respostas válidas, \texttt{9} (69\%) deles disseram que veem benefícios no uso da ferramenta, conforme exibe a Figura \ref{fig:avaliacao-questao-17}. Dentre os benefícios comentados pelos participantes, o participante P8GC disse que \textit{``aparentemente pode trazer análises mais assertivas do atual desempenho do sistema''}, já o participante P13GC menciona que \textit{``sim, é bem interessante para verificar se os novos releases contém alterações com prejuízos sérios à performance, podendo algumas vezes até detectar algum problema de lógica ou regra de negócio''}, ao passo que o participante P6GD informa que \textit{``sim. É interessante saber de maneira precisa e quantitativa a quantidade e nível de melhorias e degradações entre versões''}.
+Após responderem sobre as visualizações, a seção final do questionário convidou os participantes a responderem às questões gerais sobre os benefícios, a utilidade da ferramenta além de comentários gerais. Na primeira das questões dessa seção, os participantes responderam a questão \textit{``Você vê benefícios de usar a ferramenta de visualização de desvios de desempenho apresentada? Se sim, quais?''}. Do total de participantes com respostas válidas, \texttt{9} (69\%) deles disseram que veem benefícios no uso da ferramenta, conforme exibe a Figura \ref{fig:avaliacao-questao-17}. Dentre os benefícios comentados pelos participantes, o participante P8GC disse que \textit{``aparentemente pode trazer análises mais assertivas do atual desempenho do sistema''}, já o participante P13GC menciona que \textit{``sim, é bem interessante para verificar se os novos releases contém alterações com prejuízos sérios à performance, podendo algumas vezes até detectar algum problema de lógica ou regra de negócio''}, ao passo que o participante P6GD informa que \textit{``sim. É interessante saber de maneira precisa e quantitativa a quantidade e nível de melhorias e degradações entre versões''}.
 
 Os \texttt{2} (15\%) que talvez vejam benefícios na ferramenta também merecem destaque. O participante P19GD respondeu que \textit{``Acho a ideia muito interessante, mas acredito que o projeto ainda precise evoluir bastante para se tornar usável.''}. Já o participante P11GA disse que se sente \textit{``duvidoso com relação a falsos positivos/negativos de testes automatizados que não foram projetados para serem comparados.''}.
 
@@ -478,7 +486,7 @@ A última questão dos questionários convidou os participantes a deixar coment�
 
 \section{Considerações} \label{sec:avaliacao-consideracoes}
 
-O estudo analisou um total de 20 releases dos projetos Jetty \cite{Jetty2016} e VRaptor \cite{VRaptor2017}, sendo 10 releases para cada sistema, considerando 193 cenários distintos ao total, gerando as visualizações de sumarização dos cenários e grafo de chamadas para todos os casos. Sobre as visualizações, foram coletados feedback de usuários desses sistemas através de um questionário online.
+O estudo analisou um total de 20 releases dos projetos Jetty \cite{Jetty2016} e VRaptor \cite{VRaptor2017}, sendo 10 releases para cada sistema, considerando 193 cenários distintos ao total, gerando as visualizações de sumarização dos cenários e grafo de chamadas para todos os casos. Sobre as visualizações, foram coletados feedback de desenvolvedores desses sistemas através de um questionário online.
 
 %De maneira geral, foram aplicadas as fases discutidas no capítulo \ref{ch:pqae}, subseção \ref{sec:perfminer}, além do procedimento necessário para gerar os dados para as visualizações, conforme descrito na seção \ref{sec:visao-geral-performance-qa-evolution} do mesmo capítulo. Em suma: (i) primeiro, os casos de testes automatizados (cada um deles representando um cenário) dos sistemas foram executados e monitorados, resultando em múltiplos bancos de dados; (ii) depois, os dados coletados foram comparados, agrupando versões subsequentes para cada sistema; (iii) então, os elementos identificados com desvios de desempenho foram minerados nos seus sistemas de controle de versão, com o intuito de descobrir os \textit{commits} que alteraram esses artefatos; (iv) por fim, foi executado, para cada versão de cada sistema, o procedimento necessário para gerar os dados que dão suporte às visualizações. Após isso, o questionário online foi elaborado e aplicado.
 
@@ -506,9 +514,9 @@ Houve, também, um participante que abriu o questionário e a ferramenta de seu 
 
 \subsubsection{Validades Internas}
 
-\noindent \textbf{Medição do Desempenho}
+% \noindent \textbf{Medição do Desempenho}
 
-O \textit{\perfMinerName} se baseia em múltiplas execuções dos cenários para aumentar a confiança das medidas dos tempos de execução. Nesse estudo, todos os cenários foram executados 10 vezes para a análise do desvio de desempenho, mesmo assim alguns métodos em particular podem ter sido executados mais vezes. Por exemplo, os métodos podem ter várias hierarquias de chamadas, podem ser chamados em loops, etc. Para diminuir os riscos de viés na medição dos tempos de execução, foram tomadas precauções como desabilitar os serviços não essenciais do sistema operacional, cada teste foi executado em sua própria JVM e cada teste foi executado em ordem randômica \cite{Pinto2015}.
+% O \textit{\perfMinerName} se baseia em múltiplas execuções dos cenários para aumentar a confiança das medidas dos tempos de execução. Nesse estudo, todos os cenários foram executados 10 vezes para a análise do desvio de desempenho, mesmo assim alguns métodos em particular podem ter sido executados mais vezes. Por exemplo, os métodos podem ter várias hierarquias de chamadas, podem ser chamados em loops, etc. Para diminuir os riscos de viés na medição dos tempos de execução, foram tomadas precauções como desabilitar os serviços não essenciais do sistema operacional, cada teste foi executado em sua própria JVM e cada teste foi executado em ordem randômica \cite{Pinto2015}.
 
 \noindent \textbf{Casos de Testes Automatizados} \label{subsec:avaliacao-consideracoes-testes-unitarios}
 
