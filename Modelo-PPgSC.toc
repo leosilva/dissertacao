@@ -72,14 +72,13 @@
 \contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{110}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Escalabilidade}{110}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Automatiza\IeC {\c c}\IeC {\~a}o}{111}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Depend\IeC {\^e}ncia de Linguagem de Programa\IeC {\c c}\IeC {\~a}o ou Plataforma}{111}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{112}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{112}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{111}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{111}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{112}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{112}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{113}{subsection.6.3.4}
 \contentsline {subsection}{\numberline {6.3.5}Automatiza\IeC {\c c}\IeC {\~a}o}{113}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{114}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{113}{subsection.6.3.6}
 \contentsline {subsection}{\numberline {6.3.7}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{114}{subsection.6.3.7}
 \contentsline {chapter}{Refer\^encias}{115}{subsection.6.3.7}
 \contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{121}{chapter.appen.A}

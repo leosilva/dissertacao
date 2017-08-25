@@ -53,6 +53,8 @@ A ferramenta {\textit{\toolName}} e o \textit{Performance Evolution Blueprint} u
    \item \textit{Avaliação com Participantes}: a avaliação com participantes realizada nesta dissertação é um diferencial com relação ao trabalho de \citeauthor{SandovalAlcocer2013}. A partir dessa avaliação foi possível obter valiosas respostas dos usuários com relação a utilidade das visualizações para identificação das possíveis causas de variações de desempenho e a sua aplicabilidade nos processos de desenvolvimento de software das equipes.
 \end{itemize}
 
+O \textit{Performance Evolution Blueprint} possui algumas vantagens em relação ao \textit{\toolName}: é uma ferramenta escalável, oferece a possibilidade de exibir todo o grafo de chamadas, e não apenas os nós que tiveram algum tipo de desvio de desempenho, e exibe o conteúdo do \textit{commit} dentro da própria ferramenta, evitando que o usuário empregue sua atenção em outra ferramenta (um \textit{browser}, por exemplo).
+
 %O trabalho proposto se diferencia do de \citeauthor{SandovalAlcocer2013} pelo fato de: (i) ser compatível com a linguagem Java; (ii) mostrar mais informações sobre a hierarquia de chamadas; (iii) exibir a evolução de cada cenário entre as versões do softwares; e (iv) utilizar diferentes elementos visuais para destacar a evolução do desempenho na visualização do \textit{call graph} dos cenários.
 
 \citeauthor{Bergel} propuseram uma abordagem cujo objetivo é comparar duas versões de um software para a identificação de gargalos de execução. As visualizações propostas foram \textit{Structural Distribution Blueprint} e \textit{Behavioral Distribution Blueprint}. Ambas exibem informações de execução como um \textit{call graph}, onde os nós são os métodos e as arestas são as invocações. Cada nó é renderizado como uma caixa e uma invocação é uma linha que une dois nós. A primeira visualização exibe uma métrica que indica a distribuição do tempo de execução ao longo da estrutura estática de um programa. Já a segunda mostra as informações de tempo de execução junto com as chamadas de métodos. Essa abordagem considera apenas se um método gastou ou não mais tempo de execução do que na versão anterior. A Figura \ref{fig:trabalhos-relacionados-bergel-robbes-binder} exemplifica a visualização proposta pelos autores. A avaliação foi realizada ao aplicar a ferramenta no \textit{framework} Mondrian\footnote{\href{http://scg.unibe.ch/archive/papers/Meye06aMondrian.pdf}{http://scg.unibe.ch/archive/papers/Meye06aMondrian.pdf}}.
@@ -71,6 +73,8 @@ As principais vantagens do trabalho proposto por esta dissertação com relaçã
    \frame{\includegraphics[scale=0.60]{Imagens/trabalho_relacionado_bergel_robbes_binder.png}}
    \textsf{\caption[Exemplo da visualização comportamental proposta por Bergel, Robbes e Binder.]{Exemplo da visualização comportamental proposta por \citeauthor{Bergel}.\label{fig:trabalhos-relacionados-bergel-robbes-binder}}}
 \end{figure}
+
+Uma vantagem que o trabalho de \citeauthor{Bergel} apresenta sobre o \textit{\toolName} é uma propriedade visual para representar o tempo de execução: a altura de um nó. A ferramenta proposta por esta dissertação apresenta os tempos de execução em formato numérico. É visualmente mais claro comparar as alturas dos nós do que os números.
 
 \citeauthor{Mostafa2009} propõem uma técnica que compara duas árvores de contexto de chamadas \abrv[CCT -- \textit{Context Call Tree}]{}(CCT, do inglês \textit{Context Call Tree}), cada uma obtida de uma versão diferente de um software. Os autores apresentam o \textit{PARCS}, uma ferramenta de análise que identifica automaticamente diferenças entre o comportamento da execução de duas revisões de uma aplicação. A abordagem usa como base o algoritmo de correspondência de árvores comuns para comparar duas CCTs. No entanto, o suporte visual usado pelo PARCS não representa adequadamente a variação de uma estrutura dinâmica e múltiplas métricas \cite{Pablo2013}. Outra limitação dessa abordagem é que ela não detecta nós adicionados. Quando comparadas, duas CCTs que diferem apenas em um nó adicionado são consideradas completamente diferentes pelo PARCS. A Figura \ref{fig:trabalhos-relacionados-parcs} exibe um exemplo das diferenças topológicas encontradas entre duas versões do FindBugs\footnote{\href{http://findbugs.sourceforge.net}{http://findbugs.sourceforge.net}}, ferramenta utilizada para a avaliação da abordagem. Na figura, no centro dos nós são mostrados os seus ids, os nós retangulares representam métodos modificados e os nós em cinza indicam CCTs diferentes com relação à versão anterior.
 
@@ -106,3 +110,21 @@ O {\textit{\toolName}} apresenta vantagens com relação ao DFG, embora as metá
    \item \textit{Verificação das Mudanças}: por indicar os \textit{hashes} dos \textit{commits}, ao clicar nesses \textit{hashes}, o usuário pode ter acesso às mudanças implementadas no código-fonte que podem ter causado o desvio de desempenho do cenário;
    \item \textit{Visão Geral dos Cenários}: Os autores não mencionam se, através da abordagem, é possível obter uma visão geral das comparações realizadas. A visualização da sumarização de cenários fornecida pelo {\textit{\toolName}} possibilita uma visão geral de todos os cenários para a análise de um par de versões de um software.
 \end{itemize}
+
+A Tabela \ref{tab:resumo-diferencas-trabalhos-relacionados} adiante apresenta um resumo das diferenças dos trabalhos relacionados mencionados nesta seção com relação ao \textit{\toolName}.
+
+\begin{table}[!htb]
+  \textsf{\caption{Resumo das diferenças dos trabalhos relacionados.\label{tab:resumo-diferencas-trabalhos-relacionados}}}
+  \centering
+  \medskip
+  \resizebox{1.0\textwidth}{!}{
+     \begin{tabular}{c|c|c|c|c}
+     \textbf{Abordagem} & \textbf{Escalabilidade} & \textbf{\begin{tabular}[c]{@{}c@{}}Nós Adicionados\\ e Removidos\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Causas dos\\ Desvios\end{tabular}} & \textbf{Código-fonte} \\ \hline
+     \toolName & Limitada & Sim & Sim & \begin{tabular}[c]{@{}c@{}}Sim, externo\\ à ferramenta\end{tabular} \\ \hline
+     \begin{tabular}[c]{@{}c@{}}Performance Evolution\\Blueprint \cite{SandovalAlcocer2013}\end{tabular} & Sim & Sim & Sim & \begin{tabular}[c]{@{}c@{}}Sim, na\\ ferramenta\end{tabular} \\ \hline
+     \citeauthor{Bergel} & Não mencionado & Sim & Não & Não \\ \hline
+     PARCS \cite{Mostafa2009} & Não mencionado & Não & Não & Não \\ \hline
+     DFG \cite{Bezemer2015} & Limitada & Não & Não & Não \\ \hline
+     \end{tabular}
+  }
+\end{table}
