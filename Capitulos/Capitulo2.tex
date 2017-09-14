@@ -173,11 +173,11 @@ Duas informações são importantes nesse processo:
 
 A ferramenta usa \textit{AspectJ} para definir um aspecto que instrumenta as execuções dos cenários, interceptando os métodos de entrada para montar o grafo de chamadas e calcular os tempos de execução dos cenários e dos seus métodos \cite{Pinto2015}. Vale salientar que todo o processo dessa fase deve ser executado uma vez para cada versão do sistema a ser analisado. Dessa forma, serão gerados dois modelos de análise dinâmica que são utilizados para calcular os desvios de desempenho dos cenários e métodos na fase seguinte.
 
-A análise dinâmica é executada no mesmo computador para todas as versões, nas mesmas condições e com todos os serviços não essenciais desabilitados (por exemplo: atualizações, antivírus, memória virtual). A suíte de testes para cada versão é executada 10 vezes. Essa quantidade de execuções ajuda a ter medições de desempenho mais precisas em termos de tempo de execução.
+A análise dinâmica é executada no mesmo computador para todas as versões, sob as mesmas condições. A suíte de testes para cada versão é executada 10 vezes. Essa quantidade de execuções ajuda a ter medições de desempenho mais precisas em termos de tempo de execução.
 
 \subsection{Fase 2: Análise de Desvio} \label{subsec:fase2}
 
-A segunda fase é a análise de desvio, que consiste em realizar a comparação do modelo de análise dinâmica, extraído durante a fase de análise dinâmica, para cada uma das duas versões do sistema. Essa comparação revela os cenários e métodos que foram degradados ou otimizados durante a evolução. O artefato de saída desta fase é um relatório contendo os cenários e métodos degradados ou otimizados em termos de tempo de execução \cite{Pinto2015}. Esta fase pode ser vista na Figura \ref{fig:perfminer-fase2} adiante.
+A segunda fase é a análise de desvio, que consiste em realizar a comparação do modelo de análise dinâmica, extraído durante a fase 1 (análise dinâmica) para cada uma das duas versões do sistema. Essa comparação revela os cenários e métodos que foram degradados ou otimizados durante a evolução. O artefato de saída desta fase é um relatório contendo os cenários e métodos degradados ou otimizados em termos de tempo de execução \cite{Pinto2015}. Esta fase pode ser vista na Figura \ref{fig:perfminer-fase2} adiante.
 
 \begin{figure}[!htb]
    \centering

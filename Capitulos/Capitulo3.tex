@@ -1,7 +1,7 @@
 % Capíulo 3
 \chapter{\toolName} \label{ch:pqae}
 
-Este capítulo apresenta o conjunto de visualizações proposto como extensão à ferramenta \textit{\perfMinerName}. A seção \ref{sec:perfminer} destaca o funcionamento dessa ferramenta. A seção \ref{sec:visao-geral-performance-qa-evolution} mostra uma visão geral sobre o funcionamento da ferramenta proposta. As seções \ref{sec:visualizacao1} e \ref{sec:visualizacao2} descrevem as visualizações da sumarização de cenários e grafo de chamadas, respectivamente, com suas características, propriedades visuais e funcionamento. Por fim, são reportadas considerações finais sobre o capítulo na seção \ref{sec:consideracoes-cap3}.
+Este capítulo apresenta o conjunto de visualizações proposto como extensão à ferramenta \textit{\perfMinerName}, a qual foi discutida na seção \ref{sec:perfminer}. A seção \ref{sec:visao-geral-performance-qa-evolution} mostra uma visão geral sobre a ferramenta proposta. As seções \ref{sec:visualizacao1} e \ref{sec:visualizacao2} descrevem as visualizações da sumarização de cenários e grafo de chamadas, respectivamente, destacando suas características, propriedades visuais e funcionamento. Por fim, são reportadas considerações finais sobre o capítulo na seção \ref{sec:consideracoes-cap3}.
 
 \section{Visão Geral do \toolName} \label{sec:visao-geral-performance-qa-evolution}
 
@@ -29,7 +29,7 @@ Já no canto esquerdo é encontrada uma barra de menus contendo dois itens:
 
 Ao centro está a área principal da aplicação, onde são exibidas os conteúdos das páginas acessadas pelo usuário. Na página inicial exibida na Figura \ref{fig:pagina-inicial}, pode ser verificada uma tabela contendo todos os sistemas analisados. Cada linha da tabela representa uma análise, onde são exibidas: a versão anterior (\textit{Version From}), versão posterior (\textit{Version To}), \textit{status} e ações (\textit{Actions}). No exemplo da figura, dois sistemas foram analisados pela ferramenta: o sistema \textit{System A} teve três análises e o sistema \textit{System B} teve quatro análises.
 
-Dependendo do \textit{status} de cada análise, algumas ações pode ser tomadas. Caso o \textit{status} seja \texttt{COMPLETED}, o usuário pode navegar até a visualização de sumarização de cenários (\includegraphics[height=1.5em,valign=b]{Imagens/visualizacao_1_icone.png}) ou apagar a análise (\includegraphics[height=1.4em,valign=b]{Imagens/icon_delete_analysis.png}). Caso seja \texttt{ERROR}, a única ação que pode ser tomada é a de apagar a análise para que esta possa ser realizada novamente. Se o \textit{status} for \texttt{PENDING}, nenhuma ação pode ser efetuada uma vez que a análise ainda está em processamento.
+Dependendo do \textit{status} de cada análise, algumas ações pode ser tomadas. Caso o \textit{status} seja \texttt{COMPLETED}, o usuário pode navegar até a visualização de sumarização de cenários (\includegraphics[height=1.5em,valign=b]{Imagens/visualizacao_1_icone.png}) ou apagar a análise (\includegraphics[height=1.4em,valign=b]{Imagens/icon_delete_analysis.png}). Caso seja \texttt{ERROR}, a única ação que pode ser tomada é a de apagar a análise para que esta possa ser realizada novamente. Uma análise tem o estado modificado para \texttt{ERROR} se houver algum comportamento errôneo durante o processamento. Caso o \textit{status} seja \texttt{PENDING}, nenhuma ação pode ser efetuada uma vez que a análise ainda está em processamento.
 
 \begin{figure}[htb]
    \centering
@@ -91,7 +91,7 @@ Os bancos de dados DAM e QAV mencionados anteriormente têm funções distintas.
 
 \noindent \textbf{DAM - \textit{Dynamic Analysis Model}}
 
-O resultado do processamento da fase 1 do \textit{\perfMinerName} gera um modelo de análise dinâmica que contém informações sobre os \textit{traces} de execução do sistema, como mencionado na subseção \ref{subsec:fase1}. Esse modelo é persistido no banco de dados DAM, sendo usado, posteriormente, na extensão proposta por este trabalho para gerar as visualizações. A Figura \ref{fig:perfminer-class-diagram} mostra o diagrama de classes parcial desse modelo.
+O resultado do processamento da fase 1 do \textit{\perfMinerName} gera um modelo de análise dinâmica que contém informações sobre os \textit{traces} de execução do sistema, como mencionado na subseção \ref{subsec:fase1}. Esse modelo é persistido no banco de dados DAM, sendo usado, posteriormente, na extensão proposta por este trabalho para gerar as visualizações. No nível orientado a objetos, a Figura \ref{fig:perfminer-class-diagram} mostra o diagrama de classes parcial desse modelo.
 
 \begin{figure}[!htb]
    \centering
@@ -105,7 +105,7 @@ A classe \texttt{Node} representa todo membro (método ou construtor) executado 
 
 \noindent \textbf{QAV - \textit{Quality Attribute Visualization}}
 
-A ferramenta faz uso de outro banco de dados além do DAM: o QAV. Essa base de dados é responsável por armazenar os dados que darão suporte às visualizações. A Figura \ref{fig:archvis-class-diagram} a seguir mostra o diagrama de classes para esse modelo.
+A ferramenta faz uso de outro banco de dados além do DAM: o QAV. Essa base de dados é responsável por armazenar os dados que darão suporte às visualizações. No nível orientado a objetos, a Figura \ref{fig:archvis-class-diagram} a seguir mostra o diagrama de classes para esse modelo.
 
 \begin{figure}[!htb]
    \centering
@@ -396,7 +396,7 @@ Há casos em que existem nós filhos daqueles que possuíram algum tipo de desvi
 
 As hierarquias de chamadas irmãs que não estão diretamente relacionadas com os nós a serem exibidos são agrupadas em um único nó. Na Figura \ref{fig:no-agrupamento-arvore-adjacente}, o nó indicado com a letra \texttt{A} mostra que há uma ou mais hierarquias de chamadas agrupadas.
 
-As propriedades visuais apresentadas para a visualização do grafo de chamadas incluem, em suma, três partes: (i) seção de sumário, contendo informações gerais sobre o cenário; (ii) seção de histórico, mostrando o histórico do desempenho do cenário dentre as dez últimas versões analisadas; e (iii) seção do grafo de chamadas, onde a execução dos métodos é representada através de nós e arestas. Esta seção é a mais importante desta visualização, contendo características visuais que diferem os nós de acordo com sua classificação. Um resumo dessas características é apresentado na Tabela \ref{tab:resumo-caracteristicas-nos} a seguir.
+As propriedades visuais apresentadas para a visualização do grafo de chamadas incluem, em suma, três partes: (i) visão de sumário, contendo informações gerais sobre o cenário; (ii) visão de histórico, mostrando o histórico do desempenho do cenário dentre as dez últimas versões analisadas; e (iii) visão do grafo de chamadas, onde a execução dos métodos é representada através de nós e arestas. Esta seção é a mais importante desta visualização, contendo características visuais que diferem os nós de acordo com sua classificação. Um resumo dessas características é apresentado na Tabela \ref{tab:resumo-caracteristicas-nos} a seguir.
 
 \begin{table}[!htb]
    \textsf{\caption{Resumo das características visuais dos nós.\label{tab:resumo-caracteristicas-nos}}}
@@ -449,13 +449,13 @@ O usuário pode obter mais detalhes sobre cada nó exibido no grafo. Para isso, 
    \textsf{\caption[Detalhes de um nó no grafo de chamadas.]{Detalhes de um nó no grafo de chamadas.\label{fig:grafo-chamadas-detalhes-no}}}
 \end{figure}
 
-Na figura, podem ser encontradas informações sobre o pacote do método representado, a quantidade de vezes que o nó foi executado em caso de execução múltipla, o tempo total na versão anterior e atual, o tempo do próprio nó na versão anterior e atual, o tempo de desvio de desempenho, a listagem de parâmetros do método e a listagem de \textit{commits} que possivelmente causaram o desvio de desempenho do nó. Dependendo do tipo de nó ao qual se quer obter os detalhes, podem existir mais ou menos as informações a serem apresentadas.
+Na figura, podem ser encontradas informações sobre o pacote do método representado, a quantidade de vezes que o nó foi executado em caso de execução múltipla, o tempo total na versão anterior e atual, o tempo do próprio nó na versão anterior e atual, o tempo de desvio de desempenho, a listagem de parâmetros do método e a listagem de \textit{commits} que possivelmente causaram o desvio de desempenho do nó. Dependendo do tipo de nó ao qual se quer obter os detalhes, podem existir mais ou menos informações a serem apresentadas.
 
 \FloatBarrier % evite que as figuras da subsecao anterior invadam a secao seguinte
 
 \subsection{Funcionamento} \label{subsec:funcionamento-visualizacao-2}
 
-Após a execução de uma nova análise, conforme apresentado na seção \ref{subsec:new-analysis}, o funcionamento desta visualização segue o funcionamento geral das visualizações mostrado na Figura \ref{fig:funcionamento-geral-visualizacoes}, no entanto, no passo 4 dessa figura, existem processamentos específicos a fim de tratar os dados antes de serem exibidos para o usuário.
+Após a execução de uma nova análise, conforme apresentado na subseção \ref{subsec:new-analysis}, o funcionamento desta visualização segue o funcionamento geral das visualizações mostrado na Figura \ref{fig:funcionamento-geral-visualizacoes}, no entanto, no passo 4 dessa figura, existem processamentos específicos a fim de tratar os dados antes de serem exibidos para o usuário.
 
 Seguindo o fluxo da Figura \ref{fig:funcionamento-geral-visualizacoes}, a partir da visualização de sumarização de cenários, o usuário pode clicar em uma das fatias daquele gráfico e realizar uma requisição para a visualização do grafo de chamadas (passo 1). O servidor recebe essa requisição e, a partir dos parâmetros enviados, recupera do banco de dados QAV (passo 2) os dados necessários para a visualização. Após isso, é retornado para o navegador do usuário um arquivo em formato JSON contendo os dados recuperados (passo 3). O navegador, por fim, recebe, interpreta esse arquivo e monta a visualização com as devidas informações para que a renderização seja feita com sucesso (passo 4).
 
