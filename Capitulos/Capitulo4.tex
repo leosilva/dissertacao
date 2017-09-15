@@ -28,7 +28,7 @@ Neste estudo foram usados dois sistemas de diferentes domínios selecionados atr
   \item Ser desenvolvido na linguagem de programação Java;
   \item Ter no mínimo dez releases (no momento do início do estudo);
   \item Possuir casos de testes automatizados utilizando a biblioteca JUnit;
-  \item Utilizar o Maven\footnote{\href{http://maven.apache.org}{http://maven.apache.org}} como ferramenta de gerenciamento de dependências e compilação;
+  %\item Utilizar o Maven\footnote{\href{http://maven.apache.org}{http://maven.apache.org}} como ferramenta de gerenciamento de dependências e compilação;
   \item Possuir repositório no GitHub.
 \end{itemize}
 
@@ -374,7 +374,7 @@ O cenário \texttt{C5} foi o que mais degradou o seu tempo de execução em rela
 
 O cenário que menos degradou dentre os analisados foi o \texttt{C6}: \texttt{0,07\%}. Cinco nós adicionados foram os responsáveis por essa degradação. No entanto, os seus tempos são pequenos (em nanosegundos) em comparação ao tempo do cenário (em segundos) e, por isso, a degradação causada por eles foi baixa. Em suma, as modificações impostas por esses nós adicionados são simples verificações com um \texttt{if}.
 
-Outro caso especial que merece ser destacado é o cenário \texttt{C7}, que possuiu a com maior otimização dentre os analisados: \texttt{97,47\%}. Dois nós com otimizações de mais de \texttt{75\%} foram os responsáveis por esse desvio, adicionando uma estratégia recursiva para a configuração de um objeto da classe \texttt{com.thoughtworks.xstream.XStream}. A Figura \ref{fig:avaliacao-casos-especiais-c7} exemplifica esse grafo.
+Outro caso especial que merece ser destacado é o cenário \texttt{C7}, que possuiu a maior otimização dentre os analisados: \texttt{97,47\%}. Dois nós com otimizações de mais de \texttt{75\%} foram os responsáveis por esse desvio, adicionando uma estratégia recursiva para a configuração de um objeto da classe \texttt{com.thoughtworks.xstream.XStream}. A Figura \ref{fig:avaliacao-casos-especiais-c7} exemplifica esse grafo.
 
 \begin{figure}[!htb]
    \centering
@@ -476,7 +476,7 @@ Os \texttt{2} (15\%) que talvez vejam benefícios na ferramenta também merecem 
 
 Com relação à questão \textit{``Você utilizaria a ferramenta como parte integrante do processo de desenvolvimento de software do Jetty/VRaptor? Se sim, como você vislumbra que ela seria utilizada?''}, \texttt{7} (54\%) dos participantes respondeu que usaria a ferramenta como parte integrante do processo de desenvolvimento. O participante P22GA disse que \textit{``eu imagino usar esta ferramenta de duas maneiras: monitoramento regular para ver como as mudanças afetam o desempenho e investigação focada em uma questão específica''}, já o participante P8GC reforça que \textit{``talvez ela pudesse fazer parte do conjunto de análises antes da release''}, o participante P13GC afirma que \textit{``Sim. Acho que poderia ser utilizada para avaliar releases antes de serem lançadas, para garantir que não há consequências graves à performance após as evoluções implementadas''} e o participante P18GD disse que \textit{``sim. Integrada ao ciclo de entrega continua (acredito que usam travis.ci) para geração de reports (configurado no maven)''}. A Figura \ref{fig:avaliacao-questao-18} sumariza as respostas à essa questão e expõe que a maioria dos usuários usariam a ferramenta em seus processos de desenvolvimento.
 
-Vale destacar que \texttt{3} (23\%) responderam talvez à questão do parágrafo anterior. Dentre as justificativas apresentadas por eles, o participante P4GA disse que \textit{``não sei dizer. Não tenho certeza sobre outros testes mais complexos e de integração''}, já o participante P19GD comentou que \textit{``não neste momento. Posteriormente poderia fazer parte de uma análise de status do projeto antes de um release''}. Essas respostas indicam que, caso tivessem mais conhecimento e experiência sobre a ferramenta, eles são potenciais usuários a integrarem-na aos seus processos de desenvolvimento.
+Vale destacar que \texttt{3} (23\%) responderam talvez à questão do parágrafo anterior. Dentre as justificativas apresentadas por eles, o participante P4GA disse que \textit{``não sei dizer. Não tenho certeza sobre outros testes mais complexos e de integração''}, já o participante P19GD comentou que \textit{``não neste momento. Posteriormente poderia fazer parte de uma análise de status do projeto antes de um release''}. %Essas respostas indicam que, caso tivessem mais conhecimento e experiência sobre a ferramenta, eles são potenciais usuários a integrarem-na aos seus processos de desenvolvimento.
 
 \begin{framed}
   \noindent Dos 13 participantes com respostas válidas, 9 (69\%) veem benefícios em se utilizar a ferramenta e 7 (54\%) usariam a ferramenta em seus processos de desenvolvimento de software.
@@ -498,7 +498,7 @@ O estudo analisou um total de 20 releases dos projetos Jetty \cite{Jetty2016} e 
 
 %As principais contribuições são: (i) a identificação visual dos cenários que mais tiveram desvios de desempenho para os sistemas Jetty e VRaptor, a partir da análise de múltiplas releases; (ii) a identificação visual dos cenários com maior tempo de execução para os sistemas analisados; (iii) para os mesmos sistemas, a percepção visual do tipo de desvio dos cenários através da análise de múltiplas releases; (iv) a distinção visual dos nós que tiveram desvio de desempenho (degradação ou otimização), foram adicionados ou removidos para cada cenário dos sistemas analisados; e (v) para cada um desses nós, a indicação das potenciais causas dos desvios de desempenho, adição ou remoção ocorridos.
 
-A expectativa, através dos resultados desse estudo, é ajudar os desenvolvedores e arquitetos a analisar o desempenho dos sistemas, facilitando a correção de gargalos de desempenho, através da identificação das suas causas, inseridos durante o desenvolvimento de determinada release. Dessa forma, integrada ao processo de desenvolvimento de software, a ferramenta pode ser usada de maneira preventiva, evitando a liberação de releases com problemas de desempenho desconhecidos. Embora nem toda degradação de desempenho seja passível de correção (por exemplo, a inserção de verificações de segurança de maneira planejada), a ferramenta provê a possibilidade de acompanhá-las.
+A expectativa, através dos resultados desse estudo, é ajudar os desenvolvedores e arquitetos a analisar o desempenho dos sistemas, facilitando a correção de gargalos de desempenho, através da identificação das suas causas, inseridos durante o desenvolvimento de determinada release. Dessa forma, integrada ao processo de desenvolvimento de software como parte da integração contínua, a ferramenta pode ser usada de maneira preventiva, evitando a liberação de releases com problemas de desempenho desconhecidos. Embora nem toda degradação de desempenho seja passível de correção (por exemplo, a inserção de verificações de segurança de maneira planejada), a ferramenta provê a possibilidade de acompanhá-las.
 
 \subsection{Ameaças à Validade} \label{avaliacao-consideracoes-ameacas-validade}
 
@@ -508,7 +508,7 @@ Para estruturar as ameaças à validade do estudo, foi utilizada a apresentada p
 
 \noindent \textbf{Projeto do Questionário}
 
-Os dois tipos de questionários submetidos aos participantes continham imagens explicativas das visualizações da ferramenta. Um dos participantes respondeu às questões sobre as visualizações com base nessas imagens, fazendo que sua resposta fosse considerada inválida, consequentemente diminuindo a taxa de resposta. Nesse caso, o questionário poderia deixar ainda mais explícito que a figura era somente explicativa e que, para responder às questões, o participante teria que necessariamente abrir a ferramenta.
+Os dois tipos de questionários submetidos aos participantes continham imagens explicativas das visualizações da ferramenta. Um dos participantes respondeu às questões sobre as visualizações com base nessas imagens, fazendo com que sua resposta fosse considerada inválida, consequentemente diminuindo a taxa de resposta. Nesse caso, o questionário poderia deixar ainda mais explícito que a figura era somente explicativa e que, para responder às questões, o participante teria que necessariamente abrir a ferramenta.
 
 Houve, também, um participante que abriu o questionário e a ferramenta de seu celular. A ferramenta não foi implementada visando celulares e tablets, de modo que as visualizações podem não ser exibidas corretamente. Esse fato acabou prejudicando as respostas desse participante e, portanto, sua resposta foi considerada inválida. Para evitar esse caso, o questionário poderia incluir, explicitamente, orientações sobre a não utilização da ferramenta em dispositivos móveis.
 
