@@ -1,14 +1,14 @@
-\contentsline {abreviatura}{SCM -- \textit {Source Code Management}}{13}{chapter.1}
-\contentsline {abreviatura}{BTS -- \textit {Bug Tracking System}}{13}{chapter.1}
-\contentsline {abreviatura}{JDK -- \textit {Java Development Kit}}{15}{section.1.2}
-\contentsline {abreviatura}{CASE -- \textit {Collaborative \& Automated Software Engineering Lab and Research Group}}{18}{section.1.4}
-\contentsline {abreviatura}{DIMAp -- Departamento de Inform\IeC {\'a}tica e Matem\IeC {\'a}tica Aplicada}{18}{section.1.4}
-\contentsline {abreviatura}{UFRN -- Universidade Federal do Rio Grande do Norte}{18}{section.1.4}
-\contentsline {abreviatura}{CPU -- \textit {Central Processing Unit}}{28}{section.2.3}
-\contentsline {abreviatura}{DAM -- \textit {Dynamic Analysis Model}}{40}{figure.caption.15}
-\contentsline {abreviatura}{QAV -- \textit {Quality Attribute Visualization}}{40}{figure.caption.15}
-\contentsline {abreviatura}{JSON -- \textit {JavaScript Object Notation}}{47}{figure.caption.21}
-\contentsline {abreviatura}{CDI -- \textit {Contexts and Dependency Injection}}{67}{subsection.4.1.2}
-\contentsline {abreviatura}{JVM -- \textit {Java Virtual Machine}}{88}{figure.caption.57}
-\contentsline {abreviatura}{CCT -- \textit {Context Call Tree}}{103}{figure.caption.60}
-\contentsline {abreviatura}{SINFO -- Superintend\IeC {\^e}ncia de Inform\IeC {\'a}tica}{113}{subsection.6.3.2}
+\contentsline {abreviatura}{SCM -- \textit {Source Code Management}}{14}{chapter.1}
+\contentsline {abreviatura}{BTS -- \textit {Bug Tracking System}}{14}{chapter.1}
+\contentsline {abreviatura}{JDK -- \textit {Java Development Kit}}{16}{section.1.2}
+\contentsline {abreviatura}{CASE -- \textit {Collaborative \& Automated Software Engineering Lab and Research Group}}{19}{section.1.4}
+\contentsline {abreviatura}{DIMAp -- Departamento de Inform\IeC {\'a}tica e Matem\IeC {\'a}tica Aplicada}{19}{section.1.4}
+\contentsline {abreviatura}{UFRN -- Universidade Federal do Rio Grande do Norte}{19}{section.1.4}
+\contentsline {abreviatura}{CPU -- \textit {Central Processing Unit}}{29}{section.2.3}
+\contentsline {abreviatura}{DAM -- \textit {Dynamic Analysis Model}}{41}{figure.caption.15}
+\contentsline {abreviatura}{QAV -- \textit {Quality Attribute Visualization}}{41}{figure.caption.15}
+\contentsline {abreviatura}{JSON -- \textit {JavaScript Object Notation}}{48}{figure.caption.21}
+\contentsline {abreviatura}{CDI -- \textit {Contexts and Dependency Injection}}{68}{subsection.4.1.2}
+\contentsline {abreviatura}{JVM -- \textit {Java Virtual Machine}}{89}{figure.caption.57}
+\contentsline {abreviatura}{CCT -- \textit {Context Call Tree}}{104}{figure.caption.60}
+\contentsline {abreviatura}{SINFO -- Superintend\IeC {\^e}ncia de Inform\IeC {\'a}tica}{114}{subsection.6.3.2}
