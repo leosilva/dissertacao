@@ -27,6 +27,16 @@ Dispon{\'\i}vel em:
 \emph{IBM Systems Journal}, v.~28, n.~2, p. 294--306, 1989.
 ISSN 0018-8670.}
 
+\bibitem{Magnavita2015}
+\abntrefinfo{Magnavita, Novais e Mendon{\c{c}}a}{MAGNAVITA; NOVAIS;
+  MENDON{\c{C}}A}{2015}
+{MAGNAVITA, R.; NOVAIS, R.; MENDON{\c{C}}A, M. {Using EVOWAVE to analyze
+  software evolution}.
+\emph{ICEIS 2015 - 17th International Conference on Enterprise Information
+  Systems, Proceedings}, v.~2, p. 126--136, 2015.
+Dispon{\'\i}vel em:
+  $<$http://www.scopus.com/inward/record.url?eid=2-s2.0-84939532296{\&}partnerID=tZOtx3y1$>$.}
+
 \bibitem{Novais2013}
 \abntrefinfo{Novais et al.}{NOVAIS et al.}{2013}
 {NOVAIS, R.~L. et al. {Software evolution visualization: A systematic mapping
@@ -96,6 +106,27 @@ ISBN 9780596551056.}
   Understanding the impact of software evolution on performance}.
 \emph{2013 1st IEEE Working Conference on Software Visualization - Proceedings
   of VISSOFT 2013}, 2013.}
+
+\bibitem{Marr1982a}
+\abntrefinfo{Marr}{MARR}{1982}
+{MARR, D. \emph{{Vision: a computational investigation into the human
+  representation and processing of visual information}}. [S.l.]: Freeman and
+  Co, 1982.}
+
+\bibitem{Tudoreanu2003}
+\abntrefinfo{Tudoreanu}{TUDOREANU}{2003}
+{TUDOREANU, M.~E. {Designing effective program visualization tools for reducing
+  user's cognitive effort}. In:  \emph{SoftVis '03 Proceedings of the 2003 ACM
+  symposium on Software visualization}. [s.n.], 2003. p.~105.
+ISBN 1581136420. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=774833.774848{\%}5Cnhttp://doi.acm.org/10.1145/774833.774848$>$.}
+
+\bibitem{ToryMelanieandMoller2004}
+\abntrefinfo{Tory e M{\"{o}}ller}{TORY; M{\"{O}}LLER}{2004}
+{TORY, M.; M{\"{O}}LLER, T. {Human factors in visualization research}.
+\emph{IEEE Transactions on Visualization and Computer Graphics}, v.~10, n.~1,
+  p. 72--84, 2004.
+ISSN 10772626.}
 
 \bibitem{JProfiler}
 \abntrefinfo{JProfiler}{JPROFILER}{2016}
@@ -349,15 +380,16 @@ ISSN 1045-926X.}
 Dispon{\'\i}vel em:
   $<$http://www.old.inf.usi.ch/faculty/lanza/Downloads/Lanz05a.pdf$>$.}
 
-\bibitem{Magnavita2015}
-\abntrefinfo{Magnavita, Novais e Mendon{\c{c}}a}{MAGNAVITA; NOVAIS;
-  MENDON{\c{C}}A}{2015}
-{MAGNAVITA, R.; NOVAIS, R.; MENDON{\c{C}}A, M. {Using EVOWAVE to analyze
-  software evolution}.
-\emph{ICEIS 2015 - 17th International Conference on Enterprise Information
-  Systems, Proceedings}, v.~2, p. 126--136, 2015.
-Dispon{\'\i}vel em:
-  $<$http://www.scopus.com/inward/record.url?eid=2-s2.0-84939532296{\&}partnerID=tZOtx3y1$>$.}
+\bibitem{Novais2012}
+\abntrefinfo{Novais et al.}{NOVAIS et al.}{2012}
+{NOVAIS, R.~L. et al. {On the Use of Software Visualization to Analyze Software
+  Evolution: An Interactive Differential Approach}.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Enterprise Information Systems: 13th
+  International Conference, ICEIS 2011, Beijing, China, June 8-11, 2011,
+  Revised Selected Papers}. Berlin, Heidelberg: Springer Berlin Heidelberg,
+  2012. p. 241--255.
+ISBN 978-3-642-29958-2.
+Dispon{\'\i}vel em: $<$https://doi.org/10.1007/978-3-642-29958-2{\_}16$>$.}
 
 \bibitem{Steinbruckner2010b}
 \abntrefinfo{Steinbr{\"{u}}ckner e Lewerentz}{STEINBR{\"{U}}CKNER;
@@ -412,6 +444,14 @@ Dispon{\'\i}vel em: $<$http://portal.acm.org/citation.cfm?id=602461.602467$>$.}
 \emph{Proceedings of the 2nd ACM symposium on Software visuallization}, v.~1,
   n.~212, p.~67, 2005.
 Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=1056018.1056027$>$.}
+
+\bibitem{Novais2013a}
+\abntrefinfo{Novais et al.}{NOVAIS et al.}{2013}
+{NOVAIS, R.~L. et al. {SourceMiner evolution: A tool for supporting feature
+  evolution comprehension}.
+\emph{IEEE International Conference on Software Maintenance, ICSM}, p.
+  508--511, 2013.
+ISSN 1063-6773.}
 
 \bibitem{McConathy1993}
 \abntrefinfo{McConathy}{MCCONATHY}{1993}

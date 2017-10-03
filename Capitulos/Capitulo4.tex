@@ -190,21 +190,17 @@ Ao final da análise das releases selecionadas, foram encontrados um total de 24
 
 Nas tabelas, três pares de versões não possuíram nenhum cenário identificado como degradado ou otimizado: \texttt{9.3.13}/\texttt{9.3.14} para o Jetty, \texttt{4.1.0.Final}/\texttt{4.1.1} e \texttt{4.1.3}/\texttt{4.1.4} para o VRaptor. Isso significa que esses pares de versões tiveram os seus cenários exercitados e seus tempos de execução medidos, no entanto, o \textit{\perfMinerName} não encontrou diferenças estatisticamente relevantes nos seus tempos de execução entre a versão anterior e a posterior.
 
-\hfill \break
-
 \noindent\textbf{Visualização sem Prejuízos}
 
-A Figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} apresenta exemplos de visualizações de sumarização de cenários geradas sem prejuízos. Na Figura \ref{fig:avaliacao-sumarizacao-otimizacao} são mostrados 7 cenários com otimizações de desempenho para o \texttt{Jetty}, versão \texttt{9.3.12} para \texttt{9.3.13}. O cenário indicado pela letra \texttt{A} foi o de maior tempo de execução, conforme denuncia a altura da sua fatia preenchida. Percebe-se, através do gráfico, que os cenários \texttt{A} e \texttt{B} tiveram tempos de execução bem maiores do que o restante. Já o cenário \texttt{C} foi o que teve a maior otimização (47,46\%), identificada através da largura da fatia. A Figura \ref{fig:avaliacao-sumarizacao-degradacao} exibe 6 cenários degradados para o \texttt{VRaptor}, versão \texttt{4.2.0.RC2} para \texttt{4.2.0.RC3}. O cenário \texttt{A} foi o que possuiu o maior tempo de execução, sendo o seu tempo de execução muito maior do que o dos outros cenários. O cenário \texttt{B} foi o que teve o maior desvio de desempenho, 111,93\%.
+A Figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} apresenta exemplos de visualizações de sumarização de cenários geradas sem prejuízos. Na Figura \ref{fig:avaliacao-sumarizacao-otimizacao} são mostrados 7 cenários com otimizações de desempenho para o \texttt{Jetty}, versão \texttt{9.3.12} para \texttt{9.3.13}. O cenário indicado pela letra \texttt{A} foi o de maior tempo de execução, conforme denuncia a altura da sua fatia preenchida. Percebe-se, através do gráfico, que os cenários \texttt{A} e \texttt{C} tiveram tempos de execução bem maiores do que o restante. Já o cenário \texttt{B} foi o que teve a maior otimização (47,46\%), identificada através da largura da fatia. A Figura \ref{fig:avaliacao-sumarizacao-degradacao} exibe 6 cenários degradados para o \texttt{VRaptor}, versão \texttt{4.2.0.RC2} para \texttt{4.2.0.RC3}. O cenário \texttt{A} foi o que possuiu o maior tempo de execução, sendo o seu tempo de execução muito maior do que o dos outros cenários. O cenário \texttt{B} foi o que teve o maior desvio de desempenho, 111,93\%.
 
 Os dois exemplos comentados anteriormente mostram cenários com apenas um tipo de desvio de desempenho entre as versões. Na Figura \ref{fig:avaliacao-sumarizacao-misturado} são exibidos cenários de ambos os tipos, 3 degradações e 2 otimizações, para o \texttt{Jetty}, versões \texttt{9.3.14} para \texttt{9.3.15}. O cenário indicado pela letra \texttt{A} foi o de maior tempo de execução, já o indicado pela letra \texttt{B} foi o que teve a maior porcentagem de desvio de desempenho, 92,99\% de otimização. Já na Figura \ref{fig:avaliacao-sumarizacao-misturado-2} são mostrados 5 cenários, 4 degradações e 1 otimização, para o \texttt{VRaptor}, versões \texttt{4.2.0.RC1} para \texttt{4.2.0.RC2}. O único cenário otimizado, identificado pela letra \texttt{A}, foi o que possuiu o maior tempo de execução, já o maior desvio de desempenho foi identificado no cenário \texttt{B}, 142,87\% de degradação.
-
-É importante salientar que os cenários apresentados na Figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} não são todos os cenários existentes para as versões analisadas, mas sim apenas os cenários identificados com desvios de desempenho após a execução da ferramenta. De acordo com a Tabela \ref{tab:summary-jetty}, existem \texttt{155} cenários entre as versões \texttt{9.3.12} e \texttt{9.3.13}, sendo 7 (\texttt{4,51\%} do total) deles identificados com desvios de desempenho. Já entre as versões \texttt{9.3.14} e \texttt{9.3.15}, são \texttt{163} cenários ao todo, mas apenas 5 (\texttt{3,06\%}) deles com desvios de desempenho.
 
 \begin{figure}[!htb]
   \centering
    \begin{subfigure}{.5\textwidth}
    \centering
-   \frame{\includegraphics[scale=0.42]{Imagens/avaliacao_sumarizacao_otimizacao.png}}
+   \frame{\includegraphics[scale=0.42]{Imagens/avaliacao_sumarizacao_otimizacao_2.png}}
    \textsf{\caption[Jetty, 9.3.12/9.3.13.]{Jetty, 9.3.12/9.3.13.\label{fig:avaliacao-sumarizacao-otimizacao}}}
    \end{subfigure}%
    \begin{subfigure}{.5\textwidth}
@@ -225,6 +221,8 @@ Os dois exemplos comentados anteriormente mostram cenários com apenas um tipo d
    \caption{Exemplos da visualização de Sumarização de Cenários.}
   \label{fig:avaliacao-sumarizacao-exemplos-sucesso}
 \end{figure}
+
+É importante salientar que os cenários apresentados na Figura \ref{fig:avaliacao-sumarizacao-exemplos-sucesso} não são todos os cenários existentes para as versões analisadas, mas sim apenas os cenários identificados com desvios de desempenho após a execução da ferramenta. De acordo com a Tabela \ref{tab:summary-jetty}, existem \texttt{155} cenários entre as versões \texttt{9.3.12} e \texttt{9.3.13}, sendo 7 (\texttt{4,51\%} do total) deles identificados com desvios de desempenho. Já entre as versões \texttt{9.3.14} e \texttt{9.3.15}, são \texttt{163} cenários ao todo, mas apenas 5 (\texttt{3,06\%}) deles com desvios de desempenho.
 
 \noindent\textbf{Visualização com Prejuízos}
 
@@ -275,8 +273,6 @@ Para resolver ou minimizar essa situação, podem ser feitas adaptações na imp
 \subsubsection{Grafo de Chamadas} \label{subsec:avaliacao-comportamento-grafo-chamadas}
 
 Cada um dos 244 cenários identificados com desvios de desempenho pela ferramenta possuem nós a serem dispostos na visualização do grafo de chamadas. Nesta subseção serão destacados o resultado do algoritmo de supressão dos nós exibidos, bem como serão comentados 8 casos especiais de grafos.
-
-\hfill
 
 \noindent \textbf{Algoritmo de Supressão de Nós Exibidos}
 
@@ -526,8 +522,6 @@ Um dos participantes (P11GA) que respondeu ao questionário online aplicado most
 
 Os questionários elaborados para o estudo foram de dois tipos, conforme destacado na subseção \ref{subsec:avaliacao-procedimentos-passo-3}: tipo 1 e tipo 2. Em ambos, os participantes responderam a questões relacionadas a uma visualização através da ferramenta proposta e a outra visualização através dos dados tabulares, isto é, sem ter acesso à visualização. Essa estratégia foi adotada para que se pudesse obter indícios da eficácia das visualizações, analisando as respostas dos dois tipos de questionários. Os dados tabulares utilizados são fruto do processamento feito pelo \textit{\perfMinerName}, portanto, são dados já pré-processados. Dessa forma, mesmo sem o acesso à visualização, os participantes conseguiram responder às questões de maneira razoável.
 
-\hfill
-
 \noindent \textbf{Experiência dos Participantes}
 
 O questionário online foi submetido para todos os contribuidores dos sistemas no GitHub e, por isso, (i) a experiência dos desenvolvedores com relação à linguagem de programação e ao sistema analisado eram incógnitas, além do (ii) não conhecimento das visualizações recém implementadas. Para diminuir a primeira ameaça, foram adicionadas, no questionário, questões sobre a experiência dos participantes na linguagem e no sistema analisado. Já para diminuir a segunda ameaça, foram apresentadas imagens explicativas nas seções do questionário que continham questões relacionadas às visualizações.
@@ -549,6 +543,8 @@ Uma vez que o questionário foi submetido aos participantes em uma ferramenta on
 \noindent \textbf{Generalização e Limitação dos Resultados}
 
 Os resultados encontrados neste estudo não podem ser generalizados. Com relação ao domínio e quantidade de sistemas analisados, a ferramenta foi aplicada apenas a dois sistemas de domínios diferentes. Para outros domínios e sistemas com outras características, não há indícios de que as visualizações seriam geradas corretamente, tampouco que seriam úteis às equipes de desenvolvimento desses sistemas. Já com relação a quantidade de respostas obtidas, não é possível generalizar os resultados para todos os participantes dos sistemas analisados, uma vez que a amostra foi de baixa representatividade.
+
+\hfill \break
 
 \subsubsection{Validades de Conclusão}
 

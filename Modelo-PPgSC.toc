@@ -3,8 +3,8 @@
 \contentsline {section}{\numberline {1.1}Apresenta\IeC {\c c}\IeC {\~a}o do Problema}{15}{section.1.1}
 \contentsline {section}{\numberline {1.2}Limita\IeC {\c c}\IeC {\~o}es das Abordagens Atuais}{16}{section.1.2}
 \contentsline {section}{\numberline {1.3}Abordagem Proposta}{18}{section.1.3}
-\contentsline {section}{\numberline {1.4}Objetivos Gerais e Espec\IeC {\'\i }ficos}{19}{section.1.4}
-\contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o do trabalho}{19}{section.1.5}
+\contentsline {section}{\numberline {1.4}Objetivos Geral e Espec\IeC {\'\i }ficos}{19}{section.1.4}
+\contentsline {section}{\numberline {1.5}Organiza\IeC {\c c}\IeC {\~a}o do trabalho}{20}{section.1.5}
 \contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{21}{chapter.2}
 \contentsline {section}{\numberline {2.1}Arquitetura de Software}{21}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Atributos de Qualidade}{22}{subsection.2.1.1}
@@ -53,15 +53,15 @@
 \contentsline {subsection}{\numberline {4.2.1}An\IeC {\'a}lise do Comportamento das Visualiza\IeC {\c c}\IeC {\~o}es}{74}{subsection.4.2.1}
 \contentsline {subsubsection}{\numberline {4.2.1.1}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{74}{subsubsection.4.2.1.1}
 \contentsline {subsubsection}{\numberline {4.2.1.2}Grafo de Chamadas}{80}{subsubsection.4.2.1.2}
-\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{87}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{87}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Question\IeC {\'a}rio Online}{86}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Grafo de Chamadas}{86}{subsubsection.4.2.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2.2}Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios}{90}{subsubsection.4.2.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.3}Quest\IeC {\~o}es Finais}{92}{subsubsection.4.2.2.3}
 \contentsline {section}{\numberline {4.3}Considera\IeC {\c c}\IeC {\~o}es}{94}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Amea\IeC {\c c}as \IeC {\`a} Validade}{95}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Validades de Constru\IeC {\c c}\IeC {\~a}o}{95}{subsubsection.4.3.1.1}
+\contentsline {subsection}{\numberline {4.3.1}Amea\IeC {\c c}as \IeC {\`a} Validade}{94}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Validades de Constru\IeC {\c c}\IeC {\~a}o}{94}{subsubsection.4.3.1.1}
 \contentsline {subsubsection}{\numberline {4.3.1.2}Validades Internas}{95}{subsubsection.4.3.1.2}
-\contentsline {subsubsection}{\numberline {4.3.1.3}Validades Externas}{97}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Validades Externas}{96}{subsubsection.4.3.1.3}
 \contentsline {subsubsection}{\numberline {4.3.1.4}Validades de Conclus\IeC {\~a}o}{97}{subsubsection.4.3.1.4}
 \contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{98}{chapter.5}
 \contentsline {section}{\numberline {5.1}Ferramentas de Profiling}{98}{section.5.1}
