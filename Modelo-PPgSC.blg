@@ -37,43 +37,43 @@ Warning--campo note vazio em JProfiler
 +---------------------------------------------------------+
 You've used 77 entries,
             6480 wiz_defined-function locations,
-            1756 strings with 26264 characters,
-and the built_in function-call counts, 62199 in all, are:
-= -- 5124
-> -- 2035
-< -- 111
-+ -- 826
-- -- 611
-* -- 4541
-:= -- 8077
-add.period$ -- 335
+            1751 strings with 26115 characters,
+and the built_in function-call counts, 62033 in all, are:
+= -- 5083
+> -- 2050
+< -- 109
++ -- 832
+- -- 615
+* -- 4535
+:= -- 8063
+add.period$ -- 333
 call.type$ -- 77
-change.case$ -- 842
+change.case$ -- 846
 chr.to.int$ -- 134
 cite$ -- 78
-duplicate$ -- 3139
-empty$ -- 4557
-format.name$ -- 3177
-if$ -- 14855
+duplicate$ -- 3126
+empty$ -- 4537
+format.name$ -- 3197
+if$ -- 14800
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 1351
-newline$ -- 442
+newline$ -- 441
 num.names$ -- 309
-pop$ -- 1814
+pop$ -- 1818
 preamble$ -- 1
-purify$ -- 315
+purify$ -- 316
 quote$ -- 0
-skip$ -- 3273
+skip$ -- 3262
 stack$ -- 1
-substring$ -- 2847
-swap$ -- 1577
-text.length$ -- 92
+substring$ -- 2813
+swap$ -- 1565
+text.length$ -- 90
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 12
 warning$ -- 1
-while$ -- 537
+while$ -- 534
 width$ -- 0
-write$ -- 1108
+write$ -- 1104
 (There were 2 warnings)

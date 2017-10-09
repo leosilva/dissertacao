@@ -68,12 +68,11 @@ Dispon{\'\i}vel em:
 ISSN 21906807.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.4230/OASIcs.VLUDS.2011.25$>$.}
 
-\bibitem{Williams1998}
-\abntrefinfo{Williams e Smith}{WILLIAMS; SMITH}{1998}
-{WILLIAMS, L.; SMITH, C. {Performance evaluation of software architectures}.
-\emph{Proceedings of the 1st international workshop on Software and
-  Performance}, n.~c, p. 164--177, 1998.
-Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=287353$>$.}
+\bibitem{Woodside2007}
+\abntrefinfo{Woodside, Franks e Petriu}{WOODSIDE; FRANKS; PETRIU}{2007}
+{WOODSIDE, M.; FRANKS, G.; PETRIU, D.~C. {The Future of Software Performance
+  Engineering}.
+\emph{Future of Software Engineering, 2007. FOSE '07}, 2007.}
 
 \bibitem{Pablo2016}
 \abntrefinfo{Pablo et al.}{PABLO et al.}{2016}
@@ -90,7 +89,7 @@ ISSN 0018-8670.}
 \bibitem{LehmanMeirMandRamilJuanFandWernickPaulDandPerryDewayneEandTurski}
 \abntrefinfo{{Lehman, Ramil, Wernick, Perry}}{{Lehman, Ramil, Wernick,
   Perry}}{1997}
-{{Lehman, Ramil, Wernick, Perry}, T. {Metrics and laws of soft- ware
+{{Lehman, Ramil, Wernick, Perry}, T. {Metrics and laws of software
   evolution—the nineties view}. In:  \emph{IEEE, Piscataway}. [S.l.]: IEEE,
   1997. p. 20--32.}
 
@@ -117,9 +116,8 @@ ISBN 9780596551056.}
 \abntrefinfo{Tudoreanu}{TUDOREANU}{2003}
 {TUDOREANU, M.~E. {Designing effective program visualization tools for reducing
   user's cognitive effort}. In:  \emph{SoftVis '03 Proceedings of the 2003 ACM
-  symposium on Software visualization}. [s.n.], 2003. p.~105.
-ISBN 1581136420. Dispon{\'\i}vel em:
-  $<$http://dl.acm.org/citation.cfm?id=774833.774848{\%}5Cnhttp://doi.acm.org/10.1145/774833.774848$>$.}
+  symposium on Software visualization}. [S.l.: s.n.], 2003. p.~105.
+ISBN 1581136420.}
 
 \bibitem{ToryMelanieandMoller2004}
 \abntrefinfo{Tory e M{\"{o}}ller}{TORY; M{\"{O}}LLER}{2004}
