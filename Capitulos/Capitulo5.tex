@@ -111,7 +111,7 @@ O {\textit{\toolName}} apresenta vantagens com relação ao DFG, embora as metá
    \item \textit{Visão Geral dos Cenários}: Os autores não mencionam se, através da abordagem, é possível obter uma visão geral das comparações realizadas. A visualização da sumarização de cenários fornecida pelo {\textit{\toolName}} possibilita uma visão geral de todos os cenários para a análise de um par de versões de um software.
 \end{itemize}
 
-A Tabela \ref{tab:resumo-diferencas-trabalhos-relacionados} adiante apresenta um resumo das diferenças dos trabalhos relacionados mencionados nesta seção com relação ao \textit{\toolName}.
+A Tabela \ref{tab:resumo-diferencas-trabalhos-relacionados} adiante apresenta um resumo das diferenças dos trabalhos relacionados mencionados nesta seção com relação ao \textit{\toolName}. A ferramenta se destaca por mostrar uma visão geral dos cenários com desvios identificados para as versões analisadas, por apresentar, no grafo de chamadas, os nós adicionados e removidos entre essas duas versões, por mostrar as potenciais causas para os desvios de desempenho dos cenários e exibir uma listagem dos \textit{commits} que alteraram os métodos indicados como potenciais responsáveis. 
 
 \begin{table}[!htb]
   \textsf{\caption{Resumo das diferenças dos trabalhos relacionados.\label{tab:resumo-diferencas-trabalhos-relacionados}}}
@@ -121,13 +121,19 @@ A Tabela \ref{tab:resumo-diferencas-trabalhos-relacionados} adiante apresenta um
      \begin{tabular}{c|c|c|c|c}
      \textbf{Abordagem} & \textbf{Escalabilidade} & \textbf{\begin{tabular}[c]{@{}c@{}}Nós Adicionados\\ e Removidos\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Causas dos\\ Desvios\end{tabular}} & \textbf{Código-fonte} \\ \hline
      \toolName & Limitada & Sim & Sim & \begin{tabular}[c]{@{}c@{}}Sim, externo\\ à ferramenta\end{tabular} \\ \hline
-     \begin{tabular}[c]{@{}c@{}}Performance Evolution\\Blueprint \cite{SandovalAlcocer2013}\end{tabular} & Sim & Sim & Sim & \begin{tabular}[c]{@{}c@{}}Sim, na\\ ferramenta\end{tabular} \\ \hline
+     \begin{tabular}[c]{@{}c@{}}Performance Evolution\\Blueprint \cite{SandovalAlcocer2013}\end{tabular} & Limitada & Sim & Sim & \begin{tabular}[c]{@{}c@{}}Sim, na\\ ferramenta\end{tabular} \\ \hline
      \citeauthor{Bergel} & Não mencionado & Sim & Não & Não \\ \hline
      PARCS \cite{Mostafa2009} & Não mencionado & Não & Não & Não \\ \hline
      DFG \cite{Bezemer2015} & Limitada & Não & Não & Não \\ \hline
      \end{tabular}
   }
 \end{table}
+
+No entanto, apesar das vantagens, o \textit{\toolName} possui problemas de escalabilidade, sobretudo na visualização da Sumarização de Cenários, como mencionado no capítulo \ref{ch:avaliacao}. Com relação a visualização do Grafo de Chamadas, não houve evidências de problemas de escalabilidade para os sistemas e versões analisados. A ferramenta reduziu significativamente (entre 73,77\% e 99,83\% de redução, para 75\% dos cenários analisados) a quantidade de nós exibidos nesse grafo, mesmo quando o número de nós total foi bastante elevado. Por exemplo, o cenário \texttt{Entry point for ServletContextHandlerTest.test-\\InitOrder} possui, no total, 2.342 nós, considerando a análise feita entre as versões 9.3.11 e 9.3.12 do sistema Jetty. São exibidos no grafo de chamadas desse cenário apenas 4 nós, indicando uma redução de 99,83\% na quantidade de nós mostrados.
+
+Os autores da ferramenta \textit{Performance Evolution Blueprint} \cite{SandovalAlcocer2013} não mencionam sobre restrições de escalabilidade, mas indicam as estratégias utilizadas para diminuir esse problema. No entanto, não fica claro, por exemplo, até quantos nós exibidos no grafo de chamadas a ferramenta suporta sem que apresente problemas quanto à escalabilidade, além disso, os autores não apresentaram, no referido trabalho, casos em que esse problema ficasse evidente ou questionável.
+
+A abordagem proposta pelo DFG \cite{Bezemer2015} se mostra limitada quanto à escalabilidade. Uma vez que é exibida a pilha de chamadas de execução do sistema, quanto maior for a pilha, mais prejudicada é a qualidade da visualização, dificultando a interpretação por parte dos usuários.
 
 \section{Considerações} \label{sec:trabalhos-relacionados-consideracoes}
 

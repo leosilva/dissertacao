@@ -68,20 +68,20 @@
 \contentsline {section}{\numberline {5.2}Ferramentas APM}{101}{section.5.2}
 \contentsline {section}{\numberline {5.3}Abordagens de Varia\IeC {\c c}\IeC {\~a}o de Desempenho}{101}{section.5.3}
 \contentsline {section}{\numberline {5.4}Considera\IeC {\c c}\IeC {\~o}es}{110}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{111}{chapter.6}
-\contentsline {section}{\numberline {6.1}Revis\IeC {\~a}o das Quest\IeC {\~o}es de Pesquisa}{112}{section.6.1}
-\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{113}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Escalabilidade}{113}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Automatiza\IeC {\c c}\IeC {\~a}o}{114}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{114}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{114}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{115}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{115}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{116}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Automatiza\IeC {\c c}\IeC {\~a}o}{116}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{117}{subsection.6.3.6}
-\contentsline {subsection}{\numberline {6.3.7}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{117}{subsection.6.3.7}
-\contentsline {chapter}{Refer\^encias}{118}{subsection.6.3.7}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{124}{chapter.appen.A}
-\contentsline {section}{\numberline {A.1}Tipo 1}{124}{section.appen.A.1}
-\contentsline {section}{\numberline {A.2}Tipo 2}{127}{section.appen.A.2}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{112}{chapter.6}
+\contentsline {section}{\numberline {6.1}Revis\IeC {\~a}o das Quest\IeC {\~o}es de Pesquisa}{113}{section.6.1}
+\contentsline {section}{\numberline {6.2}Limita\IeC {\c c}\IeC {\~o}es}{114}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Escalabilidade}{114}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Automatiza\IeC {\c c}\IeC {\~a}o}{115}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Trabalhos Futuros}{115}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Atributos de Qualidade Adicionais}{115}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Aplica\IeC {\c c}\IeC {\~a}o em um Ambiente Real de Desenvolvimento}{116}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Novas Avalia\IeC {\c c}\IeC {\~o}es}{116}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Novas Estrat\IeC {\'e}gias para Exercitar os Cen\IeC {\'a}rios}{117}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Automatiza\IeC {\c c}\IeC {\~a}o}{117}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Customiza\IeC {\c c}\IeC {\~a}o}{118}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Disponibiliza\IeC {\c c}\IeC {\~a}o para a Comunidade}{118}{subsection.6.3.7}
+\contentsline {chapter}{Refer\^encias}{119}{subsection.6.3.7}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} Question\IeC {\'a}rio}{125}{chapter.appen.A}
+\contentsline {section}{\numberline {A.1}Tipo 1}{125}{section.appen.A.1}
+\contentsline {section}{\numberline {A.2}Tipo 2}{128}{section.appen.A.2}

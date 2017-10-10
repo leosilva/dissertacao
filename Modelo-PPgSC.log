@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.28)  9 OCT 2017 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.8.28)  9 OCT 2017 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,7 +1190,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 ...2.1}Escalabilidade}{113}{subsection.6.2.1}
+l.74 ...2.1}Escalabilidade}{114}{subsection.6.2.1}
                                                    [13])
 \tf@toc=\write7
 \openout7 = `Modelo-PPgSC.toc'.
@@ -2497,17 +2497,23 @@ ren-te-mente do tra-ba-lho de [][]Be-ze-mer, Pouwelse
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 133.
+[109]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
-[109])
+(babel)             in language  on input line 138.
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
  [110]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 197.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 197.
+ [111]
 \openout2 = `Capitulos/Consideracoes.aux'.
 
  (./Capitulos/Consideracoes.tex
@@ -2518,7 +2524,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
-[111
+[112
 
 
 
@@ -2529,7 +2535,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
- [112]
+ [113]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
@@ -2538,7 +2544,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 36.
- [113]
+ [114]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
@@ -2549,7 +2555,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
- [114]
+ [115]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 55.
 Package babel Info: Redefining portuges shorthand "|
@@ -2558,7 +2564,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
- [115]
+ [116]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 69.
 Package babel Info: Redefining portuges shorthand "|
@@ -2569,7 +2575,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 80.
- [116]
+ [117]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
 )
@@ -2577,7 +2583,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 200.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 200.
- [117] (./Modelo-PPgSC.bbl
+ [118] (./Modelo-PPgSC.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 
@@ -2590,7 +2596,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 95.
-[118
+[119
 
 
 ]
@@ -2603,7 +2609,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 198.
-[119]
+[120]
 Underfull \hbox (badness 1005) in paragraph at lines 267--271
 \T1/cmr/m/n/12 view. \T1/cmr/m/it/12 In-for-ma-tik\T1/cmr/m/n/12 , v. 2, n. 2, 
 p. 4--7, 2001. Dis-po-ní-vel em: 
@@ -2619,22 +2625,22 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
-[120]
+[121]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 391.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 391.
- [121]
+ [122]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 487.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 487.
- [122])
+ [123])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 208.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 208.
- [123]
+ [124]
 \openout2 = `Capitulos/ApendiceA.aux'.
 
  (./Capitulos/ApendiceA.tex
@@ -2660,11 +2666,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
-[124
+[125
 
 
 ]
-<Imagens/call_graph_explicative_portuguese.png, id=1835, 980.66376pt x 466.7437
+<Imagens/call_graph_explicative_portuguese.png, id=1842, 980.66376pt x 466.7437
 4pt>
 File: Imagens/call_graph_explicative_portuguese.png Graphic file (type png)
  <use Imagens/call_graph_explicative_portuguese.png>
@@ -2679,7 +2685,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
-[125 <./Imagens/call_graph_explicative_portuguese.png>]
+[126 <./Imagens/call_graph_explicative_portuguese.png>]
 Underfull \vbox (badness 1603) detected at line 72
  []
 
@@ -2687,20 +2693,20 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
-[126]
+[127]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 107.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 107.
- [127]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
  [128]
-<Imagens/scenario_summarization_explicative_portuguese.png, id=1854, 945.5325pt
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 133.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 133.
+ [129]
+<Imagens/scenario_summarization_explicative_portuguese.png, id=1861, 945.5325pt
  x 588.1975pt>
 File: Imagens/scenario_summarization_explicative_portuguese.png Graphic file (t
 ype png)
@@ -2713,12 +2719,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 153.
 
-[129 <./Imagens/scenario_summarization_explicative_portuguese.png>])
+[130 <./Imagens/scenario_summarization_explicative_portuguese.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 208.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 208.
- [130]
+ [131]
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -2742,8 +2748,8 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
  ) 
 Here is how much of TeX's memory you used:
- 12856 strings out of 493014
- 201209 string characters out of 6133351
+ 12857 strings out of 493014
+ 201217 string characters out of 6133351
  314744 words of memory out of 5000000
  15478 multiletter control sequences out of 15000+600000
  35885 words of font info for 96 fonts, out of 8000000 for 9000
@@ -2770,10 +2776,10 @@ mf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2016/texmf
 ist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/cm-super/sfxc1728.pfb>
-Output written on Modelo-PPgSC.pdf (131 pages, 4267761 bytes).
+Output written on Modelo-PPgSC.pdf (132 pages, 4260468 bytes).
 PDF statistics:
- 2030 PDF objects out of 2073 (max. 8388607)
- 1710 compressed objects within 18 object streams
- 453 named destinations out of 1000 (max. 500000)
+ 2037 PDF objects out of 2073 (max. 8388607)
+ 1716 compressed objects within 18 object streams
+ 454 named destinations out of 1000 (max. 500000)
  1059 words of extra memory for PDF output out of 10000 (max. 10000000)
 
