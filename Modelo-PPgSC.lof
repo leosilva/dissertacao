@@ -1,54 +1,54 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces EvoSpaces.}}{26}{figure.caption.5}
-\contentsline {figure}{\numberline {2}{\ignorespaces Areas of Interest.}}{26}{figure.caption.6}
-\contentsline {figure}{\numberline {3}{\ignorespaces CrocoCosmos.}}{27}{figure.caption.7}
-\contentsline {figure}{\numberline {4}{\ignorespaces CodeCity.}}{28}{figure.caption.8}
-\contentsline {figure}{\numberline {5}{\ignorespaces Fase 1 do PerfMiner.}}{32}{figure.caption.9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Fase 2 do PerfMiner.}}{34}{figure.caption.10}
-\contentsline {figure}{\numberline {7}{\ignorespaces Fase 3 do PerfMiner.}}{35}{figure.caption.11}
-\contentsline {figure}{\numberline {8}{\ignorespaces Abordagem completa do PerfMiner.}}{36}{figure.caption.12}
-\contentsline {figure}{\numberline {9}{\ignorespaces Fase 4 do PerfMiner.}}{39}{figure.caption.13}
-\contentsline {figure}{\numberline {10}{\ignorespaces P\IeC {\'a}gina inicial da aplica\IeC {\c c}\IeC {\~a}o.}}{40}{figure.caption.14}
-\contentsline {figure}{\numberline {11}{\ignorespaces P\IeC {\'a}gina da funcionalidade de Nova An\IeC {\'a}lise.}}{41}{figure.caption.15}
-\contentsline {figure}{\numberline {12}{\ignorespaces Funcionamento do processamento de uma nova an\IeC {\'a}lise.}}{42}{figure.caption.16}
-\contentsline {figure}{\numberline {13}{\ignorespaces Passos 4 e 5 da realiza\IeC {\c c}\IeC {\~a}o de uma nova an\IeC {\'a}lise.}}{44}{figure.caption.17}
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de classes parcial do \textit {PerfMiner}.}}{45}{figure.caption.18}
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de classes da extens\IeC {\~a}o proposta.}}{46}{figure.caption.19}
-\contentsline {figure}{\numberline {16}{\ignorespaces Vis\IeC {\~a}o geral da Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.}}{48}{figure.caption.20}
-\contentsline {figure}{\numberline {17}{\ignorespaces \textit {Tooltip} com maiores informa\IeC {\c c}\IeC {\~o}es sobre determinado cen\IeC {\'a}rio.}}{49}{figure.caption.21}
-\contentsline {figure}{\numberline {18}{\ignorespaces Funcionamento geral das visualiza\IeC {\c c}\IeC {\~o}es.}}{50}{figure.caption.22}
-\contentsline {figure}{\numberline {19}{\ignorespaces Detalhamento do passo 4 da Figura \ref {fig:funcionamento-geral-visualizacoes}, na Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.}}{51}{figure.caption.23}
-\contentsline {figure}{\numberline {20}{\ignorespaces Trecho de exemplo da p\IeC {\'a}gina web do grafo de chamadas.}}{52}{figure.caption.24}
-\contentsline {figure}{\numberline {21}{\ignorespaces Exemplo do grafo de chamadas.}}{52}{figure.caption.25}
-\contentsline {figure}{\numberline {22}{\ignorespaces Se\IeC {\c c}\IeC {\~a}o de sum\IeC {\'a}rio do grafo de chamadas.}}{53}{figure.caption.26}
-\contentsline {figure}{\numberline {23}{\ignorespaces Se\IeC {\c c}\IeC {\~a}o de hist\IeC {\'o}rico do grafo de chamadas.}}{55}{figure.caption.27}
-\contentsline {figure}{\numberline {24}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo sem desvio de desempenho.}}{55}{figure.caption.28}
-\contentsline {figure}{\numberline {25}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo com degrada\IeC {\c c}\IeC {\~a}o de desempenho.}}{56}{figure.caption.29}
-\contentsline {figure}{\numberline {26}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo com otimiza\IeC {\c c}\IeC {\~a}o de desempenho.}}{57}{figure.caption.30}
-\contentsline {figure}{\numberline {27}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo adicionado.}}{58}{figure.caption.31}
-\contentsline {figure}{\numberline {28}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo removido.}}{58}{figure.caption.32}
-\contentsline {figure}{\numberline {29}{\ignorespaces N\IeC {\'o} que representa um agrupamento de outros n\IeC {\'o}s.}}{59}{figure.caption.33}
-\contentsline {figure}{\numberline {30}{\ignorespaces Borda espessa de um n\IeC {\'o}, representando m\IeC {\'u}ltiplas execu\IeC {\c c}\IeC {\~o}es.}}{59}{figure.caption.34}
-\contentsline {figure}{\numberline {31}{\ignorespaces Exemplo de n\IeC {\'o}s agrupados durante a hierarquia de chamadas.}}{60}{figure.caption.35}
-\contentsline {figure}{\numberline {32}{\ignorespaces Exemplo de n\IeC {\'o}s agrupados em hierarquias irm\IeC {\~a}s (A) e em n\IeC {\'o}s filhos (B).}}{61}{figure.caption.36}
-\contentsline {figure}{\numberline {33}{\ignorespaces Barra de ferramentas do grafo de chamadas.}}{62}{figure.caption.38}
-\contentsline {figure}{\numberline {34}{\ignorespaces Efeito de destaque do caminho de execu\IeC {\c c}\IeC {\~a}o de n\IeC {\'o}s com desvio.}}{62}{figure.caption.39}
-\contentsline {figure}{\numberline {35}{\ignorespaces Legenda do grafo de chamadas.}}{63}{figure.caption.40}
-\contentsline {figure}{\numberline {36}{\ignorespaces Detalhes de um n\IeC {\'o} no grafo de chamadas.}}{63}{figure.caption.41}
-\contentsline {figure}{\numberline {37}{\ignorespaces Detalhamento do passo 4 da Figura \ref {fig:funcionamento-geral-visualizacoes}, no Grafo de Chamadas.}}{65}{figure.caption.42}
-\contentsline {figure}{\numberline {38}{\ignorespaces Procedimentos da Avalia\IeC {\c c}\IeC {\~a}o.}}{70}{figure.caption.43}
-\contentsline {figure}{\numberline {39}{\ignorespaces Dados demogr\IeC {\'a}ficos dos participantes.\relax }}{74}{figure.caption.46}
-\contentsline {figure}{\numberline {40}{\ignorespaces Exemplos da visualiza\IeC {\c c}\IeC {\~a}o de Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.\relax }}{77}{figure.caption.49}
-\contentsline {figure}{\numberline {41}{\ignorespaces Exemplos da visualiza\IeC {\c c}\IeC {\~a}o de Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios com excesso de cen\IeC {\'a}rios.\relax }}{78}{figure.caption.50}
-\contentsline {figure}{\numberline {42}{\ignorespaces Gr\IeC {\'a}ficos \textit {boxplot} sobre o algoritmo de redu\IeC {\c c}\IeC {\~a}o de n\IeC {\'o}s.\relax }}{82}{figure.caption.51}
-\contentsline {figure}{\numberline {43}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C3}.}}{84}{figure.caption.53}
-\contentsline {figure}{\numberline {44}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C4}.}}{85}{figure.caption.54}
-\contentsline {figure}{\numberline {45}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C5}.}}{85}{figure.caption.55}
-\contentsline {figure}{\numberline {46}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C7}.}}{86}{figure.caption.56}
-\contentsline {figure}{\numberline {47}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C8}.}}{87}{figure.caption.57}
-\contentsline {figure}{\numberline {48}{\ignorespaces Opini\IeC {\~a}o dos participantes sobre os aspectos da visualiza\IeC {\c c}\IeC {\~a}o do grafo de chamadas.}}{90}{figure.caption.58}
-\contentsline {figure}{\numberline {49}{\ignorespaces Quest\IeC {\~o}es sobre os benef\IeC {\'\i }cios e utilidade da ferramenta.\relax }}{94}{figure.caption.59}
-\contentsline {figure}{\numberline {50}{\ignorespaces Exemplo do \textit {Performance Evolution Blueprint}}}{102}{figure.caption.60}
-\contentsline {figure}{\numberline {51}{\ignorespaces Exemplo da visualiza\IeC {\c c}\IeC {\~a}o comportamental proposta por Bergel, Robbes e Binder.}}{106}{figure.caption.61}
-\contentsline {figure}{\numberline {52}{\ignorespaces Exemplo do PARCS.}}{107}{figure.caption.62}
-\contentsline {figure}{\numberline {53}{\ignorespaces Exemplo do DFG.}}{108}{figure.caption.63}
+\contentsline {figure}{\numberline {1}{\ignorespaces EvoSpaces.}}{27}{figure.caption.5}
+\contentsline {figure}{\numberline {2}{\ignorespaces Areas of Interest.}}{27}{figure.caption.6}
+\contentsline {figure}{\numberline {3}{\ignorespaces CrocoCosmos.}}{28}{figure.caption.7}
+\contentsline {figure}{\numberline {4}{\ignorespaces CodeCity.}}{29}{figure.caption.8}
+\contentsline {figure}{\numberline {5}{\ignorespaces Fase 1 do PerfMiner.}}{33}{figure.caption.9}
+\contentsline {figure}{\numberline {6}{\ignorespaces Fase 2 do PerfMiner.}}{35}{figure.caption.10}
+\contentsline {figure}{\numberline {7}{\ignorespaces Fase 3 do PerfMiner.}}{36}{figure.caption.11}
+\contentsline {figure}{\numberline {8}{\ignorespaces Abordagem completa do PerfMiner.}}{37}{figure.caption.12}
+\contentsline {figure}{\numberline {9}{\ignorespaces Fase 4 do PerfMiner.}}{40}{figure.caption.13}
+\contentsline {figure}{\numberline {10}{\ignorespaces P\IeC {\'a}gina inicial da aplica\IeC {\c c}\IeC {\~a}o.}}{41}{figure.caption.14}
+\contentsline {figure}{\numberline {11}{\ignorespaces P\IeC {\'a}gina da funcionalidade de Nova An\IeC {\'a}lise.}}{42}{figure.caption.15}
+\contentsline {figure}{\numberline {12}{\ignorespaces Funcionamento do processamento de uma nova an\IeC {\'a}lise.}}{43}{figure.caption.16}
+\contentsline {figure}{\numberline {13}{\ignorespaces Passos 4 e 5 da realiza\IeC {\c c}\IeC {\~a}o de uma nova an\IeC {\'a}lise.}}{45}{figure.caption.17}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de classes parcial do \textit {PerfMiner}.}}{46}{figure.caption.18}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de classes da extens\IeC {\~a}o proposta.}}{47}{figure.caption.19}
+\contentsline {figure}{\numberline {16}{\ignorespaces Vis\IeC {\~a}o geral da Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.}}{49}{figure.caption.20}
+\contentsline {figure}{\numberline {17}{\ignorespaces \textit {Tooltip} com maiores informa\IeC {\c c}\IeC {\~o}es sobre determinado cen\IeC {\'a}rio.}}{50}{figure.caption.21}
+\contentsline {figure}{\numberline {18}{\ignorespaces Funcionamento geral das visualiza\IeC {\c c}\IeC {\~o}es.}}{51}{figure.caption.22}
+\contentsline {figure}{\numberline {19}{\ignorespaces Detalhamento do passo 4 da Figura \ref {fig:funcionamento-geral-visualizacoes}, na Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.}}{52}{figure.caption.23}
+\contentsline {figure}{\numberline {20}{\ignorespaces Trecho de exemplo da p\IeC {\'a}gina web do grafo de chamadas.}}{53}{figure.caption.24}
+\contentsline {figure}{\numberline {21}{\ignorespaces Exemplo do grafo de chamadas.}}{53}{figure.caption.25}
+\contentsline {figure}{\numberline {22}{\ignorespaces Se\IeC {\c c}\IeC {\~a}o de sum\IeC {\'a}rio do grafo de chamadas.}}{54}{figure.caption.26}
+\contentsline {figure}{\numberline {23}{\ignorespaces Se\IeC {\c c}\IeC {\~a}o de hist\IeC {\'o}rico do grafo de chamadas.}}{56}{figure.caption.27}
+\contentsline {figure}{\numberline {24}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo sem desvio de desempenho.}}{56}{figure.caption.28}
+\contentsline {figure}{\numberline {25}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo com degrada\IeC {\c c}\IeC {\~a}o de desempenho.}}{57}{figure.caption.29}
+\contentsline {figure}{\numberline {26}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo com otimiza\IeC {\c c}\IeC {\~a}o de desempenho.}}{58}{figure.caption.30}
+\contentsline {figure}{\numberline {27}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo adicionado.}}{59}{figure.caption.31}
+\contentsline {figure}{\numberline {28}{\ignorespaces N\IeC {\'o} que representa um m\IeC {\'e}todo removido.}}{59}{figure.caption.32}
+\contentsline {figure}{\numberline {29}{\ignorespaces N\IeC {\'o} que representa um agrupamento de outros n\IeC {\'o}s.}}{60}{figure.caption.33}
+\contentsline {figure}{\numberline {30}{\ignorespaces Borda espessa de um n\IeC {\'o}, representando m\IeC {\'u}ltiplas execu\IeC {\c c}\IeC {\~o}es.}}{60}{figure.caption.34}
+\contentsline {figure}{\numberline {31}{\ignorespaces Exemplo de n\IeC {\'o}s agrupados durante a hierarquia de chamadas.}}{61}{figure.caption.35}
+\contentsline {figure}{\numberline {32}{\ignorespaces Exemplo de n\IeC {\'o}s agrupados em hierarquias irm\IeC {\~a}s (A) e em n\IeC {\'o}s filhos (B).}}{62}{figure.caption.36}
+\contentsline {figure}{\numberline {33}{\ignorespaces Barra de ferramentas do grafo de chamadas.}}{63}{figure.caption.38}
+\contentsline {figure}{\numberline {34}{\ignorespaces Efeito de destaque do caminho de execu\IeC {\c c}\IeC {\~a}o de n\IeC {\'o}s com desvio.}}{63}{figure.caption.39}
+\contentsline {figure}{\numberline {35}{\ignorespaces Legenda do grafo de chamadas.}}{64}{figure.caption.40}
+\contentsline {figure}{\numberline {36}{\ignorespaces Detalhes de um n\IeC {\'o} no grafo de chamadas.}}{64}{figure.caption.41}
+\contentsline {figure}{\numberline {37}{\ignorespaces Detalhamento do passo 4 da Figura \ref {fig:funcionamento-geral-visualizacoes}, no Grafo de Chamadas.}}{66}{figure.caption.42}
+\contentsline {figure}{\numberline {38}{\ignorespaces Procedimentos da Avalia\IeC {\c c}\IeC {\~a}o.}}{71}{figure.caption.43}
+\contentsline {figure}{\numberline {39}{\ignorespaces Dados demogr\IeC {\'a}ficos dos participantes.\relax }}{75}{figure.caption.46}
+\contentsline {figure}{\numberline {40}{\ignorespaces Exemplos da visualiza\IeC {\c c}\IeC {\~a}o de Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios.\relax }}{78}{figure.caption.49}
+\contentsline {figure}{\numberline {41}{\ignorespaces Exemplos da visualiza\IeC {\c c}\IeC {\~a}o de Sumariza\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rios com excesso de cen\IeC {\'a}rios.\relax }}{79}{figure.caption.50}
+\contentsline {figure}{\numberline {42}{\ignorespaces Gr\IeC {\'a}ficos \textit {boxplot} sobre o algoritmo de redu\IeC {\c c}\IeC {\~a}o de n\IeC {\'o}s.\relax }}{83}{figure.caption.51}
+\contentsline {figure}{\numberline {43}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C3}.}}{85}{figure.caption.53}
+\contentsline {figure}{\numberline {44}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C4}.}}{86}{figure.caption.54}
+\contentsline {figure}{\numberline {45}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C5}.}}{86}{figure.caption.55}
+\contentsline {figure}{\numberline {46}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C7}.}}{87}{figure.caption.56}
+\contentsline {figure}{\numberline {47}{\ignorespaces Grafo de Chamadas do cen\IeC {\'a}rio \texttt {C8}.}}{88}{figure.caption.57}
+\contentsline {figure}{\numberline {48}{\ignorespaces Opini\IeC {\~a}o dos participantes sobre os aspectos da visualiza\IeC {\c c}\IeC {\~a}o do grafo de chamadas.}}{91}{figure.caption.58}
+\contentsline {figure}{\numberline {49}{\ignorespaces Quest\IeC {\~o}es sobre os benef\IeC {\'\i }cios e utilidade da ferramenta.\relax }}{95}{figure.caption.59}
+\contentsline {figure}{\numberline {50}{\ignorespaces Exemplo do \textit {Performance Evolution Blueprint}}}{103}{figure.caption.60}
+\contentsline {figure}{\numberline {51}{\ignorespaces Exemplo da visualiza\IeC {\c c}\IeC {\~a}o comportamental proposta por Bergel, Robbes e Binder.}}{107}{figure.caption.61}
+\contentsline {figure}{\numberline {52}{\ignorespaces Exemplo do PARCS.}}{108}{figure.caption.62}
+\contentsline {figure}{\numberline {53}{\ignorespaces Exemplo do DFG.}}{109}{figure.caption.63}
